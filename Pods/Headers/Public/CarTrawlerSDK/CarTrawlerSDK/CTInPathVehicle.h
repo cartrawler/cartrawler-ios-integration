@@ -1,0 +1,1 @@
+../../../../CarTrawlerSDK/CarTrawlerSDK.framework/Headers/CTInPathVehicle.h

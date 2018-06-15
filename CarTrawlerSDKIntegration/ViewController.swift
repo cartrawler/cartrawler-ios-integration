@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CarTrawlerSDK
 
 class ViewController: UIViewController {
 
@@ -20,6 +21,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func carRentalButtonTapped(_ sender: UIButton) {
+        CarTrawlerSDK.sharedInstance().presentStandAlone(from: self, clientID: "105614", countryCode: "IE", currencyCode: "EUR", languageCode: "EN", passengers: nil)
+    }
+    
 }
 
