@@ -15,7 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        CarTrawlerSDK.sharedInstance().initialiseSDK(with: nil, customParameters: nil, production: false)
+        let primaryColor = UIColor.blue;
+        let secondaryColor = UIColor.black;
+        let accentColor = UIColor.yellow;
+        let style = CTStyle.init(primaryColor: primaryColor, secondaryColor: secondaryColor, accentColor: accentColor, regularFont: nil, boldFont: nil, italicFont: nil)
+        CarTrawlerSDK.sharedInstance().initialiseSDK(with: style, customParameters: nil, production: false)
         return true
     }
 
