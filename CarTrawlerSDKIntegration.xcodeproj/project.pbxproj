@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BEDF8E320D40AE900637297 /* InPathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF8E220D40AE900637297 /* InPathViewController.swift */; };
 		657CBE4D20D3E53900C734DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657CBE4C20D3E53900C734DC /* AppDelegate.swift */; };
 		657CBE4F20D3E53A00C734DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657CBE4E20D3E53A00C734DC /* ViewController.swift */; };
 		657CBE5220D3E53A00C734DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657CBE5020D3E53A00C734DC /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BEDF8E220D40AE900637297 /* InPathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InPathViewController.swift; sourceTree = "<group>"; };
 		30058E519B70671E8E9FCA0F /* Pods-CarTrawlerSDKIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarTrawlerSDKIntegration.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarTrawlerSDKIntegration/Pods-CarTrawlerSDKIntegration.release.xcconfig"; sourceTree = "<group>"; };
 		657CBE4920D3E53900C734DC /* CarTrawlerSDKIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarTrawlerSDKIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		657CBE4C20D3E53900C734DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				657CBE5320D3E53A00C734DC /* Assets.xcassets */,
 				657CBE5520D3E53A00C734DC /* LaunchScreen.storyboard */,
 				657CBE5820D3E53A00C734DC /* Info.plist */,
+				2BEDF8E220D40AE900637297 /* InPathViewController.swift */,
 			);
 			path = CarTrawlerSDKIntegration;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			files = (
 				657CBE4F20D3E53A00C734DC /* ViewController.swift in Sources */,
 				657CBE4D20D3E53900C734DC /* AppDelegate.swift in Sources */,
+				2BEDF8E320D40AE900637297 /* InPathViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
