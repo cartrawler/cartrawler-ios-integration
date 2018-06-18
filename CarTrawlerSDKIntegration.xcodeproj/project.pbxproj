@@ -14,6 +14,9 @@
 		657CBE5420D3E53A00C734DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 657CBE5320D3E53A00C734DC /* Assets.xcassets */; };
 		657CBE5720D3E53A00C734DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657CBE5520D3E53A00C734DC /* LaunchScreen.storyboard */; };
 		937DB172886427784A3ED5F7 /* libPods-CarTrawlerSDKIntegration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0BE58944EB0E57443C1A40E /* libPods-CarTrawlerSDKIntegration.a */; };
+		B070558120D7B22A008BD5AC /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B070557F20D7B1EF008BD5AC /* Roboto-Bold.ttf */; };
+		B070558220D7B22A008BD5AC /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B070557D20D7B1EE008BD5AC /* Roboto-Italic.ttf */; };
+		B070558420D7B22A008BD5AC /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B070558020D7B1EF008BD5AC /* Roboto-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		657CBE5620D3E53A00C734DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		657CBE5820D3E53A00C734DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0BE58944EB0E57443C1A40E /* libPods-CarTrawlerSDKIntegration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CarTrawlerSDKIntegration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B070557D20D7B1EE008BD5AC /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		B070557F20D7B1EF008BD5AC /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		B070558020D7B1EF008BD5AC /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		EB9AFF29FB21B7D554BE291A /* Pods-CarTrawlerSDKIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarTrawlerSDKIntegration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarTrawlerSDKIntegration/Pods-CarTrawlerSDKIntegration.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +76,7 @@
 				657CBE5520D3E53A00C734DC /* LaunchScreen.storyboard */,
 				657CBE5820D3E53A00C734DC /* Info.plist */,
 				2BEDF8E220D40AE900637297 /* InPathViewController.swift */,
+				B070558520D7B318008BD5AC /* Resources */,
 			);
 			path = CarTrawlerSDKIntegration;
 			sourceTree = "<group>";
@@ -80,6 +87,16 @@
 				A0BE58944EB0E57443C1A40E /* libPods-CarTrawlerSDKIntegration.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B070558520D7B318008BD5AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B070557F20D7B1EF008BD5AC /* Roboto-Bold.ttf */,
+				B070557D20D7B1EE008BD5AC /* Roboto-Italic.ttf */,
+				B070558020D7B1EF008BD5AC /* Roboto-Regular.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		EAE2C7FC763F298A7CB9936C /* Pods */ = {
@@ -153,6 +170,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B070558120D7B22A008BD5AC /* Roboto-Bold.ttf in Resources */,
+				B070558220D7B22A008BD5AC /* Roboto-Italic.ttf in Resources */,
+				B070558420D7B22A008BD5AC /* Roboto-Regular.ttf in Resources */,
 				657CBE5720D3E53A00C734DC /* LaunchScreen.storyboard in Resources */,
 				657CBE5420D3E53A00C734DC /* Assets.xcassets in Resources */,
 				657CBE5220D3E53A00C734DC /* Main.storyboard in Resources */,

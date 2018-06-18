@@ -18,8 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let primaryColor = UIColor(red: 3.0/255.0, green: 56.0/255.0, blue: 141.0/255.0, alpha: 1.0)
         let secondaryColor = UIColor(red: 3.0/255.0, green:56.0/255.0, blue:141.0/255.0, alpha: 1.0)
         let accentColor = UIColor(red: 241.0/255.0, green: 201.0/255.0, blue: 51.0/255.0, alpha: 1.0)
-
-        let style = CTStyle.init(primaryColor: primaryColor, secondaryColor: secondaryColor, accentColor: accentColor, regularFont: nil, boldFont: nil, italicFont: nil)
+        let regularFont = UIFont.init(name: "Roboto-Regular", size: 14.0)
+        let boldFont = UIFont.init(name: "Roboto-Bold", size: 14.0)
+        let italicFont = UIFont.init(name: "Roboto-Italic", size: 14.0)
+        
+        let style = CTStyle.init(primaryColor: primaryColor, secondaryColor: secondaryColor, accentColor: accentColor, regularFont: regularFont, boldFont: boldFont, italicFont: italicFont)
+        
         CarTrawlerSDK.sharedInstance().initialiseSDK(with: style, customParameters: nil, production: false)
         return true
     }
