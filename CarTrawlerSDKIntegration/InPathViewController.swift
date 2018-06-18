@@ -20,8 +20,11 @@ class InPathViewController: UIViewController , CarTrawlerSDKDelegate {
         
 //        let passenger = CTPassenger(firstName: "Elton", lastName: "Mendes", addressLine1: "DunDrum", addressLine2: "Dublin 12", city: "Dublin", postcode: "000", countryCode: "IE", age: 24, email: "eltonmendes.j@gmail.com", phone: "083 8580001", isPrimaryDriver: true)
 
-        // Do any additional setup after loading the view.
-        CarTrawlerSDK.sharedInstance().addInPathCard(to: containerView, clientID: "105614", currency: "EUR", customerCountry: "IE", languageCode: "EN", iataCode: "ALC", pickupDate: pickUpDate, return: nil, flightNumber: "FL123", passengers: nil, delegate: self)
+        // Call this to initialise in path
+        CarTrawlerSDK.sharedInstance().initialiseInPath(withClientID: "105614", currency: "EUR", customerCountry: "IE", languageCode: "EN", iataCode: "ALC", pickupDate: pickUpDate, return: nil, flightNumber: "FL123", passengers: nil, delegate: self)
+        
+        // Call this to add the in path card
+        CarTrawlerSDK.sharedInstance().addInPathCard(to: containerView)
     }
     
     //MARK: IBAction

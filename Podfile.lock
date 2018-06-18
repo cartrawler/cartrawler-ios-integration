@@ -1,14 +1,14 @@
 PODS:
-  - CarTrawlerSDK (6.0.0):
+  - CarTrawlerSDK (6.0.2):
     - CTPayment
-  - CTPayment (1.0.16)
+  - CTPayment (1.0.18)
 
 DEPENDENCIES:
   - CarTrawlerSDK (~> 6.0.0)
 
 SPEC CHECKSUMS:
-  CarTrawlerSDK: 2fa3a5ee7fed44591874728bb8d5fe5267c07baf
-  CTPayment: 60fb56e750d5290d4d03a74fbc4512591d17e98d
+  CarTrawlerSDK: 11e04bfc7e1bb3fdc1a97f013a756f738eb03f7d
+  CTPayment: 51d1cd7e4b33e133e2679526dcb78bde7ba27fcf
 
 PODFILE CHECKSUM: 327a1968f5139927b8a0bf9df712607c98290df9
 
