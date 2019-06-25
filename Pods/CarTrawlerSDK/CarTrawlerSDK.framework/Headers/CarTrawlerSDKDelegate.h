@@ -7,9 +7,30 @@
 //
 
 #import "CTInPathVehicle.h"
-#import "CTBooking.h"
+#import "CTWidgetContainer.h"
+
+/**
+ Enum referring to each flow supported
+ */
+typedef NS_ENUM(NSUInteger, CTFlowType) {
+    CTFlowTypeStandAlone,
+    CTFlowTypeInPath
+};
+
+static NSString * _Nonnull const CTPlaceholderSeriesCode = @"[SERIESCODE]";
+static NSString * _Nonnull const CTPlaceholderCardNumber = @"[CARDNUMBER]";
+static NSString * _Nonnull const CTPlaceholderExpireDate = @"[EXPIREDATE]";
+static NSString * _Nonnull const CTPlaceholderCardCode = @"[CARDCODE]";
+static NSString * _Nonnull const CTPlaceholderCardHolderName = @"[CARDHOLDERNAME]";
+static NSString * _Nonnull const CTPlaceholderPassengerFirstName = @"[PASSENGERFIRSTNAME]";
+static NSString * _Nonnull const CTPlaceholderPassengerSurname = @"[PASSENGERSURNAME]";
+static NSString * _Nonnull const CTPlaceholderEmail = @"[EMAIL]";
+static NSString * _Nonnull const CTPlaceholderTelephone = @"[TELEPHONE]";
+static NSString * _Nonnull const CTPlaceholderPassengerCountryCode = @"[COUNTRYNAMECODE]";
 
 @protocol CarTrawlerSDKDelegate <NSObject>
+
+#pragma Mark - Rental
 
 @required
 
@@ -22,12 +43,10 @@
 - (void)didProduceInPathPaymentRequest:(nonnull NSDictionary *)request
                                vehicle:(nonnull CTInPathVehicle *)vehicle;
 
-@optional
-
 /**
- Called when the user taps on the cross sell card
+ Called when the call to fetch vehicles fails and the best daily rate cannot be calculated
  */
-- (void)didTapCrossSellCard;
+- (void)didFailToReceiveBestDailyRate:(nonnull NSError *)error NS_SWIFT_NAME(didFailToReceiveBestDailyRate(error:));
 
 /**
  Called when the vehicles have been fetched and the best daily rate has been calculated
@@ -38,9 +57,23 @@
 - (void)didReceiveBestDailyRate:(nonnull NSNumber *)price
                        currency:(nonnull NSString *)currency;
 
+@optional
+
 /**
- Called when the call to fetch vehicles fails and the best daily rate cannot be calculated
+ Called when the user taps on the cross sell card
  */
-- (void)didFailToReceiveBestDailyRate;
+- (void)didTapCrossSellCard;
 
 @end
+
+
+@protocol CTWidgetContainerDelegate <NSObject>
+
+@optional
+- (void)didTapView:(nonnull CTWidgetContainer *)container;
+- (void)didTapAddCarHire:(nonnull CTWidgetContainer *)container;
+- (void)didTapRemoveButton:(nonnull CTWidgetContainer *)container;
+- (void)vehicleSelected:(nonnull CTWidgetVehicle *)vehicle;
+
+@end
+

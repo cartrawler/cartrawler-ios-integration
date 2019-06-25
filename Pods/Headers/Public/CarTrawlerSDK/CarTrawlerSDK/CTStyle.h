@@ -1,1 +1,0 @@
-../../../../CarTrawlerSDK/CarTrawlerSDK.framework/Headers/CTStyle.h

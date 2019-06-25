@@ -1,6 +1,0 @@
-framework module Pods_CarTrawlerSDKIntegration {
-  umbrella header "Pods-CarTrawlerSDKIntegration-umbrella.h"
-
-  export *
-  module * { export * }
-}

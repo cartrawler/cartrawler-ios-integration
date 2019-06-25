@@ -2,29 +2,64 @@
 //  InPathViewController.swift
 //  CarTrawlerSDKIntegration
 //
-//  Created by Elton Mendes Vieira Junior on 15/06/2018.
-//  Copyright © 2018 Car Trawler. All rights reserved.
+//  Copyright © 2019 CarTrawler. All rights reserved.
 //
 
 import UIKit
 import CarTrawlerSDK
 
-class InPathViewController: UIViewController , CarTrawlerSDKDelegate {
+class InPathViewController: UIViewController {
     
+    @IBOutlet weak var rentalStackView: UIStackView!
     @IBOutlet weak var textLabel: UILabel!
-    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var makePaymentButton: UIButton!
+    @IBOutlet weak var paymentIndicator: UIActivityIndicatorView!
+    
+    var carTrawlerSDK: CarTrawlerSDK!
+    
+    var widgetContainer: CTWidgetContainer?
+    var widgetContainer2: CTWidgetContainer?
+    
+    var payload: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.carTrawlerSDK = CarTrawlerSDK.sharedInstance()
+        
+        let passenger = CTPassenger(firstName: "Ryan",
+                                    lastName: "O'Connor",
+                                    addressLine1: "DunDrum",
+                                    addressLine2: "Dublin 14",
+                                    city: "Dublin",
+                                    postcode: "Dublin 12",
+                                    countryCode: "IE",
+                                    age: 25,
+                                    email: "john.murphy@cartrawler.com",
+                                    phone: "0838880000",
+                                    phoneCountryPrefix: "353",
+                                    isPrimaryDriver: true)
+        
         let pickUpDate = Date(timeIntervalSinceNow: 86400)
-        
-//        let passenger = CTPassenger(firstName: "Elton", lastName: "Mendes", addressLine1: "DunDrum", addressLine2: "Dublin 12", city: "Dublin", postcode: "000", countryCode: "IE", age: 24, email: "eltonmendes.j@gmail.com", phone: "083 8580001", isPrimaryDriver: true)
+        let returnDate = Date(timeIntervalSinceNow: TimeInterval(86400 * 3))
 
-        // Call this to initialise in path
-        CarTrawlerSDK.sharedInstance().initialiseInPath(withClientID: "105614", currency: "EUR", customerCountry: "IE", languageCode: "EN", iataCode: "ALC", pickupDate: pickUpDate, return: nil, flightNumber: "FL123", passengers: nil, delegate: self)
+        let context = CTContext(clientID: "105614", flow: .inPath)
+        context.countryCode = "IE"
+        context.currencyCode = "EUR"
+        context.languageCode = "EN"
+        context.pickupLocation = "DUB"
+        context.pickupDate = pickUpDate
+        context.dropOffDate = returnDate
+        context.flightNumber = "FL1234"
+        context.passengers = [passenger]
+        context.delegate = self
+        self.carTrawlerSDK.setContext(context)
         
-        // Call this to add the in path card
-        CarTrawlerSDK.sharedInstance().addInPathCard(to: containerView)
+        self.widgetContainer = self.carTrawlerSDK.getWidget(status: .simple, style: CTWidgetStyle(), delegate: self)
+        self.rentalStackView.insertArrangedSubview(self.widgetContainer!, at: 0)
+        
+        self.widgetContainer2 = self.carTrawlerSDK.getWidget(status: .bestPrice, style: CTWidgetStyle(), delegate: self)
+        self.rentalStackView.insertArrangedSubview(self.widgetContainer2!, at: 1)
     }
     
     //MARK: IBAction
@@ -33,41 +68,108 @@ class InPathViewController: UIViewController , CarTrawlerSDKDelegate {
         self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func removeAction(_ sender: Any) {
-        CarTrawlerSDK.sharedInstance().removeVehicle()
+    @IBAction func makeInPathPayment() {
+        if self.payload != nil {
+            self.paymentIndicator.startAnimating()
+            self.processPayment(payload: self.payload!)
+        } else {
+            self.showAlert()
+        }
     }
     
+    func showAlert() {
+        let alert = self.customAlert(title: "Error", message: "No payload Available for payment")
+        self.present(alert, animated: true, completion: nil)
+    }
     
-    //MARK: Delegate
+    func showResponseAlert(error: Error?, reservation: String?) {
+        let title = error != nil ? "Error" : "Success"
+        let message = error != nil ? error?.localizedDescription : "Reservation : \(reservation!)"
+        let alert = self.customAlert(title: title, message: message!)
+        self.present(alert, animated: true, completion: nil)
+    }
     
-    func didTapCrossSellCard() {
-        CarTrawlerSDK.sharedInstance().presentInPath(from: self)
+    func customAlert(title: String, message: String) -> UIAlertController {
+        let alert = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction.init(title: "Ok", style: .cancel, handler: nil)
+        alert.addAction(action)
+        return alert
+    }
+    
+    func processPayment(payload: String) {
+        let paymentController = PaymentController.init()
+        paymentController.makePaymentFor(json: payload, completion: { (error, reservation) in
+            if error == nil {
+                // Payment with Success
+                print("\(String(describing: reservation))")
+            } else {
+                // Payment Failed
+                print("\(String(describing: error?.localizedDescription))")
+            }
+            
+            OperationQueue.main.addOperation({
+                self.paymentIndicator.stopAnimating()
+                self.showResponseAlert(error: error, reservation: reservation)
+            })
+        })
+    }
+}
+
+extension InPathViewController: CTWidgetContainerDelegate {
+    func didTapView(_ container: CTWidgetContainer) {
+        if container == self.widgetContainer {
+            self.widgetContainer?.setStatus(.simpleAddedCar)
+        } else {
+            self.widgetContainer2?.setStatus(.vehicle)
+        }
+    }
+    
+    func didTapRemoveButton(_ container: CTWidgetContainer) {
+        if container == self.widgetContainer {
+            self.widgetContainer?.setStatus(.simple)
+        } else {
+            self.widgetContainer2?.setStatus(.bestPrice)
+        }
+    }
+    
+    func didTapAddCarHire(_ container: CTWidgetContainer) {
+        self.carTrawlerSDK.present(from: self, flow: .inPath)
+    }
+    
+    func vehicleSelected(_ vehicle: CTWidgetVehicle) {
+        self.widgetContainer2?.setVehicle(vehicle)
+        self.widgetContainer2?.setStatus(.vehicle)
+    }
+}
+
+extension InPathViewController: CarTrawlerSDKDelegate {
+    
+    func didProduce(inPathPaymentRequest request: [AnyHashable : Any], vehicle: CTInPathVehicle) {
+        print("\(request)")
+        
+        print("Total \(String(describing: vehicle.totalCost))")
+        print("Insurance \(String(describing: vehicle.insuranceCost))")
+        
+        print("Vehicle Name \(String(describing: vehicle.vehicleName))")
+        print("Vehicle First Name \(String(describing: vehicle.firstName))")
+        print("Vehicle LastName \(String(describing: vehicle.lastName))")
+        
+        print("*** PAYNOW: \(String(describing: vehicle.payNowPrice))\n" ,
+            "*** PAYLATER: \(String(describing: vehicle.payLaterPrice))\n" ,
+            "*** PAYDESK: \(String(describing: vehicle.payAtDeskPrice))\n" ,
+            "*** BOOKINGFEE: \(String(describing: vehicle.bookingFeePrice))\n")
+        
+        self.payload = request["ota"] as? String ?? nil
+        self.makePaymentButton.isHidden = false
     }
     
     func didReceiveBestDailyRate(_ price: NSNumber, currency: String) {
-        self.textLabel.text = ("Cars from \(currency) \(price)")
+        let price = String(format: "%@ %.2f", currency, price.floatValue)
+        self.widgetContainer2?.setPrice(price)
     }
     
-    func didFailToReceiveBestDailyRate() {
-        print("Error on availability request")
+    func didFailToReceiveBestDailyRate(error: Error) {
+        print("Error on availability request: %@", error.localizedDescription)
     }
     
-    // Required
-    func didProduce(inPathPaymentRequest request: [AnyHashable : Any], vehicle: CTInPathVehicle) {
-        
-        print("\(request)")
-        
-        print("Total \(vehicle.totalCost)")
-        print("Insurance \(vehicle.insuranceCost)")
-        
-        print("Vehicle Name \(vehicle.vehicleName)")
-        print("Vehicle First Name \(vehicle.firstName)")
-        print("Vehicle LastName \(vehicle.lastName)")
-        
-        print("*** PAYNOW: \(vehicle.payNowPrice)\n" ,
-            "*** PAYLATER: \(vehicle.payLaterPrice)\n" ,
-            "*** PAYDESK: \(vehicle.payAtDeskPrice)\n" ,
-            "*** BOOKINGFEE: \(vehicle.bookingFeePrice)\n")
-    }
-
 }

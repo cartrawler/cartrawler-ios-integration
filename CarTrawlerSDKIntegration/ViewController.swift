@@ -2,8 +2,7 @@
 //  ViewController.swift
 //  CarTrawlerSDKIntegration
 //
-//  Created by Alan Mathews on 15/06/2018.
-//  Copyright © 2018 Car Trawler. All rights reserved.
+//  Copyright © 2019 CarTrawler. All rights reserved.
 //
 
 import UIKit
@@ -22,7 +21,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func carRentalButtonTapped(_ sender: UIButton) {
-        CarTrawlerSDK.sharedInstance().presentStandAlone(from: self, clientID: "105614", countryCode: "IE", currencyCode: "EUR", languageCode: "EN", passengers: nil)
+        // Using context object
+        let context = CTContext(clientID: "105614", flow: .standAlone)
+        
+        /* Optional params */
+        context.countryCode = "IE" // Default device country code
+        context.currencyCode = "EUR" // Default device currency code
+        context.languageCode = "EN" // Default EN
+        
+        CarTrawlerSDK.sharedInstance().setContext(context).present(from: self)
     }
     
 }

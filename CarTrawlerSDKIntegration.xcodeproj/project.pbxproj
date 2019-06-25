@@ -14,6 +14,7 @@
 		657CBE5420D3E53A00C734DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 657CBE5320D3E53A00C734DC /* Assets.xcassets */; };
 		657CBE5720D3E53A00C734DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657CBE5520D3E53A00C734DC /* LaunchScreen.storyboard */; };
 		937DB172886427784A3ED5F7 /* libPods-CarTrawlerSDKIntegration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0BE58944EB0E57443C1A40E /* libPods-CarTrawlerSDKIntegration.a */; };
+		AF4DF80922C267F100CA4209 /* PaymentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4DF80822C267F100CA4209 /* PaymentController.swift */; };
 		B070558120D7B22A008BD5AC /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B070557F20D7B1EF008BD5AC /* Roboto-Bold.ttf */; };
 		B070558220D7B22A008BD5AC /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B070557D20D7B1EE008BD5AC /* Roboto-Italic.ttf */; };
 		B070558420D7B22A008BD5AC /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B070558020D7B1EF008BD5AC /* Roboto-Regular.ttf */; };
@@ -30,6 +31,7 @@
 		657CBE5620D3E53A00C734DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		657CBE5820D3E53A00C734DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0BE58944EB0E57443C1A40E /* libPods-CarTrawlerSDKIntegration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CarTrawlerSDKIntegration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF4DF80822C267F100CA4209 /* PaymentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentController.swift; sourceTree = "<group>"; };
 		B070557D20D7B1EE008BD5AC /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
 		B070557F20D7B1EF008BD5AC /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		B070558020D7B1EF008BD5AC /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
@@ -70,11 +72,12 @@
 			isa = PBXGroup;
 			children = (
 				657CBE4C20D3E53900C734DC /* AppDelegate.swift */,
-				657CBE4E20D3E53A00C734DC /* ViewController.swift */,
 				657CBE5020D3E53A00C734DC /* Main.storyboard */,
 				657CBE5320D3E53A00C734DC /* Assets.xcassets */,
 				657CBE5520D3E53A00C734DC /* LaunchScreen.storyboard */,
 				657CBE5820D3E53A00C734DC /* Info.plist */,
+				AF4DF80822C267F100CA4209 /* PaymentController.swift */,
+				657CBE4E20D3E53A00C734DC /* ViewController.swift */,
 				2BEDF8E220D40AE900637297 /* InPathViewController.swift */,
 				B070558520D7B318008BD5AC /* Resources */,
 			);
@@ -205,7 +208,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CarTrawlerSDKIntegration/Pods-CarTrawlerSDKIntegration-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-CarTrawlerSDKIntegration/Pods-CarTrawlerSDKIntegration-frameworks.sh",
 				"${PODS_ROOT}/CTPayment/CTPayment.framework",
 				"${PODS_ROOT}/CarTrawlerSDK/CarTrawlerSDK.framework",
 			);
@@ -216,7 +219,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarTrawlerSDKIntegration/Pods-CarTrawlerSDKIntegration-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CarTrawlerSDKIntegration/Pods-CarTrawlerSDKIntegration-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -226,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF4DF80922C267F100CA4209 /* PaymentController.swift in Sources */,
 				657CBE4F20D3E53A00C734DC /* ViewController.swift in Sources */,
 				657CBE4D20D3E53900C734DC /* AppDelegate.swift in Sources */,
 				2BEDF8E320D40AE900637297 /* InPathViewController.swift in Sources */,

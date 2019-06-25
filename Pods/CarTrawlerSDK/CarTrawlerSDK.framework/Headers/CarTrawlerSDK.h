@@ -6,11 +6,18 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CTStyle.h"
 #import "CTPassenger.h"
 #import "CarTrawlerSDKDelegate.h"
-#import "CTInPathVehicle.h"
+#import "CTStyle.h"
+#import "CTExtraEquipment.h"
+#import "CTInPathModuleDelegate.h"
 #import "CTInPathProtocol.h"
+#import "CTCustomer.h"
+#import "CTFee.h"
+#import "CTBooking.h"
+#import "CTBestDailyRateParams.h"
+#import "CTContext.h"
+#import "CTWidgetContainer.h"
 
 FOUNDATION_EXPORT double CarTrawlerSDKVersionNumber;
 
@@ -21,8 +28,9 @@ static NSString * _Nonnull const CTMyAccountID = @"myAccountId";
 static NSString * _Nonnull const CTVisitorId = @"visitorId";
 
 /**
- Please refer to www.github.io/cartrawler for full documentation
+ Please refer to cartrawler.github.io for full documentation
  */
+
 @interface CarTrawlerSDK : NSObject
 
 // MARK: CarTrawlerSDK
@@ -43,6 +51,35 @@ static NSString * _Nonnull const CTVisitorId = @"visitorId";
               customParameters:(nullable NSDictionary *)customParameters
                     production:(BOOL)isProduction;
 
+
+// MARK: Single point initialisation
+
+/**
+ Set the context before presentation
+ The SDK must be initialised before calling this method
+ 
+ @param context the instance with initalisation properties
+ */
+- (nonnull instancetype)setContext:(nonnull CTContext *)context;
+
+/**
+ Presents the Standalone flow as a modal over the presenting view controller
+ The SDK must be initialised before calling this method
+ The presentation params must be set before calling this method
+ 
+ @param viewController the presenting view controller
+ */
+- (void)presentFromViewController:(nonnull UIViewController *)viewController;
+
+/**
+ Presents the given flow type as a modal over the presenting view controller
+ The SDK must be initialised before calling this method
+ The presentation params must be set before calling this method
+ 
+ @param viewController the presenting view controller
+ */
+- (void)presentFromViewController:(nonnull UIViewController *)viewController flow:(CTFlowType)flowType;
+
 // MARK: Stand Alone
 
 /**
@@ -54,6 +91,7 @@ static NSString * _Nonnull const CTVisitorId = @"visitorId";
  @param countryCode a country code
  @param currencyCode a currency code
  @param languageCode a language code
+ @param passengers a passengers array
  */
 - (void)presentStandAloneFromViewController:(nonnull UIViewController *)presentingViewController
                                    clientID:(nonnull NSString *)clientID
@@ -62,6 +100,35 @@ static NSString * _Nonnull const CTVisitorId = @"visitorId";
                                languageCode:(nullable NSString *)languageCode
                                  passengers:(nullable NSArray<CTPassenger *> *)passengers;
 
+/**
+ Presents the Standalone flow as a modal over the presenting view controller
+ The SDK must be initialised before calling this method
+ 
+ @param presentingViewController the presenting view controller
+ @param clientID a client ID
+ @param countryCode a country code
+ @param currencyCode a currency code
+ @param languageCode a language code
+ @param pickupDate a pickup date
+ @param dropOffDate an optional return date, defaults to three days after pickup date if nil
+ @param airportCode an airport code
+ @param pickupLocationID a pickup location ID
+ @param dropOffLocationID a drop off location ID
+ @param pinnedVehicleID a vehicle reference ID
+ @param passengers a passengers array
+ */
+- (void)presentStandAloneFromViewController:(nonnull UIViewController *)presentingViewController
+                                   clientID:(nonnull NSString *)clientID
+                                countryCode:(nullable NSString *)countryCode
+                               currencyCode:(nullable NSString *)currencyCode
+                               languageCode:(nullable NSString *)languageCode
+                                 pickupDate:(nullable NSDate *)pickupDate
+                                dropOffDate:(nullable NSDate *)dropOffDate
+                                   IATACode:(nullable NSString *)airportCode
+                           pickupLocationID:(nullable NSString *)pickupLocationID
+                          dropOffLocationID:(nullable NSString *)dropOffLocationID
+                            pinnedVehicleID:(nullable NSString *)pinnedVehicleID
+                                 passengers:(nullable NSArray<CTPassenger *> *)passengers;
 
 // MARK:  InPath
 
@@ -88,6 +155,7 @@ static NSString * _Nonnull const CTVisitorId = @"visitorId";
                             IATACode:(nullable NSString *)airportCode
                           pickupDate:(nonnull NSDate *)pickupDate
                           returnDate:(nullable NSDate *)returnDate
+                     pinnedVehicleID:(nullable NSString *)pinnedVehicleID
                         flightNumber:(nullable NSString *)flightNumber
                           passengers:(nullable NSArray<CTPassenger *> *)passengers
                             delegate:(nullable id <CarTrawlerSDKDelegate>)delegate;
@@ -99,9 +167,16 @@ static NSString * _Nonnull const CTVisitorId = @"visitorId";
 - (void)presentInPathFromViewController:(nonnull UIViewController *)presentingViewController;
 
 /**
- Adds InPath card to the provided container view
+ Returns Rental Card to the client
  */
-- (void)addInPathCardToView:(nonnull UIView *)containerView;
+- (nonnull UIView *)getRentalCard;
+
+/**
+ Returns Widget to the client
+ */
+- (nonnull CTWidgetContainer *)getWidgetWithStatus:(CTWidgetStatus)status
+                                             style:(nullable CTWidgetStyle *)style
+                                      withDelegate:(nullable id <CTWidgetContainerDelegate>)delegate NS_SWIFT_NAME(getWidget(status:style:delegate:));
 
 /**
  Refreshes the in path search.
@@ -121,6 +196,12 @@ static NSString * _Nonnull const CTVisitorId = @"visitorId";
  @param confirmationID The confirmation ID or 'Booking reference'
  */
 - (void)didReceiveBookingConfirmationID:(nonnull NSString *)confirmationID;
+
+/**
+ This will trigger a new best daily rate fetch, and the subsequent delegate callbacks
+ The SDK must be initialised, and a CTBestDailyRateParams object with the necessary parameters must be set before calling this method
+ */
+- (void)requestBestDailyRate:(nonnull CTBestDailyRateParams *)params;
 
 @end
 
