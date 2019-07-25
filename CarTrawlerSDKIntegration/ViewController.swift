@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         context.currencyCode = "EUR" // Default device currency code
         context.languageCode = "EN" // Default EN
         
-        CarTrawlerSDK.sharedInstance().setContext(context).present(from: self)
+        CarTrawlerSDK.sharedInstance().present(from: self, context: context)
     }
     
 }

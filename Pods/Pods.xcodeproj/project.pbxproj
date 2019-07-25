@@ -29,16 +29,23 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		15850E1C21AA01ED81376CD182057EF5 /* Pods-CarTrawlerSDKIntegration-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB709D797CDC1B859C2C4F7DF6C53D06 /* Pods-CarTrawlerSDKIntegration-dummy.m */; };
+		A969128BC760ABCD534CEED5175E3267 /* Pods-CarTrawlerSDKIntegration-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB709D797CDC1B859C2C4F7DF6C53D06 /* Pods-CarTrawlerSDKIntegration-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1C35949A361C96B68B8C5511E8907CA2 /* PBXContainerItemProxy */ = {
+		2E14BCDA54335A201244DD1C9614C768 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B2333F7CA7E91C2DE6852E80168B111F;
 			remoteInfo = CTPayment;
+		};
+		678171603096C96C8FC320175C706F46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F7D8EE60B9853925F54299FAC30264F;
+			remoteInfo = CarTrawlerSDK;
 		};
 		86A58044D4DB5509279DE13A61C28629 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -46,13 +53,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = B2333F7CA7E91C2DE6852E80168B111F;
 			remoteInfo = CTPayment;
-		};
-		A1C98CEB147F80473E005B1B9827D601 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8F7D8EE60B9853925F54299FAC30264F;
-			remoteInfo = CarTrawlerSDK;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -72,7 +72,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3B5499B76301C6C994D1FEA9EAA74F15 /* Frameworks */ = {
+		B3436EC497B56165F266E2A8798A0814 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -196,7 +196,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7DB36E95561B4F0B312D404B577651B2 /* Headers */ = {
+		C99F7FDEFA18C4BE5E959516FC0B82F1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -206,19 +206,19 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D9E6FB439E0B8CE5841869198BA286E9 /* Pods-CarTrawlerSDKIntegration */ = {
+		1D31FF4FA0DDBAAA640D6B245736EADB /* Pods-CarTrawlerSDKIntegration */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17C712942FDCC9D1EED6B122F001821D /* Build configuration list for PBXNativeTarget "Pods-CarTrawlerSDKIntegration" */;
+			buildConfigurationList = E85D896955998071395A92EAE77CFA97 /* Build configuration list for PBXNativeTarget "Pods-CarTrawlerSDKIntegration" */;
 			buildPhases = (
-				7DB36E95561B4F0B312D404B577651B2 /* Headers */,
-				4004133DE43DB14F96D09857B7E4861F /* Sources */,
-				3B5499B76301C6C994D1FEA9EAA74F15 /* Frameworks */,
+				C99F7FDEFA18C4BE5E959516FC0B82F1 /* Headers */,
+				78765B644B7B428373D358C1604077DE /* Sources */,
+				B3436EC497B56165F266E2A8798A0814 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6DC93EAAE583D30B88942304B2747949 /* PBXTargetDependency */,
-				E11A6AEC7DFA5366603EB4D67E2A8403 /* PBXTargetDependency */,
+				D5945AD25583137E76B71FF378845F5A /* PBXTargetDependency */,
+				7E24C2B90597CA7DCF721D13CE3C9185 /* PBXTargetDependency */,
 			);
 			name = "Pods-CarTrawlerSDKIntegration";
 			productName = "Pods-CarTrawlerSDKIntegration";
@@ -231,12 +231,12 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 8.0";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -248,17 +248,17 @@
 			targets = (
 				8F7D8EE60B9853925F54299FAC30264F /* CarTrawlerSDK */,
 				B2333F7CA7E91C2DE6852E80168B111F /* CTPayment */,
-				D9E6FB439E0B8CE5841869198BA286E9 /* Pods-CarTrawlerSDKIntegration */,
+				1D31FF4FA0DDBAAA640D6B245736EADB /* Pods-CarTrawlerSDKIntegration */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4004133DE43DB14F96D09857B7E4861F /* Sources */ = {
+		78765B644B7B428373D358C1604077DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15850E1C21AA01ED81376CD182057EF5 /* Pods-CarTrawlerSDKIntegration-dummy.m in Sources */,
+				A969128BC760ABCD534CEED5175E3267 /* Pods-CarTrawlerSDKIntegration-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,22 +271,131 @@
 			target = B2333F7CA7E91C2DE6852E80168B111F /* CTPayment */;
 			targetProxy = 86A58044D4DB5509279DE13A61C28629 /* PBXContainerItemProxy */;
 		};
-		6DC93EAAE583D30B88942304B2747949 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CTPayment;
-			target = B2333F7CA7E91C2DE6852E80168B111F /* CTPayment */;
-			targetProxy = 1C35949A361C96B68B8C5511E8907CA2 /* PBXContainerItemProxy */;
-		};
-		E11A6AEC7DFA5366603EB4D67E2A8403 /* PBXTargetDependency */ = {
+		7E24C2B90597CA7DCF721D13CE3C9185 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CarTrawlerSDK;
 			target = 8F7D8EE60B9853925F54299FAC30264F /* CarTrawlerSDK */;
-			targetProxy = A1C98CEB147F80473E005B1B9827D601 /* PBXContainerItemProxy */;
+			targetProxy = 678171603096C96C8FC320175C706F46 /* PBXContainerItemProxy */;
+		};
+		D5945AD25583137E76B71FF378845F5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CTPayment;
+			target = B2333F7CA7E91C2DE6852E80168B111F /* CTPayment */;
+			targetProxy = 2E14BCDA54335A201244DD1C9614C768 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		07488D4657FB0A78086563621D425F8A /* Debug */ = {
+		31522DFF3FB7EC2BD13113D21E37F8FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DFE7ADF352F860868C82E9ED2E43052 /* CarTrawlerSDK.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6EC8F87D9F152FF50596F8A7B066690D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DFE7ADF352F860868C82E9ED2E43052 /* CarTrawlerSDK.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C7504A01375A5E758E83E10094E4343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F63D1DA6B2C3B9CDC8EB48D53F6AB4E /* Pods-CarTrawlerSDKIntegration.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -345,57 +454,8 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		2C614C350976E83637F67F2423D0E7D3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F63D1DA6B2C3B9CDC8EB48D53F6AB4E /* Pods-CarTrawlerSDKIntegration.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		31522DFF3FB7EC2BD13113D21E37F8FF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DFE7ADF352F860868C82E9ED2E43052 /* CarTrawlerSDK.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		6EC8F87D9F152FF50596F8A7B066690D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DFE7ADF352F860868C82E9ED2E43052 /* CarTrawlerSDK.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -412,7 +472,21 @@
 			};
 			name = Debug;
 		};
-		9D51BF051D258CF7C1BCFC994136A7BD /* Debug */ = {
+		AF077881E29D9F5AAA5015C885B66B51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE5CCC81F2F351D91C0A0FCF2AF16936 /* CTPayment.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED6F43639EEAFDAEA9948FCCD1C509FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F753DBE82D85714A2722657644955EE8 /* Pods-CarTrawlerSDKIntegration.debug.xcconfig */;
 			buildSettings = {
@@ -433,97 +507,14 @@
 			};
 			name = Debug;
 		};
-		A1962E6FF39BBAC201A2E5DDF99557DF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		AF077881E29D9F5AAA5015C885B66B51 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE5CCC81F2F351D91C0A0FCF2AF16936 /* CTPayment.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		17C712942FDCC9D1EED6B122F001821D /* Build configuration list for PBXNativeTarget "Pods-CarTrawlerSDKIntegration" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9D51BF051D258CF7C1BCFC994136A7BD /* Debug */,
-				2C614C350976E83637F67F2423D0E7D3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07488D4657FB0A78086563621D425F8A /* Debug */,
-				A1962E6FF39BBAC201A2E5DDF99557DF /* Release */,
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -542,6 +533,15 @@
 			buildConfigurations = (
 				6EC8F87D9F152FF50596F8A7B066690D /* Debug */,
 				31522DFF3FB7EC2BD13113D21E37F8FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E85D896955998071395A92EAE77CFA97 /* Build configuration list for PBXNativeTarget "Pods-CarTrawlerSDKIntegration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED6F43639EEAFDAEA9948FCCD1C509FB /* Debug */,
+				8C7504A01375A5E758E83E10094E4343 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

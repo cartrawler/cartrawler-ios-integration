@@ -133,7 +133,7 @@ extension InPathViewController: CTWidgetContainerDelegate {
     }
     
     func didTapAddCarHire(_ container: CTWidgetContainer) {
-        self.carTrawlerSDK.present(from: self, flow: .inPath)
+        self.carTrawlerSDK.presentInPath(from: self)
     }
     
     func vehicleSelected(_ vehicle: CTWidgetVehicle) {
