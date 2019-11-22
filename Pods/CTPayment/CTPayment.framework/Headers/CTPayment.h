@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "CTPaymentAppearance.h"
 #import "CTPaymentErrorCodes.h"
+#import "CTPaymentLocalization.h"
 
 @class CTPayment;
 
@@ -59,14 +60,14 @@
  Initialise the payment library with a container view and customised parameters
 
  @param containerView the container view in which the payment view will be placed. Should be minimum 200 points height
- @param language language code to determine which localized strings will be used
+ @param localization language code to determine which localized strings will be used
  @param appearance optional appearance object for customisation. Pass in nil for default appearance
  @param debug boolean indicating whether to use development or production endpoint
  @param active a boolean indicating whether the first textfield should be selected and keyboard displayed
  @return a CTPayment instance
  */
 - (instancetype)initWithContainerView:(UIView *)containerView
-                             language:(NSString *)language
+                         localization:(CTPaymentLocalization *)localization
                            appearance:(CTPaymentAppearance *)appearance
                                 debug:(BOOL)debug
                                active:(BOOL)active;

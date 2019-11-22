@@ -29,6 +29,7 @@ class PaymentController: NSObject {
         formattedJson = formattedJson.replacingOccurrences(of: "[CITY]", with: "Dublin")
         formattedJson = formattedJson.replacingOccurrences(of: "[ADDRESSLINE1]", with: "Dundrum Business Park, UNIT 1-4")
         formattedJson = formattedJson.replacingOccurrences(of: "[SURNAME]", with: "Murphy")
+        formattedJson = formattedJson.replacingOccurrences(of: "[ECI]", with: "x")
         
         let url = URL.init(string: stringURL)
         var request = URLRequest(url: url!)

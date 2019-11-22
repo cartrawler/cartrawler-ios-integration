@@ -40,10 +40,10 @@ class InPathViewController: UIViewController {
                                     phoneCountryPrefix: "353",
                                     isPrimaryDriver: true)
         
-        let pickUpDate = Date(timeIntervalSinceNow: 86400)
-        let returnDate = Date(timeIntervalSinceNow: TimeInterval(86400 * 3))
+        let pickUpDate = Date(timeIntervalSinceNow: TimeInterval(86400 * 3))
+        let returnDate = Date(timeIntervalSinceNow: TimeInterval(86400 * 6))
 
-        let context = CTContext(clientID: "105614", flow: .inPath)
+        let context = CTContext(clientID: "122070", flow: .inPath)
         context.countryCode = "IE"
         context.currencyCode = "EUR"
         context.languageCode = "EN"
@@ -55,8 +55,8 @@ class InPathViewController: UIViewController {
         context.delegate = self
         self.carTrawlerSDK.setContext(context)
         
-        self.widgetContainer = self.carTrawlerSDK.getWidget(status: .simple, style: CTWidgetStyle(), delegate: self)
-        self.rentalStackView.insertArrangedSubview(self.widgetContainer!, at: 0)
+        let widgetContainer3 = self.carTrawlerSDK.getWidget(status: .simple, style: CTWidgetStyle(), delegate: self)
+        self.rentalStackView.insertArrangedSubview(widgetContainer3, at: 0)
         
         self.widgetContainer2 = self.carTrawlerSDK.getWidget(status: .bestPrice, style: CTWidgetStyle(), delegate: self)
         self.rentalStackView.insertArrangedSubview(self.widgetContainer2!, at: 1)
@@ -136,15 +136,14 @@ extension InPathViewController: CTWidgetContainerDelegate {
         self.carTrawlerSDK.presentInPath(from: self)
     }
     
-    func vehicleSelected(_ vehicle: CTWidgetVehicle) {
+    func vehicleSelected(_ vehicle: CTVehicleDetails) {
         self.widgetContainer2?.setVehicle(vehicle)
         self.widgetContainer2?.setStatus(.vehicle)
     }
 }
 
 extension InPathViewController: CarTrawlerSDKDelegate {
-    
-    func didProduce(inPathPaymentRequest request: [AnyHashable : Any], vehicle: CTInPathVehicle) {
+    func didProduce(inPathPaymentRequest request: [AnyHashable : Any], vehicle: CTInPathVehicle, payment: Payment) {
         print("\(request)")
         
         print("Total \(String(describing: vehicle.totalCost))")
@@ -155,9 +154,9 @@ extension InPathViewController: CarTrawlerSDKDelegate {
         print("Vehicle LastName \(String(describing: vehicle.lastName))")
         
         print("*** PAYNOW: \(String(describing: vehicle.payNowPrice))\n" ,
-            "*** PAYLATER: \(String(describing: vehicle.payLaterPrice))\n" ,
-            "*** PAYDESK: \(String(describing: vehicle.payAtDeskPrice))\n" ,
-            "*** BOOKINGFEE: \(String(describing: vehicle.bookingFeePrice))\n")
+              "*** PAYLATER: \(String(describing: vehicle.payLaterPrice))\n" ,
+              "*** PAYDESK: \(String(describing: vehicle.payAtDeskPrice))\n" ,
+              "*** BOOKINGFEE: \(String(describing: vehicle.bookingFeePrice))\n")
         
         self.payload = request["ota"] as? String ?? nil
         self.makePaymentButton.isHidden = false

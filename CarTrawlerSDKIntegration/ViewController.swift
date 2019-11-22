@@ -22,7 +22,7 @@ class ViewController: UIViewController {
 
     @IBAction func carRentalButtonTapped(_ sender: UIButton) {
         // Using context object
-        let context = CTContext(clientID: "105614", flow: .standAlone)
+        let context = CTContext(clientID: "122070", flow: .standAlone)
         
         /* Optional params */
         context.countryCode = "IE" // Default device country code
