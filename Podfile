@@ -3,5 +3,5 @@ source 'https://github.com/cartrawler/cartrawler-ios-pods'
 platform :ios, '9.0'
 
 target 'CarTrawlerSDKIntegration' do
-  pod 'CarTrawlerSDK', '~> 9.3.0'
+  pod 'CarTrawlerSDK', '~> 9.4.0'
 end
