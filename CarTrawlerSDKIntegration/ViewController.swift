@@ -32,5 +32,34 @@ class ViewController: UIViewController {
         CarTrawlerSDK.sharedInstance().present(from: self, context: context)
     }
     
+    @IBAction func requestVehicles(_ sender: UIButton) {
+        
+        let params = CTAPIQueryParams()
+        params.delegate = self
+        params.clientID = "122070"
+        params.iataCode = "AMS"
+        params.currencyCode = "GBP"
+        params.languageCode = "en"
+        params.pickupDate = Date(timeIntervalSinceNow: 86400) // next day
+        params.dropOffDate = Date(timeIntervalSinceNow: 86400 * 3) // next day + 3 days
+        params.numberOfVehicles = 5 // Default 0, it will return all vehicles
+
+        CarTrawlerSDK.sharedInstance().requestVehicles(params)
+    }
+    
+}
+
+extension ViewController: CarTrawlerSDKDelegate {
+    func didProduce(inPathPaymentRequest request: [AnyHashable : Any], vehicle: CTInPathVehicle, payment: Payment) {
+        
+    }
+    
+    func didReceiveVehicles(_ vehicles: [CTVehicleDetails]) {
+        print("vehicles: \(vehicles)")
+    }
+    
+    func didFailToReceiveVehicles(error: Error) {
+        print("error: \(error)")
+    }
 }
 
