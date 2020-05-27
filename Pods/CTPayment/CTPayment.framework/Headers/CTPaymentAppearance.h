@@ -91,5 +91,9 @@
  */
 @property (nonatomic) CGFloat generalSpacing;
 
+/**
+ Defaults to empty dictionary
+ */
+@property (nonatomic, strong) NSDictionary *cardImageDict;
 
 @end
