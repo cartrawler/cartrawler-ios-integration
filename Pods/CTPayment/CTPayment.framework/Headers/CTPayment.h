@@ -86,5 +86,4 @@
  @param json Vehicle booking JSON
  */
 - (void)makeCustomPaymentWithJSON:(NSString *)json;
-
 @end
