@@ -38,6 +38,7 @@ class InPathViewController: UIViewController {
                                     email: "john.murphy@cartrawler.com",
                                     phone: "0838880000",
                                     phoneCountryPrefix: "353",
+                                    loyaltyProgramNumber: "123456",
                                     isPrimaryDriver: true)
         
         let pickUpDate = Date(timeIntervalSinceNow: TimeInterval(86400 * 3))
