@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let green = UIColor(red: 188/255, green: 209/255, blue: 60/255, alpha: 1.0)
         let blue = UIColor(red: 125/255, green: 144/255, blue: 167/255, alpha: 1.0)
-        
+        style.userInterfaceStyle = .system
         style.primaryLightColor = blue // Optional, default light generated based on primary color
         style.primaryDarkColor = UIColor.white // Optional, default dark generated based on primary color
         style.ctaColor = green // Optional, default iOS blue RGB(0,122,255)
