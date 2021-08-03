@@ -70,7 +70,8 @@
                          localization:(CTPaymentLocalization *)localization
                            appearance:(CTPaymentAppearance *)appearance
                                 debug:(BOOL)debug
-                               active:(BOOL)active;
+                               active:(BOOL)active
+                               hashes:(NSDictionary *)hashes;
 
 /**
  Call this once valid entries have been entered
