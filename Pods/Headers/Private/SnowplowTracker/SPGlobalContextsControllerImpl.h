@@ -1,0 +1,1 @@
+../../../SnowplowTracker/Snowplow/Internal/GlobalContexts/SPGlobalContextsControllerImpl.h

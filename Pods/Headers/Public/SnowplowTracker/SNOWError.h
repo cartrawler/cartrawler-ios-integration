@@ -1,0 +1,1 @@
+../../../SnowplowTracker/Snowplow/Internal/Events/SNOWError.h

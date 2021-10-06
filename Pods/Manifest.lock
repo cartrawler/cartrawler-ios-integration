@@ -1,20 +1,31 @@
 PODS:
-  - CarTrawlerSDK (11.7.0):
-    - CTPayment (= 1.0.28)
-  - CTPayment (1.0.28)
+  - CarTrawlerSDK (11.9.0):
+    - CTPayment (= 1.0.29)
+    - SnowplowTracker (~> 2.2.0)
+  - CTPayment (1.0.29)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - SnowplowTracker (2.2.2):
+    - FMDB (~> 2.7)
 
 DEPENDENCIES:
-  - CarTrawlerSDK (~> 11.7.0)
+  - CarTrawlerSDK (~> 11.9.0)
 
 SPEC REPOS:
   https://github.com/cartrawler/cartrawler-ios-pods:
     - CarTrawlerSDK
     - CTPayment
+  https://github.com/CocoaPods/Specs.git:
+    - FMDB
+    - SnowplowTracker
 
 SPEC CHECKSUMS:
-  CarTrawlerSDK: dc163fa27db23afdedf3597111a379ae7407bfe7
-  CTPayment: 6f2d1acf0ce46752d52a43cf10fdbe811bc0a098
+  CarTrawlerSDK: c818416228177bb6a927d3965f67c775ff96e5b4
+  CTPayment: 0527f81777f16627e24e515eacbb64b50216042b
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  SnowplowTracker: 2eee2d6606a60db98f7c4e1515499bb216b6c8ad
 
-PODFILE CHECKSUM: 1dcc45b720723a40e6243e6a58eba09d4240ed91
+PODFILE CHECKSUM: d5af43923c640ece118166b91705dcf597e8c85b
 
 COCOAPODS: 1.10.1

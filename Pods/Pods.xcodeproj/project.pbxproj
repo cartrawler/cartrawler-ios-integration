@@ -18,63 +18,475 @@
 		};
 		71568D7B9FA9D5C2E7BCBD576E1909FC /* CarTrawlerSDK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = E3536E6B7F82278BA6CDC93CFF857C3B /* Build configuration list for PBXAggregateTarget "CarTrawlerSDK" */;
+			buildConfigurationList = E855720645DF2B61169C4F7FD60FB91E /* Build configuration list for PBXAggregateTarget "CarTrawlerSDK" */;
 			buildPhases = (
+				FD23D34A2188082ECBC68E70DE5E0461 /* [CP] Copy dSYMs */,
 			);
 			dependencies = (
-				0FFECFDC2E87917633475510C4D63563 /* PBXTargetDependency */,
+				0370FA40023BF06C416385E8D614EE40 /* PBXTargetDependency */,
+				FD845CDF6A87012285F9669CE621FF7E /* PBXTargetDependency */,
 			);
 			name = CarTrawlerSDK;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		6E3744ECCDD7786D01E159431647E152 /* Pods-CarTrawlerSDKIntegration-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CD2E033A0F8220E83927F7E408EFAB /* Pods-CarTrawlerSDKIntegration-dummy.m */; };
+		006C9A574FF62F53F2F9C6B823A32718 /* SPStructured.h in Headers */ = {isa = PBXBuildFile; fileRef = 21C943D38A069F93F158201780E9E7E2 /* SPStructured.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		018D5B82C341D0A243BE4C9E8418110C /* SPConfigurationFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F9614D07E15C64791C346E3B4475D5 /* SPConfigurationFetcher.m */; };
+		02E3AFE55C6F16A63FA9295FC2E0D5AE /* SPSessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F4ACA6CEB80C8CC9751C4F600C7D0E /* SPSessionConfiguration.m */; };
+		033FF49F02EEA5D41E728BF16C280413 /* SPRequestResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AF84DA297C21C547E953D0D9CB07D53 /* SPRequestResult.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		036276A367A2CB2D962BFEFB2004DB07 /* SPNetworkConfigurationUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = 016CB8268AC19D3E0BFDE016753C8AEC /* SPNetworkConfigurationUpdate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		05D41915DD2FA4AC26C2DD7495F07BBF /* SPPushNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 688686217A42045BC0DD5DA058B5281A /* SPPushNotification.m */; };
+		06416B2B7734CBC131B9187B0C37C30E /* SPController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8AB05083D1B8C3ECA8B7197EA34D3D5 /* SPController.m */; };
+		066294EE979E6D00E083CB4292A599FB /* SPWeakTimerTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = 206499D8DEE89A919F8F73B326DBBEDA /* SPWeakTimerTarget.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0685ECB0C6AE09B481E570D5C659D3BA /* SPTrackerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 74893A1D6C92F09064D77ECFB39EA117 /* SPTrackerConfiguration.m */; };
+		06A94CD98C3F32F6430A21D1356E797C /* SPEmitterConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C5C69C524820B6075BFD375237C276F /* SPEmitterConfiguration.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		06C7B26252363DB422156460919F747B /* SPServiceProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 85BE9DB1ADAFC724F0916FDB9D7F249C /* SPServiceProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0736A148E6C5A9E65911DC9353D3E36C /* SPInstallTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AAF6C1260BCEBDC87B0A35148C5B47 /* SPInstallTracker.m */; };
+		07B75FB7B0887252E92492EBB6A86096 /* SPEmitterControllerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AF363D6665DAEB03A4CE64C8E1FA5B /* SPEmitterControllerImpl.m */; };
+		0916EBF9667CDCF66F45FAA86B223E18 /* SPRemoteConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D06228F3FB266EFDC6854CD5675CFCF6 /* SPRemoteConfiguration.m */; };
+		0AE1B9E69C1229238508E17C22EB671D /* SPScreenState.h in Headers */ = {isa = PBXBuildFile; fileRef = 825F1431F48EB27FBE4FC8C83107B1DB /* SPScreenState.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1313EBBB40F6B5D31AA7F3E131EA8309 /* SPGlobalContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A620B65B5311DE3AD51B978C0DD309E4 /* SPGlobalContext.m */; };
+		15024C9E4C7EDF6DA9863F3ABAAB0839 /* SPGDPRController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BC0B0F982787607567131B60B55DF26 /* SPGDPRController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		15FD0031806A87A46E13986FB92B6FB8 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 722620F6A71CAF1E4AEC0A03C62D4F44 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		19EDF8DC3DB6897D5D453F0DF6BC0AB1 /* SPTrackerConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A60D33B54D601A15E24549D6504D3ABD /* SPTrackerConstants.m */; };
+		1A236566E5E9C64E66ADE537275CC9F4 /* SPEventBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 46BDEECB225CF7BC3542258CDE3C9C20 /* SPEventBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1C00F2FF1F489C5FFFB43CF0B3710922 /* SPTrackerControllerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D3DB289E9A248B6BF54F6A3D8BA83A0 /* SPTrackerControllerImpl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1C8844C18FA36071073A8A9A2BEAD451 /* SPGDPRConfigurationUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C985B99DB1129A513B891D403A33764 /* SPGDPRConfigurationUpdate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2060E1F9672BD9EBBDAA6F7CF6C1102B /* SPLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = EF532B4446CE5EACD0D4B66732C1FD29 /* SPLogger.m */; };
+		2151893A5D13B42BE1D874746F131CFE /* SPEventStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 213194271E0DFBFEC41441866C1CB7D1 /* SPEventStore.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		25C4DC8CF425D270602D6F436F1555D7 /* SPDefaultNetworkConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 267F48B679F1CAC802FEFFDCA27BA543 /* SPDefaultNetworkConnection.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		268F830AF1235A74B22587BE2052AB06 /* SPDevicePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B8563B8450AF7AE422271563D6B34 /* SPDevicePlatform.m */; };
+		28E97755370953930D88207BE9DBE38D /* SPBackground.h in Headers */ = {isa = PBXBuildFile; fileRef = C8C66ED54D7F791713FFB0075407C9F3 /* SPBackground.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2A8BFED47E4270358D0643C6AD5506FE /* SPLoggerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C076659023853A365296468C86CB563B /* SPLoggerDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2AFCDBD71E692BDD2F541BD80A697808 /* SPSchemaRuleset.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E604E189955D4D375BFDFA212D3B938 /* SPSchemaRuleset.m */; };
+		2B11215C5AAB4B95ADEEC1560A1CE4D1 /* SPLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EF581E33538A94FC8ADCF69063AB83F /* SPLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2BC607B4F4285A5D15AAE04B2A3B2E1B /* SPNetworkConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6FE2561BC1D1DB45B1284705DCA68A /* SPNetworkConfiguration.m */; };
+		2CFFFE52C9E62EE7F84939985BF8A9DC /* SPTiming.h in Headers */ = {isa = PBXBuildFile; fileRef = 592DEEF2AAEB0881FC7A24AB9576CCDA /* SPTiming.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2D31EC71273F3FBAE61B4B2C5CD14E63 /* SPUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C3634E9FF06BA3EA372B8E2383C0CEBD /* SPUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2DE1C59EE884607E822C6FC7E1E00EEC /* SPScreenState.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED481E15A9CF4534A3C3EDCD9CA9C9C /* SPScreenState.m */; };
+		2ED45897E9F4F95059167BD4324130F7 /* SPConfigurationCache.h in Headers */ = {isa = PBXBuildFile; fileRef = A27638E5394327EC85E2591D3558A3A3 /* SPConfigurationCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FB40D0E1D60AFDA06F4A2618E984C61 /* SPConsentWithdrawn.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BD4666DD54C51FADCE2E79A8FAFEC /* SPConsentWithdrawn.m */; };
+		33A9977C0C4507516BCD95132D8C4B44 /* SPConfigurationFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A4155634A02F0C24B4B0C7B3305FE6E /* SPConfigurationFetcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		347F130D86ABEE52717A16FC54F5A6B2 /* SPRequestCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = DBA401AA02ADFD3A5E390B3FD314BDA2 /* SPRequestCallback.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		34DB40BFF2EFFD866CB69014E7481A9B /* SPGdprContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A7A59B79473EC962DD28EC2A1976F67 /* SPGdprContext.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		35C3BF004F4E1BC33B4DB664952D74D1 /* SPGlobalContextsController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FC0573F6EB089913A5771C9E370DD71 /* SPGlobalContextsController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		36005C363B28D6AF1530DEA5CD09C4A5 /* SPDataPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 642569BFA285049C0324DECCD0B89B58 /* SPDataPersistence.m */; };
+		372486E4F6332B6C153B992083757D06 /* SPTrackerConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E9FAD727B0A0DDD21F5E4F20ADCE725 /* SPTrackerConfiguration.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3ADFDD9381BB5BBE4EC256BB3490FD38 /* SPConfigurationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A86389941AB6BBA7F41BA20E2CEFB88 /* SPConfigurationProvider.m */; };
+		3FA131066BA61B115EF38EF0E8F2452D /* SPSelfDescribingJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E9C9FA72128972DBB7AAE76DC48A22 /* SPSelfDescribingJson.m */; };
+		4280B3F4215DD90C8FD738ECDC5B036E /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BFCF973ADE10348F392FD6D35719503 /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		42D150C462DB0381D5000043C9E02A76 /* SPGlobalContextsConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D5CC31E1707FC6AE50AF4266962859 /* SPGlobalContextsConfiguration.m */; };
+		4481D8CEB9CF6921C113E723CE798522 /* SPRemoteConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AE47E98960E316E8A024F7D75ED055A /* SPRemoteConfiguration.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		455EC5D0A766F2135FEB763AD8C807AC /* SPDefaultNetworkConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 374B2AF0CD9786789DDBBE9C132E0905 /* SPDefaultNetworkConnection.m */; };
+		47240CDAF59D33CBBC53289C13356A04 /* SPConsentGranted.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6E608457DAB0243650180C037136B6 /* SPConsentGranted.m */; };
+		481060FB79E42276226A8018F90C7159 /* SPEcommerceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 351A00DBE2E3105C1D6E97BB33D7CC3B /* SPEcommerceItem.m */; };
+		48648C493C4ACD9177756235460D399D /* Snowplow-umbrella-header.h in Headers */ = {isa = PBXBuildFile; fileRef = 3485BD6C583F5C9D47EFC793B8D0D7E6 /* Snowplow-umbrella-header.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4FFA2B992BF8307D9AD4C4E036ABF300 /* SPJSONSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = EBAC1362B84031009B8A2BF8C0779B48 /* SPJSONSerialization.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		50C75803BA0B56C3B7C265BBA7CB76B0 /* SPConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E36C208A7FD2FEB7B263596ACA72C /* SPConfiguration.m */; };
+		53E89FEED06D35F60DFED78B54F5E449 /* UIViewController+SPScreenView_SWIZZLE.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C6CB4EFA83EAFD1A7A16485036A1C83 /* UIViewController+SPScreenView_SWIZZLE.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		55C12F04FA9314F18DBA71EAFD6BD89B /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = DAF93430FBA0B8868A64B937E6CE5F27 /* FMDatabase.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		56603369AD526986681188D5BE8DA45D /* SPSubjectController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C878F4F18D13F072837DCE963F4348E /* SPSubjectController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		58D0E7ACFF848B65BF89DDF60BAC0F70 /* SPServiceProviderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A7156D4E77199D860719C130A6992E1 /* SPServiceProviderProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		59CE5CA38D11B31A8989A1D8DC2DEC38 /* SPSubjectConfigurationUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CD0FDF7000F370D5F23EA3DE3B81FC /* SPSubjectConfigurationUpdate.m */; };
+		59D5244B08DE156D63034C993D0EB89B /* SPEmitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 31C506661BA11C2D8913BB1F8568F937 /* SPEmitter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5C86DE4F1E44F90CFF95694ADBA04A0E /* SPConfigurationCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 03BF569450B248178793F2EEF26E2BD5 /* SPConfigurationCache.m */; };
+		5D1094056DFE0E948F63BAC6C2ED88CC /* SPSessionConfigurationUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DA694D0650CE4A99A0B8996026DA4FC /* SPSessionConfigurationUpdate.m */; };
+		5EE18A0AC6A412EE4DFBE8814153C7FE /* SPEcommerce.m in Sources */ = {isa = PBXBuildFile; fileRef = 9134A5D8A5D3676EE399FCCF53708B8A /* SPEcommerce.m */; };
+		603D84A1ECE7E8AD06AEEF7A22C80B83 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 13F3F7EE53FBAE0E3D55D0A4341A5144 /* FMResultSet.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		64760465B6F31D80851F75C46BA70BFD /* SPPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F514DC2CA1F6DA783057FEEBBE99E55 /* SPPayload.m */; };
+		65CC54C854F17005FA867FCC7A75C79F /* SPServiceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D94DD83ACD68892CB43AC40D535F716 /* SPServiceProvider.m */; };
+		667B11A6320B16F5EC5AA3E0A69C2087 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4E89259F9D77EA174D208988B37ABF /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		679E33664FBAC16F01834ACCA210C6B5 /* SPForeground.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D6C26D6B33165C6BC883144998DA3D6 /* SPForeground.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		67ABB4FF4C1CF58C676BA951BCF065AF /* SPGDPRConfigurationUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EAD5CB39A27CD5991E60830802F9C3 /* SPGDPRConfigurationUpdate.m */; };
+		6850E9413B56D8C09D76F9DA447DBBB8 /* SPEmitterConfigurationUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C12A185931C065B5C67DDFC1D51BCDB /* SPEmitterConfigurationUpdate.m */; };
+		68B3D1FE1B83B4DE8E0B70409A819FF9 /* SPSessionControllerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DC5DDC785813086E31056B1436AD40 /* SPSessionControllerImpl.m */; };
+		695BEE12EEE3393CDF11DDFA7A64A00D /* SPGlobalContextsControllerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 573CCC1981E078E733CC793FAAAF2721 /* SPGlobalContextsControllerImpl.m */; };
+		6CFD60BEAC0E3D8BFE908DE5A1B41F8D /* SPBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 7049B56D2BBAE7666CF29B29E8CFBCF4 /* SPBackground.m */; };
+		6E019A3D9AB52F79BDEE629DC530FFFE /* SPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CD89DF123144A0969CF1B0F2CDF4087E /* SPRequest.m */; };
+		6F8100517A69C7B32D0A0732C4EDE766 /* Pods-CarTrawlerSDKIntegration-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CD2E033A0F8220E83927F7E408EFAB /* Pods-CarTrawlerSDKIntegration-dummy.m */; };
+		70B667A4F9805D5292624CF6BA9BA7DB /* SnowplowTracker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C44CD6AC7FBAA3F3DE7A4185174489DC /* SnowplowTracker-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		72586037069AFC1051ACE679078FF6B1 /* SPNetworkConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 06C5233564880A01BB05D07611B1FE1E /* SPNetworkConnection.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7299673B45750F1521ACFCB29B017364 /* SPNetworkControllerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 95706EECB1D08AE4291DB7FF462198D4 /* SPNetworkControllerImpl.m */; };
+		72EF345218839DF36E8D3705E13B9814 /* SPSessionConfigurationUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = 54EE9B244F70322A4C89B92408674468 /* SPSessionConfigurationUpdate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		74D708FDF4DD3227EED200E5996FC310 /* SnowplowTracker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC10CDEF899F07C0EF19041C76F45B01 /* SnowplowTracker-dummy.m */; };
+		7B165C7AD84542145886021FEAEBFDDF /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D94BC91BAE9410AA06888F3AF6AFF54 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7B9C069B67FCB88CB698DD16A431F478 /* SPGdprContext.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CFC317F369390B0BE53E8024BAFA36 /* SPGdprContext.m */; };
+		7CCE698DBF3994AD79044E002D8CB080 /* SPConsentDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = BA745C33739446FF14A9376F656DCF3A /* SPConsentDocument.m */; };
+		7D1E04E6B0D448480A3320695869A641 /* SPNetworkControllerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = C010E4E570A6EF277CA084EB5ABE13C7 /* SPNetworkControllerImpl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7EF0E603F91139B16D5AA64C2F4F88D5 /* SPSchemaRule.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BB58489B4C686CBE7A8F66648F8E55 /* SPSchemaRule.m */; };
+		80A1C63E6EDD3EA13719AF4561173210 /* SPScreenView.h in Headers */ = {isa = PBXBuildFile; fileRef = AC7070BE3386114552F9949642905E73 /* SPScreenView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		828E932BA45E3DA2EEDD9FAEF7CD7857 /* SPSessionControllerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = AD05F7C78FDE8784A4654541953FFFCC /* SPSessionControllerImpl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		82EEF4232CC00BDE13F4FB334DE8F0EC /* SPGDPRControllerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A9A51E66B2C15664EBBCFD75151082 /* SPGDPRControllerImpl.m */; };
+		84224089B1B6BCB57B6BC0CD55DF6D31 /* SPEcommerce.h in Headers */ = {isa = PBXBuildFile; fileRef = E27D0E82BF105F8118D0F3C574366E0E /* SPEcommerce.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		84B220F7682BDF4EA3BFFB91CEACBE65 /* SPEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF58C01D92A4E600B4650FDA5287BA4 /* SPEmitter.m */; };
+		86258E2B0775BBDF1C2D90CDB99C9007 /* SPTrackerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B93F8954711809E690937EE2C662A7F2 /* SPTrackerEvent.m */; };
+		862AE04D449C49126FA97798295C99B9 /* SPSubject.h in Headers */ = {isa = PBXBuildFile; fileRef = BB791BEDDADD204C0B5816836047F261 /* SPSubject.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		874A9C1D051BA689C9D1B3BA18CB3C5D /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E96F93EDA410C68725DE210407EDC3C2 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		875D91691E4372DD44A8E6529252F6D7 /* SPRequestResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F0DFEC70D8D4E395ABAC88DE2A2B2B /* SPRequestResult.m */; };
+		895B8755BBF49C1956BD6315ADA7DEFE /* SPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 78BF621FBFDC5A10E06EE24FB93C2A5A /* SPRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8A337210BAA45CB297EB4F97D40264DA /* SPSubjectControllerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = A5AB010F1B074546DABCAF3F8D3E20F5 /* SPSubjectControllerImpl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8C790A435A9E895D26F720D389C246DA /* SPSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 889C138F950B957848332A0336589F69 /* SPSession.m */; };
+		8CEE9D227AEB4763484B134256829AB1 /* SPEmitterEventProcessing.h in Headers */ = {isa = PBXBuildFile; fileRef = AD9140965B2AF92A51F4852D3E6C4565 /* SPEmitterEventProcessing.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8E05D3F778AFB1FE0FDB204B2C7E7E67 /* SPPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = 96C9D6AF1E32FC00EA38B9105BA00442 /* SPPayload.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		901DAB7416256CB94751B842AA886346 /* SPJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81BF153221EB4A54DB75680D92F13B /* SPJSONSerialization.m */; };
+		91C6F91A426256C62ADF2C4CA4911B04 /* SPTrackerConfigurationUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65090896611DD207418B7A8998CF65AD /* SPTrackerConfigurationUpdate.m */; };
+		943D140CF8AA8F74B71A138BE308E6CF /* SPSubjectConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D7275EA60378C3B6DDD3C3CCCDE33EA2 /* SPSubjectConfiguration.m */; };
+		9A1996862251783368A69CD9FD39068F /* SPGlobalContextsControllerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F2D3E9443CCFD4C78B4B9C5723808D /* SPGlobalContextsControllerImpl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9BC4057A2C876B0415D5B83A858B3180 /* SPMemoryEventStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F2F2829B2F3FF753BC56EBEB5F1153 /* SPMemoryEventStore.m */; };
+		9C54636ABA324524C6EE6BD9A0FD682B /* UIViewController+SPScreenView_SWIZZLE.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB81AB4A8B83C1C2292395683DF5D7C /* UIViewController+SPScreenView_SWIZZLE.m */; };
+		9D8AAB4F6AC188B5253891FFE5951F74 /* SPTiming.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7F93ADBFFA6FBEED4CC613C866B66D /* SPTiming.m */; };
+		9FCE6EFADC38156E216DA33180594F6D /* SPGDPRConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = F807C67E03C084FCD8DF8142DD616122 /* SPGDPRConfiguration.m */; };
+		9FF21CDB5455D44EAA314B77AEEB50E3 /* SPEmitterConfigurationUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BDCF51EEE5F30F7F744FA502B190F7A /* SPEmitterConfigurationUpdate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A0CF17F1750A6951E09E7DE50D744C0E /* SPConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = B2B9607C1D7169C4AD1BA0AF13BB9D9E /* SPConfiguration.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A0EC2AF48DDD13A91B791FD2A3A3B100 /* SNOWReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = F72B847FC0F739038B9C829706173F1B /* SNOWReachability.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A160BD9A515582A502DEE310D9ED4914 /* SPConsentWithdrawn.h in Headers */ = {isa = PBXBuildFile; fileRef = 03AF26C20575F02A3AEE13ECDA607D1E /* SPConsentWithdrawn.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A302786BF0C496C825D0AD83F5EF30F2 /* SPSchemaRule.h in Headers */ = {isa = PBXBuildFile; fileRef = CB6C0EFCA55EF02D7BBA206F23955763 /* SPSchemaRule.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A3584523A3124CE039964DF36C2A3EAB /* SPTrackerControllerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4008D9871F85AAC2572798E05C4E19CE /* SPTrackerControllerImpl.m */; };
+		A39405BFE7A99C5995F59914791E6195 /* SPUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A37134D956514B8196E5D4236FEA4E0 /* SPUtilities.m */; };
+		A3B407CCD66ACB02B9C3517CC9E02FA9 /* SPConfigurationProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3D815F3D7492E967D298AC37B82565 /* SPConfigurationProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A4E535992935FAECFC9F40DA4BBF7722 /* SPSubjectConfigurationUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D42A552207796B3DB9B1C1B3C6D2E6D /* SPSubjectConfigurationUpdate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A8C365DB338DBED07D42CBF209722CD0 /* SNOWReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 689CFCFE80663F28BAEC1CFE39889175 /* SNOWReachability.m */; };
+		A98EFFA0261B9EC0DDCC3847580BDC38 /* SPFetchedConfigurationBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CAE0C6016C54BDC507A9B31169F704B /* SPFetchedConfigurationBundle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AA828E8C93C4BB43B8384F4956AE7EAC /* SPSnowplow.h in Headers */ = {isa = PBXBuildFile; fileRef = FD8B2D087C2D9AD0F49776F6C56DC7C3 /* SPSnowplow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AB00BD18EEC58726C715A79B58B7381A /* SPSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 18C2F6F1FB65D7E47004F16DA29A74F6 /* SPSession.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AB30A8AE3DF3B2D0723B7EB9389B167C /* SPSessionConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = FD126BBB24030E9EB719BA17A3B3EC3C /* SPSessionConfiguration.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AB42D0C3BB0B2CC9E93CF8E425D183BC /* SPForeground.m in Sources */ = {isa = PBXBuildFile; fileRef = A5ED5D8417B5EBF1F5AF92895FBA1652 /* SPForeground.m */; };
+		AE14DA376F937A791BBEE592EC1A388E /* SPTrackerError.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BA09119DE23A010078DD6238E06DAE /* SPTrackerError.m */; };
+		B21025AD9555D16FE20F3F7705C8EE26 /* SPTrackerConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A3821AAF2D0BB9B0BAEBE549B04D376 /* SPTrackerConstants.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B6B949B419CEF44F18FE2C8DECC2A005 /* SPEventBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB07DE46499F555FAA38FFECE2D8C7 /* SPEventBase.m */; };
+		B72B77DC758744F661C804108AEC8A05 /* SPFetchedConfigurationBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD6DAC9B1313D5B37B1D75C61044A16 /* SPFetchedConfigurationBundle.m */; };
+		B7CE71D51F9242B8C32A594AE4AAF857 /* SPEmitterEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DB6D9A42B5FA7623443438D179CC830 /* SPEmitterEvent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B7EC813D655F21B9DDFA7D43FA7E7D55 /* SPPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7C224052AB97DB8F6F1C7EA12C0614 /* SPPageView.m */; };
+		B85199997D8EA845C80344849D539EC1 /* SPConsentDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 959BB77A87706A796B158B477A1AE25A /* SPConsentDocument.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B91252B3A700A697F939F1450E06D388 /* SPSelfDescribing.h in Headers */ = {isa = PBXBuildFile; fileRef = 104443A8BBB7ADDC683A5768C9895F29 /* SPSelfDescribing.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BC93828111824B533DA0A6E8767E2423 /* SPEmitterControllerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 624517D77478AD2A3B3367B5639355A6 /* SPEmitterControllerImpl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BD8DF70353BE30562038787CFC8F5E61 /* SPNetworkConfigurationUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B4ACE598818A075605A6DA0CAB6568 /* SPNetworkConfigurationUpdate.m */; };
+		BDF0699915DDACEA328C56A27F28EC25 /* SPConfigurationBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 31D8555C5AA448154BB919671E47C13B /* SPConfigurationBundle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BE3C38E1B28537EE55D1D70C2732B05F /* SPConsentGranted.h in Headers */ = {isa = PBXBuildFile; fileRef = 27D8CECD01EC2C5AE1CAFCDE5075473D /* SPConsentGranted.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BEDB6FF72FEC172064F56462B3A828E8 /* SPSQLiteEventStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F06505BD8519155CA412AA4D5515F881 /* SPSQLiteEventStore.m */; };
+		BF1E4E09A55EA0EB7CC69CDC20C4760E /* SPTrackerConfigurationUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F2FC3F9CE883FEB26CFD2381D3E2219 /* SPTrackerConfigurationUpdate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C2B0627A4DFB0A27B128352B57B46E41 /* SPTrackerError.h in Headers */ = {isa = PBXBuildFile; fileRef = 10CDEFB212CDD1D1C2EB9977774AA908 /* SPTrackerError.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C4D6B08E6DC25B7ABB397AC537988615 /* SPEcommerceItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 9317EACE0837C68DAD91A246D31BC06E /* SPEcommerceItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C4FFFA9428A7DDAC04DB716F846DDC12 /* NSDictionary+SP_TypeMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = BED9E4A0A620A738E295BF032A0E2345 /* NSDictionary+SP_TypeMethods.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C56D7FBE33F394ACD1E380CCB687B51A /* SPController.h in Headers */ = {isa = PBXBuildFile; fileRef = 222F18A02DC8F45B8785281BBCF76B4F /* SPController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C60208A74D649764D1EAE4AB0AFA4C34 /* SPTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = A0E316C5B4F41FC7172319E43C239565 /* SPTracker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C9EAD801DCBED773AF5306C7DF8850EC /* SPScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 80818A2E014A86E6E673D4AE311EC053 /* SPScreenView.m */; };
+		CAE20033FFC2A63715D25A8C46049247 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 200022CC2E9CAE6F1582991A4453AEE9 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CBF8719F84427A43CB6CF6C89DD50F42 /* SPGlobalContextsConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 50A9510BB91A51A45F9C0C0A321B256C /* SPGlobalContextsConfiguration.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CDAD19D5DE5FA5FB74C4B8B68A839C75 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = E9F8804C687EF88E0244F292576DB05E /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CE177DE9A8BE02A7AF3057978C8E6C4E /* SPPushNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = F76D021BBE8381BCBBCD6C7A6619BC99 /* SPPushNotification.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CFB751D59C3018BFA28327E01AA97B4A /* SPNetworkController.h in Headers */ = {isa = PBXBuildFile; fileRef = D02FC527CE077EE1DE41BEA50AE6DE42 /* SPNetworkController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CFF21862F43DC1BBA3030BDF4B0F2584 /* SNOWError.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F5734F5DFD1B21FB1E3D0003A79D32 /* SNOWError.m */; };
+		D07235C6BAC7284EBE3F46D25359E2A6 /* SPTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDBA6843E46C762F4992A38B3180219 /* SPTracker.m */; };
+		D07F0AE8431FD9BB44D8000EBE986F86 /* SPGlobalContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 96AF7E66B8C1F90DA49FEB748626DE0E /* SPGlobalContext.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D1C6638B1A39F35377C5863EF786108D /* SPEmitterController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1845D171601A89661CBC435433303B7E /* SPEmitterController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D291A70E5FC826DF79B7D63BB6C9F78F /* SPPageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CA43A112F87A6C14FE877CE2582D129 /* SPPageView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D29A82B0F445E32B4679FBBA08C61C6F /* SPTrackerEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = D4966DC3F42E5DD25BFDE1BD3772B4FC /* SPTrackerEvent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D428F155599F3B4FA87A1B1DBF320EFB /* NSDictionary+SP_TypeMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AE693061AED8A1B21D691A7F21FFDD /* NSDictionary+SP_TypeMethods.m */; };
+		D52F3F27B2FCCBFB82214A2A332460AB /* SPSessionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 206048BD21C2752627D47808C219F0B9 /* SPSessionController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D55785A1E1319EB0B07006CF78D8BF45 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = C6ADB13339565C4B5C87D53C55F0A4F7 /* FMDB.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D5D6E620658A1DD91093D9C373974206 /* SPInstallTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C936089B3B08AA58AF9F808479A2AF1 /* SPInstallTracker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D9D2B39FD3909361DD5C2D38499224AF /* SPWeakTimerTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0E5943E2CBCF1F3C38F30A0E3D7BAF /* SPWeakTimerTarget.m */; };
+		DAFEFAFC6987E884E2F3D6265D6C2185 /* SPMemoryEventStore.h in Headers */ = {isa = PBXBuildFile; fileRef = A1A6F4146C62D739E2463A9BB5A576E0 /* SPMemoryEventStore.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DBC0E8C02276D2BF110E04A24216E5B5 /* SPSelfDescribingJson.h in Headers */ = {isa = PBXBuildFile; fileRef = 323399C24FE958702E8DF0091CB55465 /* SPSelfDescribingJson.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DC71FBB6BCC9B029164C37B22F4794E0 /* SPSQLiteEventStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 491D919BC6EB34574F7F64AD81B4DE5B /* SPSQLiteEventStore.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DC758BDA94E821952C2AEA320D6C2CFB /* SPDevicePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = B3201B5C9CEEA0283A9D9D9FC530BEFB /* SPDevicePlatform.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DE0007E3EDF2E318B8C9BDE4013B15DE /* SPEmitterEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E33D5D0A69B059E347D8FC11748F8B9D /* SPEmitterEvent.m */; };
+		DEA741F8AA9300A72CD9F79DC6F55B05 /* SPSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFDA1F7727114212A7BFD3A65C9BFBB /* SPSubject.m */; };
+		E1BBFBB3BDE1E684F8C1C1737D988251 /* SPSubjectControllerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A1C76B08202ED92FCE5FD8EE8A1655 /* SPSubjectControllerImpl.m */; };
+		E1C46666FA09C136E184625B667E3F06 /* SPDataPersistence.h in Headers */ = {isa = PBXBuildFile; fileRef = 53E9680A79C53DEB83483343D9B2C7CB /* SPDataPersistence.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E9E84AF6606D28AB72B961686EF7091F /* SPNetworkConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = A2BB8AA6AE769DE3612EE581EAF1CBA3 /* SPNetworkConfiguration.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EB516CC57051CDECF42E66E6A7DDCF78 /* SPConfigurationBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4676C2F458131097647FF52CFFA0E5F5 /* SPConfigurationBundle.m */; };
+		ED83E3F529D6CA6E8342B65C633AC9EF /* SPSchemaRuleset.h in Headers */ = {isa = PBXBuildFile; fileRef = 253CB68DE4920A1CF790B1560D6ED29A /* SPSchemaRuleset.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EDAA9B03E3078605F2A75C13411FE8BF /* SPTrackerController.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4188010F5710FF26BCD68FC5749D3B /* SPTrackerController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EDCE26653513E094CC9BC8D3B56B1B64 /* SPEmitterConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 44526F4A654E0A67A74CDD9D98328754 /* SPEmitterConfiguration.m */; };
+		F0580B92E2E8F97AC1249EDCFEDB2276 /* SPSelfDescribing.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5ECDA9155A1965A27AEDAAB4AAEAF1 /* SPSelfDescribing.m */; };
+		F08885B23519C8F3FFA8947AEB9BAAFB /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2712F3C80F83164DF6EA47A51A62CD6F /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F21FAD4557E40DE9BD8F9E0251C18855 /* SPGDPRControllerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D5227CCE1145B5A6E9EC4A75C39822A /* SPGDPRControllerImpl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F2DC58FC98DEF713E425926A72478684 /* SPSubjectConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 84594204C420D325953CF0286EF4D735 /* SPSubjectConfiguration.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F3CE30D912F6A2475B6DDBA050FCA731 /* SPEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = D3AFE478ECE56B89F22C5527C89DDC7B /* SPEvent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F402CC9DAFE4E4A10A5FDFD1E805C5E0 /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2698CA5E0F0AAEEC05776149C10FF1 /* FMDB-dummy.m */; };
+		F73BA118D286B22EF83CC311C2481469 /* SPGDPRConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 055CB4378FB3A698DCA8FB981EE92092 /* SPGDPRConfiguration.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F76E3F3C302BF19D23EE8BD31F066C2C /* SPSnowplow.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE5CCC91AACA2CC7BCEEBB0DF752FEA /* SPSnowplow.m */; };
+		FD0DEEAFDB6E1AF6ACBA58205A28F961 /* SNOWError.h in Headers */ = {isa = PBXBuildFile; fileRef = 00958BECC1143F5ADB74E113A33F96AE /* SNOWError.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FEA39F7F90D92D74167A561F2CED5B22 /* SPStructured.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D3ADA1B51161DE8DB26D220C3D9957 /* SPStructured.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		369482B70543F5C6BCD4234E52FC51CE /* PBXContainerItemProxy */ = {
+		13554D40636DEA48AD5CECE111A48FB4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 06AC81A34DAD85D1DEFFB4B0202285C2;
 			remoteInfo = CTPayment;
 		};
-		D1A159F805ACE276CBCD6FBF9111995D /* PBXContainerItemProxy */ = {
+		150563960A7F518F5B51F07C57E9C5A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DBA189AF01B5699C4ECEC25CBCCFA65;
+			remoteInfo = SnowplowTracker;
+		};
+		4150966ABA6180B42DABE601DE4A026F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8592E0E389D40AC17881400ADC67ABC0;
+			remoteInfo = FMDB;
+		};
+		68B70424C431945E36C62F943AE45EB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8592E0E389D40AC17881400ADC67ABC0;
+			remoteInfo = FMDB;
+		};
+		AA90271198651F7157449E86CA2FF403 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 06AC81A34DAD85D1DEFFB4B0202285C2;
 			remoteInfo = CTPayment;
 		};
-		E2CBEAE51723516C0912D2EAE5BD854D /* PBXContainerItemProxy */ = {
+		B4FC8EF050B8600CD062E4A1146E0CBC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 71568D7B9FA9D5C2E7BCBD576E1909FC;
 			remoteInfo = CarTrawlerSDK;
 		};
+		E2FAF72C47AC78CB22EEF4273A6CECE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DBA189AF01B5699C4ECEC25CBCCFA65;
+			remoteInfo = SnowplowTracker;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C501AAD0CCBD2290EBD96602B59AE16 /* CTPayment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CTPayment.debug.xcconfig; sourceTree = "<group>"; };
+		00958BECC1143F5ADB74E113A33F96AE /* SNOWError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SNOWError.h; path = Snowplow/Internal/Events/SNOWError.h; sourceTree = "<group>"; };
+		016CB8268AC19D3E0BFDE016753C8AEC /* SPNetworkConfigurationUpdate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPNetworkConfigurationUpdate.h; path = Snowplow/Internal/NetworkConnection/SPNetworkConfigurationUpdate.h; sourceTree = "<group>"; };
+		02F0DFEC70D8D4E395ABAC88DE2A2B2B /* SPRequestResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPRequestResult.m; path = Snowplow/Internal/Emitter/SPRequestResult.m; sourceTree = "<group>"; };
+		03AF26C20575F02A3AEE13ECDA607D1E /* SPConsentWithdrawn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPConsentWithdrawn.h; path = Snowplow/Internal/Events/SPConsentWithdrawn.h; sourceTree = "<group>"; };
+		03BF569450B248178793F2EEF26E2BD5 /* SPConfigurationCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPConfigurationCache.m; path = Snowplow/Internal/RemoteConfiguration/SPConfigurationCache.m; sourceTree = "<group>"; };
+		04AAF6C1260BCEBDC87B0A35148C5B47 /* SPInstallTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPInstallTracker.m; path = Snowplow/Internal/Tracker/SPInstallTracker.m; sourceTree = "<group>"; };
+		055CB4378FB3A698DCA8FB981EE92092 /* SPGDPRConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPGDPRConfiguration.h; path = Snowplow/Internal/Configurations/SPGDPRConfiguration.h; sourceTree = "<group>"; };
+		05E80D124D6D4DE5B8823D0A54DC7378 /* FMDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.release.xcconfig; sourceTree = "<group>"; };
+		05E9C9FA72128972DBB7AAE76DC48A22 /* SPSelfDescribingJson.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPSelfDescribingJson.m; path = Snowplow/Internal/Payload/SPSelfDescribingJson.m; sourceTree = "<group>"; };
+		06C5233564880A01BB05D07611B1FE1E /* SPNetworkConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPNetworkConnection.h; path = Snowplow/Internal/NetworkConnection/SPNetworkConnection.h; sourceTree = "<group>"; };
+		0BC0B0F982787607567131B60B55DF26 /* SPGDPRController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPGDPRController.h; path = Snowplow/Internal/GDPR/SPGDPRController.h; sourceTree = "<group>"; };
+		0F514DC2CA1F6DA783057FEEBBE99E55 /* SPPayload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPPayload.m; path = Snowplow/Internal/Payload/SPPayload.m; sourceTree = "<group>"; };
+		104443A8BBB7ADDC683A5768C9895F29 /* SPSelfDescribing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPSelfDescribing.h; path = Snowplow/Internal/Events/SPSelfDescribing.h; sourceTree = "<group>"; };
+		10CDEFB212CDD1D1C2EB9977774AA908 /* SPTrackerError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTrackerError.h; path = Snowplow/Internal/Events/SPTrackerError.h; sourceTree = "<group>"; };
+		13F3F7EE53FBAE0E3D55D0A4341A5144 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
 		17F3EBDC7A045342E099EC2D7A9263A5 /* Pods-CarTrawlerSDKIntegration-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CarTrawlerSDKIntegration-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1845D171601A89661CBC435433303B7E /* SPEmitterController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPEmitterController.h; path = Snowplow/Internal/Emitter/SPEmitterController.h; sourceTree = "<group>"; };
+		18C2F6F1FB65D7E47004F16DA29A74F6 /* SPSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPSession.h; path = Snowplow/Internal/Session/SPSession.h; sourceTree = "<group>"; };
 		18F44997A566FAA49D02D165BF9A02AD /* Pods-CarTrawlerSDKIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CarTrawlerSDKIntegration.release.xcconfig"; sourceTree = "<group>"; };
-		1C8CA52F35FEB56C1D1D48C0A24C06E6 /* CarTrawlerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CarTrawlerSDK.framework; sourceTree = "<group>"; };
+		1C5C69C524820B6075BFD375237C276F /* SPEmitterConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPEmitterConfiguration.h; path = Snowplow/Internal/Configurations/SPEmitterConfiguration.h; sourceTree = "<group>"; };
+		1DB6D9A42B5FA7623443438D179CC830 /* SPEmitterEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPEmitterEvent.h; path = Snowplow/Internal/Emitter/SPEmitterEvent.h; sourceTree = "<group>"; };
+		1F2FC3F9CE883FEB26CFD2381D3E2219 /* SPTrackerConfigurationUpdate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTrackerConfigurationUpdate.h; path = Snowplow/Internal/Tracker/SPTrackerConfigurationUpdate.h; sourceTree = "<group>"; };
+		1FF58C01D92A4E600B4650FDA5287BA4 /* SPEmitter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPEmitter.m; path = Snowplow/Internal/Emitter/SPEmitter.m; sourceTree = "<group>"; };
+		200022CC2E9CAE6F1582991A4453AEE9 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		206048BD21C2752627D47808C219F0B9 /* SPSessionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPSessionController.h; path = Snowplow/Internal/Session/SPSessionController.h; sourceTree = "<group>"; };
+		206499D8DEE89A919F8F73B326DBBEDA /* SPWeakTimerTarget.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPWeakTimerTarget.h; path = Snowplow/Internal/Utils/SPWeakTimerTarget.h; sourceTree = "<group>"; };
+		213194271E0DFBFEC41441866C1CB7D1 /* SPEventStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPEventStore.h; path = Snowplow/Internal/Storage/SPEventStore.h; sourceTree = "<group>"; };
+		21C943D38A069F93F158201780E9E7E2 /* SPStructured.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPStructured.h; path = Snowplow/Internal/Events/SPStructured.h; sourceTree = "<group>"; };
+		21CD0FDF7000F370D5F23EA3DE3B81FC /* SPSubjectConfigurationUpdate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPSubjectConfigurationUpdate.m; path = Snowplow/Internal/Subject/SPSubjectConfigurationUpdate.m; sourceTree = "<group>"; };
 		21CD2E033A0F8220E83927F7E408EFAB /* Pods-CarTrawlerSDKIntegration-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CarTrawlerSDKIntegration-dummy.m"; sourceTree = "<group>"; };
 		2201A025796DDA69E4450A7994D02F43 /* Pods-CarTrawlerSDKIntegration-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CarTrawlerSDKIntegration-frameworks.sh"; sourceTree = "<group>"; };
-		2F004A93E03D331D8B9BC15B4EA6D323 /* CarTrawlerSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CarTrawlerSDK.debug.xcconfig; sourceTree = "<group>"; };
+		222F18A02DC8F45B8785281BBCF76B4F /* SPController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPController.h; path = Snowplow/Internal/SPController.h; sourceTree = "<group>"; };
+		22DC5DDC785813086E31056B1436AD40 /* SPSessionControllerImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPSessionControllerImpl.m; path = Snowplow/Internal/Session/SPSessionControllerImpl.m; sourceTree = "<group>"; };
+		253CB68DE4920A1CF790B1560D6ED29A /* SPSchemaRuleset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPSchemaRuleset.h; path = Snowplow/Internal/GlobalContexts/SPSchemaRuleset.h; sourceTree = "<group>"; };
+		267F48B679F1CAC802FEFFDCA27BA543 /* SPDefaultNetworkConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPDefaultNetworkConnection.h; path = Snowplow/Internal/NetworkConnection/SPDefaultNetworkConnection.h; sourceTree = "<group>"; };
+		2712F3C80F83164DF6EA47A51A62CD6F /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		2737858FBC39CAADE32B3A441CD237C4 /* SnowplowTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnowplowTracker.debug.xcconfig; sourceTree = "<group>"; };
+		27D8CECD01EC2C5AE1CAFCDE5075473D /* SPConsentGranted.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPConsentGranted.h; path = Snowplow/Internal/Events/SPConsentGranted.h; sourceTree = "<group>"; };
+		29D5CC31E1707FC6AE50AF4266962859 /* SPGlobalContextsConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPGlobalContextsConfiguration.m; path = Snowplow/Internal/Configurations/SPGlobalContextsConfiguration.m; sourceTree = "<group>"; };
+		2A4155634A02F0C24B4B0C7B3305FE6E /* SPConfigurationFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPConfigurationFetcher.h; path = Snowplow/Internal/RemoteConfiguration/SPConfigurationFetcher.h; sourceTree = "<group>"; };
+		2A86389941AB6BBA7F41BA20E2CEFB88 /* SPConfigurationProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPConfigurationProvider.m; path = Snowplow/Internal/RemoteConfiguration/SPConfigurationProvider.m; sourceTree = "<group>"; };
+		2BDCF51EEE5F30F7F744FA502B190F7A /* SPEmitterConfigurationUpdate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPEmitterConfigurationUpdate.h; path = Snowplow/Internal/Emitter/SPEmitterConfigurationUpdate.h; sourceTree = "<group>"; };
+		2CAE0C6016C54BDC507A9B31169F704B /* SPFetchedConfigurationBundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPFetchedConfigurationBundle.h; path = Snowplow/Internal/RemoteConfiguration/SPFetchedConfigurationBundle.h; sourceTree = "<group>"; };
+		2CD6DAC9B1313D5B37B1D75C61044A16 /* SPFetchedConfigurationBundle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPFetchedConfigurationBundle.m; path = Snowplow/Internal/RemoteConfiguration/SPFetchedConfigurationBundle.m; sourceTree = "<group>"; };
+		2CE04B04A90ECAA8E6F73A661F5B51F4 /* CarTrawlerSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CarTrawlerSDK.release.xcconfig; sourceTree = "<group>"; };
+		2D94DD83ACD68892CB43AC40D535F716 /* SPServiceProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPServiceProvider.m; path = Snowplow/Internal/Tracker/SPServiceProvider.m; sourceTree = "<group>"; };
+		2F87B37C1D9D95657524169B5190A0E1 /* CarTrawlerSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CarTrawlerSDK.debug.xcconfig; sourceTree = "<group>"; };
+		31C506661BA11C2D8913BB1F8568F937 /* SPEmitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPEmitter.h; path = Snowplow/Internal/Emitter/SPEmitter.h; sourceTree = "<group>"; };
+		31D8555C5AA448154BB919671E47C13B /* SPConfigurationBundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPConfigurationBundle.h; path = Snowplow/Internal/Configurations/SPConfigurationBundle.h; sourceTree = "<group>"; };
+		323399C24FE958702E8DF0091CB55465 /* SPSelfDescribingJson.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPSelfDescribingJson.h; path = Snowplow/Internal/Payload/SPSelfDescribingJson.h; sourceTree = "<group>"; };
+		345B9337B92FA2FCDF53EF4F3FCA6750 /* libSnowplowTracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSnowplowTracker.a; path = libSnowplowTracker.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3485BD6C583F5C9D47EFC793B8D0D7E6 /* Snowplow-umbrella-header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Snowplow-umbrella-header.h"; path = "Snowplow/Snowplow-umbrella-header.h"; sourceTree = "<group>"; };
+		351A00DBE2E3105C1D6E97BB33D7CC3B /* SPEcommerceItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPEcommerceItem.m; path = Snowplow/Internal/Events/SPEcommerceItem.m; sourceTree = "<group>"; };
+		374B2AF0CD9786789DDBBE9C132E0905 /* SPDefaultNetworkConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPDefaultNetworkConnection.m; path = Snowplow/Internal/NetworkConnection/SPDefaultNetworkConnection.m; sourceTree = "<group>"; };
+		3A7156D4E77199D860719C130A6992E1 /* SPServiceProviderProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPServiceProviderProtocol.h; path = Snowplow/Internal/Tracker/SPServiceProviderProtocol.h; sourceTree = "<group>"; };
+		3A7A59B79473EC962DD28EC2A1976F67 /* SPGdprContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPGdprContext.h; path = Snowplow/Internal/GDPR/SPGdprContext.h; sourceTree = "<group>"; };
+		3B5E36C208A7FD2FEB7B263596ACA72C /* SPConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPConfiguration.m; path = Snowplow/Internal/Configurations/SPConfiguration.m; sourceTree = "<group>"; };
+		3C12A185931C065B5C67DDFC1D51BCDB /* SPEmitterConfigurationUpdate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPEmitterConfigurationUpdate.m; path = Snowplow/Internal/Emitter/SPEmitterConfigurationUpdate.m; sourceTree = "<group>"; };
+		3C878F4F18D13F072837DCE963F4348E /* SPSubjectController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPSubjectController.h; path = Snowplow/Internal/Subject/SPSubjectController.h; sourceTree = "<group>"; };
+		3D3DB289E9A248B6BF54F6A3D8BA83A0 /* SPTrackerControllerImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTrackerControllerImpl.h; path = Snowplow/Internal/Tracker/SPTrackerControllerImpl.h; sourceTree = "<group>"; };
+		3FC0573F6EB089913A5771C9E370DD71 /* SPGlobalContextsController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPGlobalContextsController.h; path = Snowplow/Internal/GlobalContexts/SPGlobalContextsController.h; sourceTree = "<group>"; };
+		4008D9871F85AAC2572798E05C4E19CE /* SPTrackerControllerImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTrackerControllerImpl.m; path = Snowplow/Internal/Tracker/SPTrackerControllerImpl.m; sourceTree = "<group>"; };
+		40F5734F5DFD1B21FB1E3D0003A79D32 /* SNOWError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SNOWError.m; path = Snowplow/Internal/Events/SNOWError.m; sourceTree = "<group>"; };
+		41F4ACA6CEB80C8CC9751C4F600C7D0E /* SPSessionConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPSessionConfiguration.m; path = Snowplow/Internal/Configurations/SPSessionConfiguration.m; sourceTree = "<group>"; };
+		42EAD5CB39A27CD5991E60830802F9C3 /* SPGDPRConfigurationUpdate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPGDPRConfigurationUpdate.m; path = Snowplow/Internal/GDPR/SPGDPRConfigurationUpdate.m; sourceTree = "<group>"; };
+		44526F4A654E0A67A74CDD9D98328754 /* SPEmitterConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPEmitterConfiguration.m; path = Snowplow/Internal/Configurations/SPEmitterConfiguration.m; sourceTree = "<group>"; };
+		4676C2F458131097647FF52CFFA0E5F5 /* SPConfigurationBundle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPConfigurationBundle.m; path = Snowplow/Internal/Configurations/SPConfigurationBundle.m; sourceTree = "<group>"; };
+		46BDEECB225CF7BC3542258CDE3C9C20 /* SPEventBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPEventBase.h; path = Snowplow/Internal/Events/SPEventBase.h; sourceTree = "<group>"; };
+		47EA4B8B88CFC8DAB97B1F2F92739709 /* FMDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.debug.xcconfig; sourceTree = "<group>"; };
+		491D919BC6EB34574F7F64AD81B4DE5B /* SPSQLiteEventStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPSQLiteEventStore.h; path = Snowplow/Internal/Storage/SPSQLiteEventStore.h; sourceTree = "<group>"; };
+		4A3821AAF2D0BB9B0BAEBE549B04D376 /* SPTrackerConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTrackerConstants.h; path = Snowplow/Internal/SPTrackerConstants.h; sourceTree = "<group>"; };
+		4D3B8563B8450AF7AE422271563D6B34 /* SPDevicePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPDevicePlatform.m; path = Snowplow/Internal/Subject/SPDevicePlatform.m; sourceTree = "<group>"; };
+		4D6C26D6B33165C6BC883144998DA3D6 /* SPForeground.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPForeground.h; path = Snowplow/Internal/Events/SPForeground.h; sourceTree = "<group>"; };
+		50A9510BB91A51A45F9C0C0A321B256C /* SPGlobalContextsConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPGlobalContextsConfiguration.h; path = Snowplow/Internal/Configurations/SPGlobalContextsConfiguration.h; sourceTree = "<group>"; };
+		53E9680A79C53DEB83483343D9B2C7CB /* SPDataPersistence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPDataPersistence.h; path = Snowplow/Internal/Utils/SPDataPersistence.h; sourceTree = "<group>"; };
+		54A1C76B08202ED92FCE5FD8EE8A1655 /* SPSubjectControllerImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPSubjectControllerImpl.m; path = Snowplow/Internal/Subject/SPSubjectControllerImpl.m; sourceTree = "<group>"; };
+		54BA09119DE23A010078DD6238E06DAE /* SPTrackerError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTrackerError.m; path = Snowplow/Internal/Events/SPTrackerError.m; sourceTree = "<group>"; };
+		54EE9B244F70322A4C89B92408674468 /* SPSessionConfigurationUpdate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPSessionConfigurationUpdate.h; path = Snowplow/Internal/Session/SPSessionConfigurationUpdate.h; sourceTree = "<group>"; };
+		573CCC1981E078E733CC793FAAAF2721 /* SPGlobalContextsControllerImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPGlobalContextsControllerImpl.m; path = Snowplow/Internal/GlobalContexts/SPGlobalContextsControllerImpl.m; sourceTree = "<group>"; };
+		574BE6E0BD424F12CE2EF9060A6EB6CB /* CarTrawlerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CarTrawlerSDK.framework; sourceTree = "<group>"; };
+		592DEEF2AAEB0881FC7A24AB9576CCDA /* SPTiming.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTiming.h; path = Snowplow/Internal/Events/SPTiming.h; sourceTree = "<group>"; };
+		5BDBA6843E46C762F4992A38B3180219 /* SPTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTracker.m; path = Snowplow/Internal/Tracker/SPTracker.m; sourceTree = "<group>"; };
+		5ED481E15A9CF4534A3C3EDCD9CA9C9C /* SPScreenState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPScreenState.m; path = Snowplow/Internal/ScreenViewTracking/SPScreenState.m; sourceTree = "<group>"; };
+		5EF581E33538A94FC8ADCF69063AB83F /* SPLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPLogger.h; path = Snowplow/Internal/Logger/SPLogger.h; sourceTree = "<group>"; };
+		624517D77478AD2A3B3367B5639355A6 /* SPEmitterControllerImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPEmitterControllerImpl.h; path = Snowplow/Internal/Emitter/SPEmitterControllerImpl.h; sourceTree = "<group>"; };
+		642569BFA285049C0324DECCD0B89B58 /* SPDataPersistence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPDataPersistence.m; path = Snowplow/Internal/Utils/SPDataPersistence.m; sourceTree = "<group>"; };
+		65090896611DD207418B7A8998CF65AD /* SPTrackerConfigurationUpdate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTrackerConfigurationUpdate.m; path = Snowplow/Internal/Tracker/SPTrackerConfigurationUpdate.m; sourceTree = "<group>"; };
+		688686217A42045BC0DD5DA058B5281A /* SPPushNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPPushNotification.m; path = Snowplow/Internal/Events/SPPushNotification.m; sourceTree = "<group>"; };
+		689CFCFE80663F28BAEC1CFE39889175 /* SNOWReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SNOWReachability.m; path = Snowplow/Internal/Utils/SNOWReachability.m; sourceTree = "<group>"; };
+		6A6E608457DAB0243650180C037136B6 /* SPConsentGranted.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPConsentGranted.m; path = Snowplow/Internal/Events/SPConsentGranted.m; sourceTree = "<group>"; };
+		6C2698CA5E0F0AAEEC05776149C10FF1 /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
+		6D3D815F3D7492E967D298AC37B82565 /* SPConfigurationProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPConfigurationProvider.h; path = Snowplow/Internal/RemoteConfiguration/SPConfigurationProvider.h; sourceTree = "<group>"; };
+		6E2D9F19B1507BBA87AF27AA0AFAB104 /* SnowplowTracker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnowplowTracker-prefix.pch"; sourceTree = "<group>"; };
+		6ECB07DE46499F555FAA38FFECE2D8C7 /* SPEventBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPEventBase.m; path = Snowplow/Internal/Events/SPEventBase.m; sourceTree = "<group>"; };
+		7049B56D2BBAE7666CF29B29E8CFBCF4 /* SPBackground.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPBackground.m; path = Snowplow/Internal/Events/SPBackground.m; sourceTree = "<group>"; };
+		70F2D3E9443CCFD4C78B4B9C5723808D /* SPGlobalContextsControllerImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPGlobalContextsControllerImpl.h; path = Snowplow/Internal/GlobalContexts/SPGlobalContextsControllerImpl.h; sourceTree = "<group>"; };
+		722620F6A71CAF1E4AEC0A03C62D4F44 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		74893A1D6C92F09064D77ECFB39EA117 /* SPTrackerConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTrackerConfiguration.m; path = Snowplow/Internal/Configurations/SPTrackerConfiguration.m; sourceTree = "<group>"; };
+		74D3ADA1B51161DE8DB26D220C3D9957 /* SPStructured.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPStructured.m; path = Snowplow/Internal/Events/SPStructured.m; sourceTree = "<group>"; };
 		754EF1A8B0860484FFD754BF62E5FEE5 /* libPods-CarTrawlerSDKIntegration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CarTrawlerSDKIntegration.a"; path = "libPods-CarTrawlerSDKIntegration.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78BF621FBFDC5A10E06EE24FB93C2A5A /* SPRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPRequest.h; path = Snowplow/Internal/Emitter/SPRequest.h; sourceTree = "<group>"; };
+		7C6CB4EFA83EAFD1A7A16485036A1C83 /* UIViewController+SPScreenView_SWIZZLE.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+SPScreenView_SWIZZLE.h"; path = "Snowplow/Internal/ScreenViewTracking/UIViewController+SPScreenView_SWIZZLE.h"; sourceTree = "<group>"; };
+		7CA43A112F87A6C14FE877CE2582D129 /* SPPageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPPageView.h; path = Snowplow/Internal/Events/SPPageView.h; sourceTree = "<group>"; };
+		7D42A552207796B3DB9B1C1B3C6D2E6D /* SPSubjectConfigurationUpdate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPSubjectConfigurationUpdate.h; path = Snowplow/Internal/Subject/SPSubjectConfigurationUpdate.h; sourceTree = "<group>"; };
+		7D94BC91BAE9410AA06888F3AF6AFF54 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		7E604E189955D4D375BFDFA212D3B938 /* SPSchemaRuleset.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPSchemaRuleset.m; path = Snowplow/Internal/GlobalContexts/SPSchemaRuleset.m; sourceTree = "<group>"; };
+		7E7C224052AB97DB8F6F1C7EA12C0614 /* SPPageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPPageView.m; path = Snowplow/Internal/Events/SPPageView.m; sourceTree = "<group>"; };
+		80818A2E014A86E6E673D4AE311EC053 /* SPScreenView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPScreenView.m; path = Snowplow/Internal/Events/SPScreenView.m; sourceTree = "<group>"; };
+		80AE693061AED8A1B21D691A7F21FFDD /* NSDictionary+SP_TypeMethods.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+SP_TypeMethods.m"; path = "Snowplow/Internal/Utils/NSDictionary+SP_TypeMethods.m"; sourceTree = "<group>"; };
+		825F1431F48EB27FBE4FC8C83107B1DB /* SPScreenState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPScreenState.h; path = Snowplow/Internal/ScreenViewTracking/SPScreenState.h; sourceTree = "<group>"; };
+		84594204C420D325953CF0286EF4D735 /* SPSubjectConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPSubjectConfiguration.h; path = Snowplow/Internal/Configurations/SPSubjectConfiguration.h; sourceTree = "<group>"; };
+		85BE9DB1ADAFC724F0916FDB9D7F249C /* SPServiceProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPServiceProvider.h; path = Snowplow/Internal/Tracker/SPServiceProvider.h; sourceTree = "<group>"; };
+		889C138F950B957848332A0336589F69 /* SPSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPSession.m; path = Snowplow/Internal/Session/SPSession.m; sourceTree = "<group>"; };
+		8A37134D956514B8196E5D4236FEA4E0 /* SPUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPUtilities.m; path = Snowplow/Internal/Utils/SPUtilities.m; sourceTree = "<group>"; };
+		8AF84DA297C21C547E953D0D9CB07D53 /* SPRequestResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPRequestResult.h; path = Snowplow/Internal/Emitter/SPRequestResult.h; sourceTree = "<group>"; };
+		8D5227CCE1145B5A6E9EC4A75C39822A /* SPGDPRControllerImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPGDPRControllerImpl.h; path = Snowplow/Internal/GDPR/SPGDPRControllerImpl.h; sourceTree = "<group>"; };
+		8DA694D0650CE4A99A0B8996026DA4FC /* SPSessionConfigurationUpdate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPSessionConfigurationUpdate.m; path = Snowplow/Internal/Session/SPSessionConfigurationUpdate.m; sourceTree = "<group>"; };
+		9134A5D8A5D3676EE399FCCF53708B8A /* SPEcommerce.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPEcommerce.m; path = Snowplow/Internal/Events/SPEcommerce.m; sourceTree = "<group>"; };
+		9317EACE0837C68DAD91A246D31BC06E /* SPEcommerceItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPEcommerceItem.h; path = Snowplow/Internal/Events/SPEcommerceItem.h; sourceTree = "<group>"; };
+		95706EECB1D08AE4291DB7FF462198D4 /* SPNetworkControllerImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPNetworkControllerImpl.m; path = Snowplow/Internal/NetworkConnection/SPNetworkControllerImpl.m; sourceTree = "<group>"; };
+		959BB77A87706A796B158B477A1AE25A /* SPConsentDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPConsentDocument.h; path = Snowplow/Internal/Events/SPConsentDocument.h; sourceTree = "<group>"; };
+		96AF7E66B8C1F90DA49FEB748626DE0E /* SPGlobalContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPGlobalContext.h; path = Snowplow/Internal/GlobalContexts/SPGlobalContext.h; sourceTree = "<group>"; };
+		96AF8BD3E7DE5EFB725522FE8F2E9CB9 /* SnowplowTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnowplowTracker.release.xcconfig; sourceTree = "<group>"; };
+		96C9D6AF1E32FC00EA38B9105BA00442 /* SPPayload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPPayload.h; path = Snowplow/Internal/Payload/SPPayload.h; sourceTree = "<group>"; };
+		989DC99A738D97169A01B36160239A97 /* SnowplowTracker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnowplowTracker.modulemap; sourceTree = "<group>"; };
+		996BD4666DD54C51FADCE2E79A8FAFEC /* SPConsentWithdrawn.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPConsentWithdrawn.m; path = Snowplow/Internal/Events/SPConsentWithdrawn.m; sourceTree = "<group>"; };
+		9AE47E98960E316E8A024F7D75ED055A /* SPRemoteConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPRemoteConfiguration.h; path = Snowplow/Internal/Configurations/SPRemoteConfiguration.h; sourceTree = "<group>"; };
+		9BFCF973ADE10348F392FD6D35719503 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		9C936089B3B08AA58AF9F808479A2AF1 /* SPInstallTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPInstallTracker.h; path = Snowplow/Internal/Tracker/SPInstallTracker.h; sourceTree = "<group>"; };
+		9C985B99DB1129A513B891D403A33764 /* SPGDPRConfigurationUpdate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPGDPRConfigurationUpdate.h; path = Snowplow/Internal/GDPR/SPGDPRConfigurationUpdate.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E5D359FE0619B2FAEDE342AB83D8793 /* Pods-CarTrawlerSDKIntegration-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CarTrawlerSDKIntegration-acknowledgements.plist"; sourceTree = "<group>"; };
-		C68D3F6366BC9F201B3F57F6E481312B /* CTPayment.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CTPayment.framework; sourceTree = "<group>"; };
+		9E9FAD727B0A0DDD21F5E4F20ADCE725 /* SPTrackerConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTrackerConfiguration.h; path = Snowplow/Internal/Configurations/SPTrackerConfiguration.h; sourceTree = "<group>"; };
+		A0E316C5B4F41FC7172319E43C239565 /* SPTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTracker.h; path = Snowplow/Internal/Tracker/SPTracker.h; sourceTree = "<group>"; };
+		A1A6F4146C62D739E2463A9BB5A576E0 /* SPMemoryEventStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPMemoryEventStore.h; path = Snowplow/Internal/Storage/SPMemoryEventStore.h; sourceTree = "<group>"; };
+		A27638E5394327EC85E2591D3558A3A3 /* SPConfigurationCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPConfigurationCache.h; path = Snowplow/Internal/RemoteConfiguration/SPConfigurationCache.h; sourceTree = "<group>"; };
+		A2BB8AA6AE769DE3612EE581EAF1CBA3 /* SPNetworkConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPNetworkConfiguration.h; path = Snowplow/Internal/Configurations/SPNetworkConfiguration.h; sourceTree = "<group>"; };
+		A3A80BA70CFB7F75C5391BEBBBA8C9DA /* libFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFMDB.a; path = libFMDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5AB010F1B074546DABCAF3F8D3E20F5 /* SPSubjectControllerImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPSubjectControllerImpl.h; path = Snowplow/Internal/Subject/SPSubjectControllerImpl.h; sourceTree = "<group>"; };
+		A5ED5D8417B5EBF1F5AF92895FBA1652 /* SPForeground.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPForeground.m; path = Snowplow/Internal/Events/SPForeground.m; sourceTree = "<group>"; };
+		A60D33B54D601A15E24549D6504D3ABD /* SPTrackerConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTrackerConstants.m; path = Snowplow/Internal/SPTrackerConstants.m; sourceTree = "<group>"; };
+		A620B65B5311DE3AD51B978C0DD309E4 /* SPGlobalContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPGlobalContext.m; path = Snowplow/Internal/GlobalContexts/SPGlobalContext.m; sourceTree = "<group>"; };
+		AA5ECDA9155A1965A27AEDAAB4AAEAF1 /* SPSelfDescribing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPSelfDescribing.m; path = Snowplow/Internal/Events/SPSelfDescribing.m; sourceTree = "<group>"; };
+		AC7070BE3386114552F9949642905E73 /* SPScreenView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPScreenView.h; path = Snowplow/Internal/Events/SPScreenView.h; sourceTree = "<group>"; };
+		AD05F7C78FDE8784A4654541953FFFCC /* SPSessionControllerImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPSessionControllerImpl.h; path = Snowplow/Internal/Session/SPSessionControllerImpl.h; sourceTree = "<group>"; };
+		AD9140965B2AF92A51F4852D3E6C4565 /* SPEmitterEventProcessing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPEmitterEventProcessing.h; path = Snowplow/Internal/Emitter/SPEmitterEventProcessing.h; sourceTree = "<group>"; };
+		B2B9607C1D7169C4AD1BA0AF13BB9D9E /* SPConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPConfiguration.h; path = Snowplow/Internal/Configurations/SPConfiguration.h; sourceTree = "<group>"; };
+		B2F2F2829B2F3FF753BC56EBEB5F1153 /* SPMemoryEventStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPMemoryEventStore.m; path = Snowplow/Internal/Storage/SPMemoryEventStore.m; sourceTree = "<group>"; };
+		B3201B5C9CEEA0283A9D9D9FC530BEFB /* SPDevicePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPDevicePlatform.h; path = Snowplow/Internal/Subject/SPDevicePlatform.h; sourceTree = "<group>"; };
+		B93F8954711809E690937EE2C662A7F2 /* SPTrackerEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTrackerEvent.m; path = Snowplow/Internal/Tracker/SPTrackerEvent.m; sourceTree = "<group>"; };
+		BA745C33739446FF14A9376F656DCF3A /* SPConsentDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPConsentDocument.m; path = Snowplow/Internal/Events/SPConsentDocument.m; sourceTree = "<group>"; };
+		BAB3255B942E646A9A0972D5D5D46C03 /* CTPayment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CTPayment.release.xcconfig; sourceTree = "<group>"; };
+		BB791BEDDADD204C0B5816836047F261 /* SPSubject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPSubject.h; path = Snowplow/Internal/Subject/SPSubject.h; sourceTree = "<group>"; };
+		BC0E5943E2CBCF1F3C38F30A0E3D7BAF /* SPWeakTimerTarget.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPWeakTimerTarget.m; path = Snowplow/Internal/Utils/SPWeakTimerTarget.m; sourceTree = "<group>"; };
+		BED9E4A0A620A738E295BF032A0E2345 /* NSDictionary+SP_TypeMethods.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+SP_TypeMethods.h"; path = "Snowplow/Internal/Utils/NSDictionary+SP_TypeMethods.h"; sourceTree = "<group>"; };
+		BEFDA1F7727114212A7BFD3A65C9BFBB /* SPSubject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPSubject.m; path = Snowplow/Internal/Subject/SPSubject.m; sourceTree = "<group>"; };
+		C010E4E570A6EF277CA084EB5ABE13C7 /* SPNetworkControllerImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPNetworkControllerImpl.h; path = Snowplow/Internal/NetworkConnection/SPNetworkControllerImpl.h; sourceTree = "<group>"; };
+		C076659023853A365296468C86CB563B /* SPLoggerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPLoggerDelegate.h; path = Snowplow/Internal/Logger/SPLoggerDelegate.h; sourceTree = "<group>"; };
+		C3634E9FF06BA3EA372B8E2383C0CEBD /* SPUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPUtilities.h; path = Snowplow/Internal/Utils/SPUtilities.h; sourceTree = "<group>"; };
+		C44CD6AC7FBAA3F3DE7A4185174489DC /* SnowplowTracker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnowplowTracker-umbrella.h"; sourceTree = "<group>"; };
+		C52E0823DB5D05E09D994E3E2268766D /* CarTrawlerSDK-copy-dsyms.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "CarTrawlerSDK-copy-dsyms.sh"; sourceTree = "<group>"; };
+		C6ADB13339565C4B5C87D53C55F0A4F7 /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
 		C75A606DDFA83DB3432998EBB0A7C8B6 /* Pods-CarTrawlerSDKIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CarTrawlerSDKIntegration.debug.xcconfig"; sourceTree = "<group>"; };
-		CEA6A7AEAC7889D844AAAEA3E09E57FD /* CarTrawlerSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CarTrawlerSDK.release.xcconfig; sourceTree = "<group>"; };
-		D9DD0E15574C41B3E53F265988BDAE05 /* CTPayment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CTPayment.release.xcconfig; sourceTree = "<group>"; };
+		C8AB05083D1B8C3ECA8B7197EA34D3D5 /* SPController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPController.m; path = Snowplow/Internal/SPController.m; sourceTree = "<group>"; };
+		C8C66ED54D7F791713FFB0075407C9F3 /* SPBackground.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPBackground.h; path = Snowplow/Internal/Events/SPBackground.h; sourceTree = "<group>"; };
+		CB4188010F5710FF26BCD68FC5749D3B /* SPTrackerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTrackerController.h; path = Snowplow/Internal/Tracker/SPTrackerController.h; sourceTree = "<group>"; };
+		CB6C0EFCA55EF02D7BBA206F23955763 /* SPSchemaRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPSchemaRule.h; path = Snowplow/Internal/GlobalContexts/SPSchemaRule.h; sourceTree = "<group>"; };
+		CC10CDEF899F07C0EF19041C76F45B01 /* SnowplowTracker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnowplowTracker-dummy.m"; sourceTree = "<group>"; };
+		CD89DF123144A0969CF1B0F2CDF4087E /* SPRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPRequest.m; path = Snowplow/Internal/Emitter/SPRequest.m; sourceTree = "<group>"; };
+		CF7F93ADBFFA6FBEED4CC613C866B66D /* SPTiming.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTiming.m; path = Snowplow/Internal/Events/SPTiming.m; sourceTree = "<group>"; };
+		CFB81AB4A8B83C1C2292395683DF5D7C /* UIViewController+SPScreenView_SWIZZLE.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+SPScreenView_SWIZZLE.m"; path = "Snowplow/Internal/ScreenViewTracking/UIViewController+SPScreenView_SWIZZLE.m"; sourceTree = "<group>"; };
+		D02FC527CE077EE1DE41BEA50AE6DE42 /* SPNetworkController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPNetworkController.h; path = Snowplow/Internal/NetworkConnection/SPNetworkController.h; sourceTree = "<group>"; };
+		D06228F3FB266EFDC6854CD5675CFCF6 /* SPRemoteConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPRemoteConfiguration.m; path = Snowplow/Internal/Configurations/SPRemoteConfiguration.m; sourceTree = "<group>"; };
+		D3AFE478ECE56B89F22C5527C89DDC7B /* SPEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPEvent.h; path = Snowplow/Internal/Events/SPEvent.h; sourceTree = "<group>"; };
+		D4966DC3F42E5DD25BFDE1BD3772B4FC /* SPTrackerEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTrackerEvent.h; path = Snowplow/Internal/Tracker/SPTrackerEvent.h; sourceTree = "<group>"; };
+		D4B4ACE598818A075605A6DA0CAB6568 /* SPNetworkConfigurationUpdate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPNetworkConfigurationUpdate.m; path = Snowplow/Internal/NetworkConnection/SPNetworkConfigurationUpdate.m; sourceTree = "<group>"; };
+		D7275EA60378C3B6DDD3C3CCCDE33EA2 /* SPSubjectConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPSubjectConfiguration.m; path = Snowplow/Internal/Configurations/SPSubjectConfiguration.m; sourceTree = "<group>"; };
+		DA81BF153221EB4A54DB75680D92F13B /* SPJSONSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPJSONSerialization.m; path = Snowplow/Internal/Utils/SPJSONSerialization.m; sourceTree = "<group>"; };
+		DAF93430FBA0B8868A64B937E6CE5F27 /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		DBA401AA02ADFD3A5E390B3FD314BDA2 /* SPRequestCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPRequestCallback.h; path = Snowplow/Internal/Emitter/SPRequestCallback.h; sourceTree = "<group>"; };
+		DBE5CCC91AACA2CC7BCEEBB0DF752FEA /* SPSnowplow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPSnowplow.m; path = Snowplow/Internal/SPSnowplow.m; sourceTree = "<group>"; };
+		DD6FE2561BC1D1DB45B1284705DCA68A /* SPNetworkConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPNetworkConfiguration.m; path = Snowplow/Internal/Configurations/SPNetworkConfiguration.m; sourceTree = "<group>"; };
+		E27D0E82BF105F8118D0F3C574366E0E /* SPEcommerce.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPEcommerce.h; path = Snowplow/Internal/Events/SPEcommerce.h; sourceTree = "<group>"; };
+		E33D5D0A69B059E347D8FC11748F8B9D /* SPEmitterEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPEmitterEvent.m; path = Snowplow/Internal/Emitter/SPEmitterEvent.m; sourceTree = "<group>"; };
+		E96F93EDA410C68725DE210407EDC3C2 /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
+		E9F8804C687EF88E0244F292576DB05E /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		EBAC1362B84031009B8A2BF8C0779B48 /* SPJSONSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPJSONSerialization.h; path = Snowplow/Internal/Utils/SPJSONSerialization.h; sourceTree = "<group>"; };
+		EC3F3C47E2BC2110183A6540D1B016A0 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
+		ECA8974A6FF50B2032BE2279B0012378 /* CTPayment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CTPayment.debug.xcconfig; sourceTree = "<group>"; };
+		ED4E89259F9D77EA174D208988B37ABF /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		EF532B4446CE5EACD0D4B66732C1FD29 /* SPLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPLogger.m; path = Snowplow/Internal/Logger/SPLogger.m; sourceTree = "<group>"; };
+		F06505BD8519155CA412AA4D5515F881 /* SPSQLiteEventStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPSQLiteEventStore.m; path = Snowplow/Internal/Storage/SPSQLiteEventStore.m; sourceTree = "<group>"; };
+		F6F9614D07E15C64791C346E3B4475D5 /* SPConfigurationFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPConfigurationFetcher.m; path = Snowplow/Internal/RemoteConfiguration/SPConfigurationFetcher.m; sourceTree = "<group>"; };
+		F72B847FC0F739038B9C829706173F1B /* SNOWReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SNOWReachability.h; path = Snowplow/Internal/Utils/SNOWReachability.h; sourceTree = "<group>"; };
+		F76D021BBE8381BCBBCD6C7A6619BC99 /* SPPushNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPPushNotification.h; path = Snowplow/Internal/Events/SPPushNotification.h; sourceTree = "<group>"; };
+		F7BB58489B4C686CBE7A8F66648F8E55 /* SPSchemaRule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPSchemaRule.m; path = Snowplow/Internal/GlobalContexts/SPSchemaRule.m; sourceTree = "<group>"; };
+		F7CFC317F369390B0BE53E8024BAFA36 /* SPGdprContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPGdprContext.m; path = Snowplow/Internal/GDPR/SPGdprContext.m; sourceTree = "<group>"; };
+		F807C67E03C084FCD8DF8142DD616122 /* SPGDPRConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPGDPRConfiguration.m; path = Snowplow/Internal/Configurations/SPGDPRConfiguration.m; sourceTree = "<group>"; };
+		F9A9A51E66B2C15664EBBCFD75151082 /* SPGDPRControllerImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPGDPRControllerImpl.m; path = Snowplow/Internal/GDPR/SPGDPRControllerImpl.m; sourceTree = "<group>"; };
+		F9AF363D6665DAEB03A4CE64C8E1FA5B /* SPEmitterControllerImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPEmitterControllerImpl.m; path = Snowplow/Internal/Emitter/SPEmitterControllerImpl.m; sourceTree = "<group>"; };
+		FD05FA40D0586E19317E02D156820421 /* CTPayment.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CTPayment.framework; sourceTree = "<group>"; };
+		FD126BBB24030E9EB719BA17A3B3EC3C /* SPSessionConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPSessionConfiguration.h; path = Snowplow/Internal/Configurations/SPSessionConfiguration.h; sourceTree = "<group>"; };
+		FD8B2D087C2D9AD0F49776F6C56DC7C3 /* SPSnowplow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPSnowplow.h; path = Snowplow/Internal/SPSnowplow.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F0FC7EBCE3017B2CF161B48B8ECF85FA /* Frameworks */ = {
+		9E1A4480E664B7C680F1F3524FFDBB67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EDE9B8606FBAA0409C77623592C29B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB1962CA544DC42A0F6B5F63B2EEE24D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -84,6 +496,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12D6509FB4B23E69674CB0574519183B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C2698CA5E0F0AAEEC05776149C10FF1 /* FMDB-dummy.m */,
+				EC3F3C47E2BC2110183A6540D1B016A0 /* FMDB-prefix.pch */,
+				47EA4B8B88CFC8DAB97B1F2F92739709 /* FMDB.debug.xcconfig */,
+				05E80D124D6D4DE5B8823D0A54DC7378 /* FMDB.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FMDB";
+			sourceTree = "<group>";
+		};
+		141634BC0F9CE39D8C0D831B0D2529C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				574BE6E0BD424F12CE2EF9060A6EB6CB /* CarTrawlerSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C73D9986DCB9B4688748E47428B24B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E0EC003BBAB2A895262F01FFDA6B87D /* CarTrawlerSDK */,
+				EF40243E13763F2365A36A529A44BC80 /* CTPayment */,
+				77AB2EEEAE39D8CB528B2265120BF770 /* FMDB */,
+				9F8C2567423BAA8DFE66475DE438C100 /* SnowplowTracker */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		25C1C6CBDA0FFB8871DA292FBB574390 /* Pods-CarTrawlerSDKIntegration */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,12 +541,12 @@
 			path = "Target Support Files/Pods-CarTrawlerSDKIntegration";
 			sourceTree = "<group>";
 		};
-		49D843D8A0A04AC9BDD874104D37B973 /* Products */ = {
+		579A9C8FD7D71B3790ACD776DDF8AB43 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				754EF1A8B0860484FFD754BF62E5FEE5 /* libPods-CarTrawlerSDKIntegration.a */,
+				FD05FA40D0586E19317E02D156820421 /* CTPayment.framework */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		5C7E1BAC29F01E4A028AA7676EC45F40 /* Targets Support Files */ = {
@@ -114,59 +557,243 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		6973BF66E2B902696F02A6EBCA2470EE /* Support Files */ = {
+		6D61032AF42D2582D1241A791524590D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2F004A93E03D331D8B9BC15B4EA6D323 /* CarTrawlerSDK.debug.xcconfig */,
-				CEA6A7AEAC7889D844AAAEA3E09E57FD /* CarTrawlerSDK.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CarTrawlerSDK";
-			sourceTree = "<group>";
-		};
-		719343A6709D5FB38853D005C2A3E884 /* CTPayment */ = {
-			isa = PBXGroup;
-			children = (
-				BE00A78FB27FB27E11659390D62A4AA8 /* Frameworks */,
-				9AA1F8F802322DE8FD714568026D6B0B /* Support Files */,
-			);
-			name = CTPayment;
-			path = CTPayment;
-			sourceTree = "<group>";
-		};
-		9AA1F8F802322DE8FD714568026D6B0B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0C501AAD0CCBD2290EBD96602B59AE16 /* CTPayment.debug.xcconfig */,
-				D9DD0E15574C41B3E53F265988BDAE05 /* CTPayment.release.xcconfig */,
+				ECA8974A6FF50B2032BE2279B0012378 /* CTPayment.debug.xcconfig */,
+				BAB3255B942E646A9A0972D5D5D46C03 /* CTPayment.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/CTPayment";
 			sourceTree = "<group>";
 		};
-		B4D85880B13A3743E062DA76BCB0AFFC /* Pods */ = {
+		723E9C3FAFE95E24DDD0541AF1198498 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FD5438F9DE33628DFA3484DC88F7CB73 /* CarTrawlerSDK */,
-				719343A6709D5FB38853D005C2A3E884 /* CTPayment */,
+				C52E0823DB5D05E09D994E3E2268766D /* CarTrawlerSDK-copy-dsyms.sh */,
+				2F87B37C1D9D95657524169B5190A0E1 /* CarTrawlerSDK.debug.xcconfig */,
+				2CE04B04A90ECAA8E6F73A661F5B51F4 /* CarTrawlerSDK.release.xcconfig */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/CarTrawlerSDK";
 			sourceTree = "<group>";
 		};
-		BD8BB735E560ED8C02CA8F8DECAE37EA /* Frameworks */ = {
+		77AB2EEEAE39D8CB528B2265120BF770 /* FMDB */ = {
 			isa = PBXGroup;
 			children = (
-				1C8CA52F35FEB56C1D1D48C0A24C06E6 /* CarTrawlerSDK.framework */,
+				DD3058913357E7638C1401E86488CB87 /* standard */,
+				12D6509FB4B23E69674CB0574519183B /* Support Files */,
 			);
-			name = Frameworks;
+			name = FMDB;
+			path = FMDB;
 			sourceTree = "<group>";
 		};
-		BE00A78FB27FB27E11659390D62A4AA8 /* Frameworks */ = {
+		7E0EC003BBAB2A895262F01FFDA6B87D /* CarTrawlerSDK */ = {
 			isa = PBXGroup;
 			children = (
-				C68D3F6366BC9F201B3F57F6E481312B /* CTPayment.framework */,
+				141634BC0F9CE39D8C0D831B0D2529C3 /* Frameworks */,
+				723E9C3FAFE95E24DDD0541AF1198498 /* Support Files */,
 			);
-			name = Frameworks;
+			name = CarTrawlerSDK;
+			path = CarTrawlerSDK;
+			sourceTree = "<group>";
+		};
+		9F8C2567423BAA8DFE66475DE438C100 /* SnowplowTracker */ = {
+			isa = PBXGroup;
+			children = (
+				BED9E4A0A620A738E295BF032A0E2345 /* NSDictionary+SP_TypeMethods.h */,
+				80AE693061AED8A1B21D691A7F21FFDD /* NSDictionary+SP_TypeMethods.m */,
+				00958BECC1143F5ADB74E113A33F96AE /* SNOWError.h */,
+				40F5734F5DFD1B21FB1E3D0003A79D32 /* SNOWError.m */,
+				3485BD6C583F5C9D47EFC793B8D0D7E6 /* Snowplow-umbrella-header.h */,
+				F72B847FC0F739038B9C829706173F1B /* SNOWReachability.h */,
+				689CFCFE80663F28BAEC1CFE39889175 /* SNOWReachability.m */,
+				C8C66ED54D7F791713FFB0075407C9F3 /* SPBackground.h */,
+				7049B56D2BBAE7666CF29B29E8CFBCF4 /* SPBackground.m */,
+				B2B9607C1D7169C4AD1BA0AF13BB9D9E /* SPConfiguration.h */,
+				3B5E36C208A7FD2FEB7B263596ACA72C /* SPConfiguration.m */,
+				31D8555C5AA448154BB919671E47C13B /* SPConfigurationBundle.h */,
+				4676C2F458131097647FF52CFFA0E5F5 /* SPConfigurationBundle.m */,
+				A27638E5394327EC85E2591D3558A3A3 /* SPConfigurationCache.h */,
+				03BF569450B248178793F2EEF26E2BD5 /* SPConfigurationCache.m */,
+				2A4155634A02F0C24B4B0C7B3305FE6E /* SPConfigurationFetcher.h */,
+				F6F9614D07E15C64791C346E3B4475D5 /* SPConfigurationFetcher.m */,
+				6D3D815F3D7492E967D298AC37B82565 /* SPConfigurationProvider.h */,
+				2A86389941AB6BBA7F41BA20E2CEFB88 /* SPConfigurationProvider.m */,
+				959BB77A87706A796B158B477A1AE25A /* SPConsentDocument.h */,
+				BA745C33739446FF14A9376F656DCF3A /* SPConsentDocument.m */,
+				27D8CECD01EC2C5AE1CAFCDE5075473D /* SPConsentGranted.h */,
+				6A6E608457DAB0243650180C037136B6 /* SPConsentGranted.m */,
+				03AF26C20575F02A3AEE13ECDA607D1E /* SPConsentWithdrawn.h */,
+				996BD4666DD54C51FADCE2E79A8FAFEC /* SPConsentWithdrawn.m */,
+				222F18A02DC8F45B8785281BBCF76B4F /* SPController.h */,
+				C8AB05083D1B8C3ECA8B7197EA34D3D5 /* SPController.m */,
+				53E9680A79C53DEB83483343D9B2C7CB /* SPDataPersistence.h */,
+				642569BFA285049C0324DECCD0B89B58 /* SPDataPersistence.m */,
+				267F48B679F1CAC802FEFFDCA27BA543 /* SPDefaultNetworkConnection.h */,
+				374B2AF0CD9786789DDBBE9C132E0905 /* SPDefaultNetworkConnection.m */,
+				B3201B5C9CEEA0283A9D9D9FC530BEFB /* SPDevicePlatform.h */,
+				4D3B8563B8450AF7AE422271563D6B34 /* SPDevicePlatform.m */,
+				E27D0E82BF105F8118D0F3C574366E0E /* SPEcommerce.h */,
+				9134A5D8A5D3676EE399FCCF53708B8A /* SPEcommerce.m */,
+				9317EACE0837C68DAD91A246D31BC06E /* SPEcommerceItem.h */,
+				351A00DBE2E3105C1D6E97BB33D7CC3B /* SPEcommerceItem.m */,
+				31C506661BA11C2D8913BB1F8568F937 /* SPEmitter.h */,
+				1FF58C01D92A4E600B4650FDA5287BA4 /* SPEmitter.m */,
+				1C5C69C524820B6075BFD375237C276F /* SPEmitterConfiguration.h */,
+				44526F4A654E0A67A74CDD9D98328754 /* SPEmitterConfiguration.m */,
+				2BDCF51EEE5F30F7F744FA502B190F7A /* SPEmitterConfigurationUpdate.h */,
+				3C12A185931C065B5C67DDFC1D51BCDB /* SPEmitterConfigurationUpdate.m */,
+				1845D171601A89661CBC435433303B7E /* SPEmitterController.h */,
+				624517D77478AD2A3B3367B5639355A6 /* SPEmitterControllerImpl.h */,
+				F9AF363D6665DAEB03A4CE64C8E1FA5B /* SPEmitterControllerImpl.m */,
+				1DB6D9A42B5FA7623443438D179CC830 /* SPEmitterEvent.h */,
+				E33D5D0A69B059E347D8FC11748F8B9D /* SPEmitterEvent.m */,
+				AD9140965B2AF92A51F4852D3E6C4565 /* SPEmitterEventProcessing.h */,
+				D3AFE478ECE56B89F22C5527C89DDC7B /* SPEvent.h */,
+				46BDEECB225CF7BC3542258CDE3C9C20 /* SPEventBase.h */,
+				6ECB07DE46499F555FAA38FFECE2D8C7 /* SPEventBase.m */,
+				213194271E0DFBFEC41441866C1CB7D1 /* SPEventStore.h */,
+				2CAE0C6016C54BDC507A9B31169F704B /* SPFetchedConfigurationBundle.h */,
+				2CD6DAC9B1313D5B37B1D75C61044A16 /* SPFetchedConfigurationBundle.m */,
+				4D6C26D6B33165C6BC883144998DA3D6 /* SPForeground.h */,
+				A5ED5D8417B5EBF1F5AF92895FBA1652 /* SPForeground.m */,
+				055CB4378FB3A698DCA8FB981EE92092 /* SPGDPRConfiguration.h */,
+				F807C67E03C084FCD8DF8142DD616122 /* SPGDPRConfiguration.m */,
+				9C985B99DB1129A513B891D403A33764 /* SPGDPRConfigurationUpdate.h */,
+				42EAD5CB39A27CD5991E60830802F9C3 /* SPGDPRConfigurationUpdate.m */,
+				3A7A59B79473EC962DD28EC2A1976F67 /* SPGdprContext.h */,
+				F7CFC317F369390B0BE53E8024BAFA36 /* SPGdprContext.m */,
+				0BC0B0F982787607567131B60B55DF26 /* SPGDPRController.h */,
+				8D5227CCE1145B5A6E9EC4A75C39822A /* SPGDPRControllerImpl.h */,
+				F9A9A51E66B2C15664EBBCFD75151082 /* SPGDPRControllerImpl.m */,
+				96AF7E66B8C1F90DA49FEB748626DE0E /* SPGlobalContext.h */,
+				A620B65B5311DE3AD51B978C0DD309E4 /* SPGlobalContext.m */,
+				50A9510BB91A51A45F9C0C0A321B256C /* SPGlobalContextsConfiguration.h */,
+				29D5CC31E1707FC6AE50AF4266962859 /* SPGlobalContextsConfiguration.m */,
+				3FC0573F6EB089913A5771C9E370DD71 /* SPGlobalContextsController.h */,
+				70F2D3E9443CCFD4C78B4B9C5723808D /* SPGlobalContextsControllerImpl.h */,
+				573CCC1981E078E733CC793FAAAF2721 /* SPGlobalContextsControllerImpl.m */,
+				9C936089B3B08AA58AF9F808479A2AF1 /* SPInstallTracker.h */,
+				04AAF6C1260BCEBDC87B0A35148C5B47 /* SPInstallTracker.m */,
+				EBAC1362B84031009B8A2BF8C0779B48 /* SPJSONSerialization.h */,
+				DA81BF153221EB4A54DB75680D92F13B /* SPJSONSerialization.m */,
+				5EF581E33538A94FC8ADCF69063AB83F /* SPLogger.h */,
+				EF532B4446CE5EACD0D4B66732C1FD29 /* SPLogger.m */,
+				C076659023853A365296468C86CB563B /* SPLoggerDelegate.h */,
+				A1A6F4146C62D739E2463A9BB5A576E0 /* SPMemoryEventStore.h */,
+				B2F2F2829B2F3FF753BC56EBEB5F1153 /* SPMemoryEventStore.m */,
+				A2BB8AA6AE769DE3612EE581EAF1CBA3 /* SPNetworkConfiguration.h */,
+				DD6FE2561BC1D1DB45B1284705DCA68A /* SPNetworkConfiguration.m */,
+				016CB8268AC19D3E0BFDE016753C8AEC /* SPNetworkConfigurationUpdate.h */,
+				D4B4ACE598818A075605A6DA0CAB6568 /* SPNetworkConfigurationUpdate.m */,
+				06C5233564880A01BB05D07611B1FE1E /* SPNetworkConnection.h */,
+				D02FC527CE077EE1DE41BEA50AE6DE42 /* SPNetworkController.h */,
+				C010E4E570A6EF277CA084EB5ABE13C7 /* SPNetworkControllerImpl.h */,
+				95706EECB1D08AE4291DB7FF462198D4 /* SPNetworkControllerImpl.m */,
+				7CA43A112F87A6C14FE877CE2582D129 /* SPPageView.h */,
+				7E7C224052AB97DB8F6F1C7EA12C0614 /* SPPageView.m */,
+				96C9D6AF1E32FC00EA38B9105BA00442 /* SPPayload.h */,
+				0F514DC2CA1F6DA783057FEEBBE99E55 /* SPPayload.m */,
+				F76D021BBE8381BCBBCD6C7A6619BC99 /* SPPushNotification.h */,
+				688686217A42045BC0DD5DA058B5281A /* SPPushNotification.m */,
+				9AE47E98960E316E8A024F7D75ED055A /* SPRemoteConfiguration.h */,
+				D06228F3FB266EFDC6854CD5675CFCF6 /* SPRemoteConfiguration.m */,
+				78BF621FBFDC5A10E06EE24FB93C2A5A /* SPRequest.h */,
+				CD89DF123144A0969CF1B0F2CDF4087E /* SPRequest.m */,
+				DBA401AA02ADFD3A5E390B3FD314BDA2 /* SPRequestCallback.h */,
+				8AF84DA297C21C547E953D0D9CB07D53 /* SPRequestResult.h */,
+				02F0DFEC70D8D4E395ABAC88DE2A2B2B /* SPRequestResult.m */,
+				CB6C0EFCA55EF02D7BBA206F23955763 /* SPSchemaRule.h */,
+				F7BB58489B4C686CBE7A8F66648F8E55 /* SPSchemaRule.m */,
+				253CB68DE4920A1CF790B1560D6ED29A /* SPSchemaRuleset.h */,
+				7E604E189955D4D375BFDFA212D3B938 /* SPSchemaRuleset.m */,
+				825F1431F48EB27FBE4FC8C83107B1DB /* SPScreenState.h */,
+				5ED481E15A9CF4534A3C3EDCD9CA9C9C /* SPScreenState.m */,
+				AC7070BE3386114552F9949642905E73 /* SPScreenView.h */,
+				80818A2E014A86E6E673D4AE311EC053 /* SPScreenView.m */,
+				104443A8BBB7ADDC683A5768C9895F29 /* SPSelfDescribing.h */,
+				AA5ECDA9155A1965A27AEDAAB4AAEAF1 /* SPSelfDescribing.m */,
+				323399C24FE958702E8DF0091CB55465 /* SPSelfDescribingJson.h */,
+				05E9C9FA72128972DBB7AAE76DC48A22 /* SPSelfDescribingJson.m */,
+				85BE9DB1ADAFC724F0916FDB9D7F249C /* SPServiceProvider.h */,
+				2D94DD83ACD68892CB43AC40D535F716 /* SPServiceProvider.m */,
+				3A7156D4E77199D860719C130A6992E1 /* SPServiceProviderProtocol.h */,
+				18C2F6F1FB65D7E47004F16DA29A74F6 /* SPSession.h */,
+				889C138F950B957848332A0336589F69 /* SPSession.m */,
+				FD126BBB24030E9EB719BA17A3B3EC3C /* SPSessionConfiguration.h */,
+				41F4ACA6CEB80C8CC9751C4F600C7D0E /* SPSessionConfiguration.m */,
+				54EE9B244F70322A4C89B92408674468 /* SPSessionConfigurationUpdate.h */,
+				8DA694D0650CE4A99A0B8996026DA4FC /* SPSessionConfigurationUpdate.m */,
+				206048BD21C2752627D47808C219F0B9 /* SPSessionController.h */,
+				AD05F7C78FDE8784A4654541953FFFCC /* SPSessionControllerImpl.h */,
+				22DC5DDC785813086E31056B1436AD40 /* SPSessionControllerImpl.m */,
+				FD8B2D087C2D9AD0F49776F6C56DC7C3 /* SPSnowplow.h */,
+				DBE5CCC91AACA2CC7BCEEBB0DF752FEA /* SPSnowplow.m */,
+				491D919BC6EB34574F7F64AD81B4DE5B /* SPSQLiteEventStore.h */,
+				F06505BD8519155CA412AA4D5515F881 /* SPSQLiteEventStore.m */,
+				21C943D38A069F93F158201780E9E7E2 /* SPStructured.h */,
+				74D3ADA1B51161DE8DB26D220C3D9957 /* SPStructured.m */,
+				BB791BEDDADD204C0B5816836047F261 /* SPSubject.h */,
+				BEFDA1F7727114212A7BFD3A65C9BFBB /* SPSubject.m */,
+				84594204C420D325953CF0286EF4D735 /* SPSubjectConfiguration.h */,
+				D7275EA60378C3B6DDD3C3CCCDE33EA2 /* SPSubjectConfiguration.m */,
+				7D42A552207796B3DB9B1C1B3C6D2E6D /* SPSubjectConfigurationUpdate.h */,
+				21CD0FDF7000F370D5F23EA3DE3B81FC /* SPSubjectConfigurationUpdate.m */,
+				3C878F4F18D13F072837DCE963F4348E /* SPSubjectController.h */,
+				A5AB010F1B074546DABCAF3F8D3E20F5 /* SPSubjectControllerImpl.h */,
+				54A1C76B08202ED92FCE5FD8EE8A1655 /* SPSubjectControllerImpl.m */,
+				592DEEF2AAEB0881FC7A24AB9576CCDA /* SPTiming.h */,
+				CF7F93ADBFFA6FBEED4CC613C866B66D /* SPTiming.m */,
+				A0E316C5B4F41FC7172319E43C239565 /* SPTracker.h */,
+				5BDBA6843E46C762F4992A38B3180219 /* SPTracker.m */,
+				9E9FAD727B0A0DDD21F5E4F20ADCE725 /* SPTrackerConfiguration.h */,
+				74893A1D6C92F09064D77ECFB39EA117 /* SPTrackerConfiguration.m */,
+				1F2FC3F9CE883FEB26CFD2381D3E2219 /* SPTrackerConfigurationUpdate.h */,
+				65090896611DD207418B7A8998CF65AD /* SPTrackerConfigurationUpdate.m */,
+				4A3821AAF2D0BB9B0BAEBE549B04D376 /* SPTrackerConstants.h */,
+				A60D33B54D601A15E24549D6504D3ABD /* SPTrackerConstants.m */,
+				CB4188010F5710FF26BCD68FC5749D3B /* SPTrackerController.h */,
+				3D3DB289E9A248B6BF54F6A3D8BA83A0 /* SPTrackerControllerImpl.h */,
+				4008D9871F85AAC2572798E05C4E19CE /* SPTrackerControllerImpl.m */,
+				10CDEFB212CDD1D1C2EB9977774AA908 /* SPTrackerError.h */,
+				54BA09119DE23A010078DD6238E06DAE /* SPTrackerError.m */,
+				D4966DC3F42E5DD25BFDE1BD3772B4FC /* SPTrackerEvent.h */,
+				B93F8954711809E690937EE2C662A7F2 /* SPTrackerEvent.m */,
+				C3634E9FF06BA3EA372B8E2383C0CEBD /* SPUtilities.h */,
+				8A37134D956514B8196E5D4236FEA4E0 /* SPUtilities.m */,
+				206499D8DEE89A919F8F73B326DBBEDA /* SPWeakTimerTarget.h */,
+				BC0E5943E2CBCF1F3C38F30A0E3D7BAF /* SPWeakTimerTarget.m */,
+				7C6CB4EFA83EAFD1A7A16485036A1C83 /* UIViewController+SPScreenView_SWIZZLE.h */,
+				CFB81AB4A8B83C1C2292395683DF5D7C /* UIViewController+SPScreenView_SWIZZLE.m */,
+				C9EC7709D578E297981CE78378A28F80 /* Support Files */,
+			);
+			name = SnowplowTracker;
+			path = SnowplowTracker;
+			sourceTree = "<group>";
+		};
+		A5D2F92B95B22C71CEFECC3F53A57491 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3A80BA70CFB7F75C5391BEBBBA8C9DA /* libFMDB.a */,
+				754EF1A8B0860484FFD754BF62E5FEE5 /* libPods-CarTrawlerSDKIntegration.a */,
+				345B9337B92FA2FCDF53EF4F3FCA6750 /* libSnowplowTracker.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9EC7709D578E297981CE78378A28F80 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				989DC99A738D97169A01B36160239A97 /* SnowplowTracker.modulemap */,
+				CC10CDEF899F07C0EF19041C76F45B01 /* SnowplowTracker-dummy.m */,
+				6E2D9F19B1507BBA87AF27AA0AFAB104 /* SnowplowTracker-prefix.pch */,
+				C44CD6AC7FBAA3F3DE7A4185174489DC /* SnowplowTracker-umbrella.h */,
+				2737858FBC39CAADE32B3A441CD237C4 /* SnowplowTracker.debug.xcconfig */,
+				96AF8BD3E7DE5EFB725522FE8F2E9CB9 /* SnowplowTracker.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnowplowTracker";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -174,8 +801,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				B4D85880B13A3743E062DA76BCB0AFFC /* Pods */,
-				49D843D8A0A04AC9BDD874104D37B973 /* Products */,
+				1C73D9986DCB9B4688748E47428B24B2 /* Pods */,
+				A5D2F92B95B22C71CEFECC3F53A57491 /* Products */,
 				5C7E1BAC29F01E4A028AA7676EC45F40 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -187,46 +814,212 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FD5438F9DE33628DFA3484DC88F7CB73 /* CarTrawlerSDK */ = {
+		DD3058913357E7638C1401E86488CB87 /* standard */ = {
 			isa = PBXGroup;
 			children = (
-				BD8BB735E560ED8C02CA8F8DECAE37EA /* Frameworks */,
-				6973BF66E2B902696F02A6EBCA2470EE /* Support Files */,
+				DAF93430FBA0B8868A64B937E6CE5F27 /* FMDatabase.h */,
+				7D94BC91BAE9410AA06888F3AF6AFF54 /* FMDatabase.m */,
+				2712F3C80F83164DF6EA47A51A62CD6F /* FMDatabaseAdditions.h */,
+				ED4E89259F9D77EA174D208988B37ABF /* FMDatabaseAdditions.m */,
+				E9F8804C687EF88E0244F292576DB05E /* FMDatabasePool.h */,
+				200022CC2E9CAE6F1582991A4453AEE9 /* FMDatabasePool.m */,
+				9BFCF973ADE10348F392FD6D35719503 /* FMDatabaseQueue.h */,
+				722620F6A71CAF1E4AEC0A03C62D4F44 /* FMDatabaseQueue.m */,
+				C6ADB13339565C4B5C87D53C55F0A4F7 /* FMDB.h */,
+				13F3F7EE53FBAE0E3D55D0A4341A5144 /* FMResultSet.h */,
+				E96F93EDA410C68725DE210407EDC3C2 /* FMResultSet.m */,
 			);
-			name = CarTrawlerSDK;
-			path = CarTrawlerSDK;
+			name = standard;
+			sourceTree = "<group>";
+		};
+		EF40243E13763F2365A36A529A44BC80 /* CTPayment */ = {
+			isa = PBXGroup;
+			children = (
+				579A9C8FD7D71B3790ACD776DDF8AB43 /* Frameworks */,
+				6D61032AF42D2582D1241A791524590D /* Support Files */,
+			);
+			name = CTPayment;
+			path = CTPayment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3D459A6050A3B93027D0D95FD477CBF5 /* Headers */ = {
+		77512E363EB3E735E5E52A37CE10F190 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4FFFA9428A7DDAC04DB716F846DDC12 /* NSDictionary+SP_TypeMethods.h in Headers */,
+				FD0DEEAFDB6E1AF6ACBA58205A28F961 /* SNOWError.h in Headers */,
+				48648C493C4ACD9177756235460D399D /* Snowplow-umbrella-header.h in Headers */,
+				70B667A4F9805D5292624CF6BA9BA7DB /* SnowplowTracker-umbrella.h in Headers */,
+				A0EC2AF48DDD13A91B791FD2A3A3B100 /* SNOWReachability.h in Headers */,
+				28E97755370953930D88207BE9DBE38D /* SPBackground.h in Headers */,
+				A0CF17F1750A6951E09E7DE50D744C0E /* SPConfiguration.h in Headers */,
+				BDF0699915DDACEA328C56A27F28EC25 /* SPConfigurationBundle.h in Headers */,
+				2ED45897E9F4F95059167BD4324130F7 /* SPConfigurationCache.h in Headers */,
+				33A9977C0C4507516BCD95132D8C4B44 /* SPConfigurationFetcher.h in Headers */,
+				A3B407CCD66ACB02B9C3517CC9E02FA9 /* SPConfigurationProvider.h in Headers */,
+				B85199997D8EA845C80344849D539EC1 /* SPConsentDocument.h in Headers */,
+				BE3C38E1B28537EE55D1D70C2732B05F /* SPConsentGranted.h in Headers */,
+				A160BD9A515582A502DEE310D9ED4914 /* SPConsentWithdrawn.h in Headers */,
+				C56D7FBE33F394ACD1E380CCB687B51A /* SPController.h in Headers */,
+				E1C46666FA09C136E184625B667E3F06 /* SPDataPersistence.h in Headers */,
+				25C4DC8CF425D270602D6F436F1555D7 /* SPDefaultNetworkConnection.h in Headers */,
+				DC758BDA94E821952C2AEA320D6C2CFB /* SPDevicePlatform.h in Headers */,
+				84224089B1B6BCB57B6BC0CD55DF6D31 /* SPEcommerce.h in Headers */,
+				C4D6B08E6DC25B7ABB397AC537988615 /* SPEcommerceItem.h in Headers */,
+				59D5244B08DE156D63034C993D0EB89B /* SPEmitter.h in Headers */,
+				06A94CD98C3F32F6430A21D1356E797C /* SPEmitterConfiguration.h in Headers */,
+				9FF21CDB5455D44EAA314B77AEEB50E3 /* SPEmitterConfigurationUpdate.h in Headers */,
+				D1C6638B1A39F35377C5863EF786108D /* SPEmitterController.h in Headers */,
+				BC93828111824B533DA0A6E8767E2423 /* SPEmitterControllerImpl.h in Headers */,
+				B7CE71D51F9242B8C32A594AE4AAF857 /* SPEmitterEvent.h in Headers */,
+				8CEE9D227AEB4763484B134256829AB1 /* SPEmitterEventProcessing.h in Headers */,
+				F3CE30D912F6A2475B6DDBA050FCA731 /* SPEvent.h in Headers */,
+				1A236566E5E9C64E66ADE537275CC9F4 /* SPEventBase.h in Headers */,
+				2151893A5D13B42BE1D874746F131CFE /* SPEventStore.h in Headers */,
+				A98EFFA0261B9EC0DDCC3847580BDC38 /* SPFetchedConfigurationBundle.h in Headers */,
+				679E33664FBAC16F01834ACCA210C6B5 /* SPForeground.h in Headers */,
+				F73BA118D286B22EF83CC311C2481469 /* SPGDPRConfiguration.h in Headers */,
+				1C8844C18FA36071073A8A9A2BEAD451 /* SPGDPRConfigurationUpdate.h in Headers */,
+				34DB40BFF2EFFD866CB69014E7481A9B /* SPGdprContext.h in Headers */,
+				15024C9E4C7EDF6DA9863F3ABAAB0839 /* SPGDPRController.h in Headers */,
+				F21FAD4557E40DE9BD8F9E0251C18855 /* SPGDPRControllerImpl.h in Headers */,
+				D07F0AE8431FD9BB44D8000EBE986F86 /* SPGlobalContext.h in Headers */,
+				CBF8719F84427A43CB6CF6C89DD50F42 /* SPGlobalContextsConfiguration.h in Headers */,
+				35C3BF004F4E1BC33B4DB664952D74D1 /* SPGlobalContextsController.h in Headers */,
+				9A1996862251783368A69CD9FD39068F /* SPGlobalContextsControllerImpl.h in Headers */,
+				D5D6E620658A1DD91093D9C373974206 /* SPInstallTracker.h in Headers */,
+				4FFA2B992BF8307D9AD4C4E036ABF300 /* SPJSONSerialization.h in Headers */,
+				2B11215C5AAB4B95ADEEC1560A1CE4D1 /* SPLogger.h in Headers */,
+				2A8BFED47E4270358D0643C6AD5506FE /* SPLoggerDelegate.h in Headers */,
+				DAFEFAFC6987E884E2F3D6265D6C2185 /* SPMemoryEventStore.h in Headers */,
+				E9E84AF6606D28AB72B961686EF7091F /* SPNetworkConfiguration.h in Headers */,
+				036276A367A2CB2D962BFEFB2004DB07 /* SPNetworkConfigurationUpdate.h in Headers */,
+				72586037069AFC1051ACE679078FF6B1 /* SPNetworkConnection.h in Headers */,
+				CFB751D59C3018BFA28327E01AA97B4A /* SPNetworkController.h in Headers */,
+				7D1E04E6B0D448480A3320695869A641 /* SPNetworkControllerImpl.h in Headers */,
+				D291A70E5FC826DF79B7D63BB6C9F78F /* SPPageView.h in Headers */,
+				8E05D3F778AFB1FE0FDB204B2C7E7E67 /* SPPayload.h in Headers */,
+				CE177DE9A8BE02A7AF3057978C8E6C4E /* SPPushNotification.h in Headers */,
+				4481D8CEB9CF6921C113E723CE798522 /* SPRemoteConfiguration.h in Headers */,
+				895B8755BBF49C1956BD6315ADA7DEFE /* SPRequest.h in Headers */,
+				347F130D86ABEE52717A16FC54F5A6B2 /* SPRequestCallback.h in Headers */,
+				033FF49F02EEA5D41E728BF16C280413 /* SPRequestResult.h in Headers */,
+				A302786BF0C496C825D0AD83F5EF30F2 /* SPSchemaRule.h in Headers */,
+				ED83E3F529D6CA6E8342B65C633AC9EF /* SPSchemaRuleset.h in Headers */,
+				0AE1B9E69C1229238508E17C22EB671D /* SPScreenState.h in Headers */,
+				80A1C63E6EDD3EA13719AF4561173210 /* SPScreenView.h in Headers */,
+				B91252B3A700A697F939F1450E06D388 /* SPSelfDescribing.h in Headers */,
+				DBC0E8C02276D2BF110E04A24216E5B5 /* SPSelfDescribingJson.h in Headers */,
+				06C7B26252363DB422156460919F747B /* SPServiceProvider.h in Headers */,
+				58D0E7ACFF848B65BF89DDF60BAC0F70 /* SPServiceProviderProtocol.h in Headers */,
+				AB00BD18EEC58726C715A79B58B7381A /* SPSession.h in Headers */,
+				AB30A8AE3DF3B2D0723B7EB9389B167C /* SPSessionConfiguration.h in Headers */,
+				72EF345218839DF36E8D3705E13B9814 /* SPSessionConfigurationUpdate.h in Headers */,
+				D52F3F27B2FCCBFB82214A2A332460AB /* SPSessionController.h in Headers */,
+				828E932BA45E3DA2EEDD9FAEF7CD7857 /* SPSessionControllerImpl.h in Headers */,
+				AA828E8C93C4BB43B8384F4956AE7EAC /* SPSnowplow.h in Headers */,
+				DC71FBB6BCC9B029164C37B22F4794E0 /* SPSQLiteEventStore.h in Headers */,
+				006C9A574FF62F53F2F9C6B823A32718 /* SPStructured.h in Headers */,
+				862AE04D449C49126FA97798295C99B9 /* SPSubject.h in Headers */,
+				F2DC58FC98DEF713E425926A72478684 /* SPSubjectConfiguration.h in Headers */,
+				A4E535992935FAECFC9F40DA4BBF7722 /* SPSubjectConfigurationUpdate.h in Headers */,
+				56603369AD526986681188D5BE8DA45D /* SPSubjectController.h in Headers */,
+				8A337210BAA45CB297EB4F97D40264DA /* SPSubjectControllerImpl.h in Headers */,
+				2CFFFE52C9E62EE7F84939985BF8A9DC /* SPTiming.h in Headers */,
+				C60208A74D649764D1EAE4AB0AFA4C34 /* SPTracker.h in Headers */,
+				372486E4F6332B6C153B992083757D06 /* SPTrackerConfiguration.h in Headers */,
+				BF1E4E09A55EA0EB7CC69CDC20C4760E /* SPTrackerConfigurationUpdate.h in Headers */,
+				B21025AD9555D16FE20F3F7705C8EE26 /* SPTrackerConstants.h in Headers */,
+				EDAA9B03E3078605F2A75C13411FE8BF /* SPTrackerController.h in Headers */,
+				1C00F2FF1F489C5FFFB43CF0B3710922 /* SPTrackerControllerImpl.h in Headers */,
+				C2B0627A4DFB0A27B128352B57B46E41 /* SPTrackerError.h in Headers */,
+				D29A82B0F445E32B4679FBBA08C61C6F /* SPTrackerEvent.h in Headers */,
+				2D31EC71273F3FBAE61B4B2C5CD14E63 /* SPUtilities.h in Headers */,
+				066294EE979E6D00E083CB4292A599FB /* SPWeakTimerTarget.h in Headers */,
+				53E89FEED06D35F60DFED78B54F5E449 /* UIViewController+SPScreenView_SWIZZLE.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7DE95F8CB922DCC4F1B975DB09DA3EF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0965AA1C7142F70B0B8251F0989CA68 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C12F04FA9314F18DBA71EAFD6BD89B /* FMDatabase.h in Headers */,
+				F08885B23519C8F3FFA8947AEB9BAAFB /* FMDatabaseAdditions.h in Headers */,
+				CDAD19D5DE5FA5FB74C4B8B68A839C75 /* FMDatabasePool.h in Headers */,
+				4280B3F4215DD90C8FD738ECDC5B036E /* FMDatabaseQueue.h in Headers */,
+				D55785A1E1319EB0B07006CF78D8BF45 /* FMDB.h in Headers */,
+				603D84A1ECE7E8AD06AEEF7A22C80B83 /* FMResultSet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6BF6F21A2A2D3566B11F2AF29EBDDA92 /* Pods-CarTrawlerSDKIntegration */ = {
+		4DBA189AF01B5699C4ECEC25CBCCFA65 /* SnowplowTracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B0918AF3668DFB4865534EDF00D3CF76 /* Build configuration list for PBXNativeTarget "Pods-CarTrawlerSDKIntegration" */;
+			buildConfigurationList = 1D8858CB26D5DFF0EA47444E35F62AA5 /* Build configuration list for PBXNativeTarget "SnowplowTracker" */;
 			buildPhases = (
-				3D459A6050A3B93027D0D95FD477CBF5 /* Headers */,
-				EA3BF19A0EB959CA3A3CAF3E71E8BA9D /* Sources */,
-				F0FC7EBCE3017B2CF161B48B8ECF85FA /* Frameworks */,
+				77512E363EB3E735E5E52A37CE10F190 /* Headers */,
+				4541DEB4A7967077A25C4EEB7A51BDE3 /* Sources */,
+				9E1A4480E664B7C680F1F3524FFDBB67 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				967702F589227EAC070CAED41D033773 /* PBXTargetDependency */,
-				2A1DDC5938B5C22E72BCB49385930257 /* PBXTargetDependency */,
+				73420D9E4E584A2492671EBEA5A518FB /* PBXTargetDependency */,
+			);
+			name = SnowplowTracker;
+			productName = SnowplowTracker;
+			productReference = 345B9337B92FA2FCDF53EF4F3FCA6750 /* libSnowplowTracker.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6BF6F21A2A2D3566B11F2AF29EBDDA92 /* Pods-CarTrawlerSDKIntegration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3067999BFBE2D484E8A944CD5FC219A5 /* Build configuration list for PBXNativeTarget "Pods-CarTrawlerSDKIntegration" */;
+			buildPhases = (
+				A7DE95F8CB922DCC4F1B975DB09DA3EF /* Headers */,
+				6C0F482B8AD0F41C5E2AC63CE43C5C14 /* Sources */,
+				9EDE9B8606FBAA0409C77623592C29B7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FD0006668D4F2C18C36C6B8C3D2893F /* PBXTargetDependency */,
+				23ECA541B62FB09EC6599222A0E21457 /* PBXTargetDependency */,
+				B5FF19054EC6FF2F31F8F2166F32583E /* PBXTargetDependency */,
+				9DB28E232DC40644DBB521A52B3A0C3F /* PBXTargetDependency */,
 			);
 			name = "Pods-CarTrawlerSDKIntegration";
 			productName = "Pods-CarTrawlerSDKIntegration";
 			productReference = 754EF1A8B0860484FFD754BF62E5FEE5 /* libPods-CarTrawlerSDKIntegration.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8592E0E389D40AC17881400ADC67ABC0 /* FMDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABF59DBDB0B4C384B638CFFA3561EE8B /* Build configuration list for PBXNativeTarget "FMDB" */;
+			buildPhases = (
+				D0965AA1C7142F70B0B8251F0989CA68 /* Headers */,
+				83EBA7F76A09AEACA3779909C174AD54 /* Sources */,
+				CB1962CA544DC42A0F6B5F63B2EEE24D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMDB;
+			productName = FMDB;
+			productReference = A3A80BA70CFB7F75C5391BEBBBA8C9DA /* libFMDB.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -247,53 +1040,263 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 49D843D8A0A04AC9BDD874104D37B973 /* Products */;
+			productRefGroup = A5D2F92B95B22C71CEFECC3F53A57491 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				71568D7B9FA9D5C2E7BCBD576E1909FC /* CarTrawlerSDK */,
 				06AC81A34DAD85D1DEFFB4B0202285C2 /* CTPayment */,
+				8592E0E389D40AC17881400ADC67ABC0 /* FMDB */,
 				6BF6F21A2A2D3566B11F2AF29EBDDA92 /* Pods-CarTrawlerSDKIntegration */,
+				4DBA189AF01B5699C4ECEC25CBCCFA65 /* SnowplowTracker */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FD23D34A2188082ECBC68E70DE5E0461 /* [CP] Copy dSYMs */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/CarTrawlerSDK/CarTrawlerSDK.framework.dSYM",
+				"${PODS_ROOT}/CarTrawlerSDK/51E5B026-3A69-38CD-B141-B67E8E5FDC21.bcsymbolmap",
+				"${PODS_ROOT}/CarTrawlerSDK/535CF7DC-503F-3E85-8848-09A35DF93BDF.bcsymbolmap",
+			);
+			name = "[CP] Copy dSYMs";
+			outputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/CarTrawlerSDK.framework.dSYM",
+				"${DWARF_DSYM_FOLDER_PATH}/51E5B026-3A69-38CD-B141-B67E8E5FDC21.bcsymbolmap",
+				"${DWARF_DSYM_FOLDER_PATH}/535CF7DC-503F-3E85-8848-09A35DF93BDF.bcsymbolmap",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/CarTrawlerSDK/CarTrawlerSDK-copy-dsyms.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		EA3BF19A0EB959CA3A3CAF3E71E8BA9D /* Sources */ = {
+		4541DEB4A7967077A25C4EEB7A51BDE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E3744ECCDD7786D01E159431647E152 /* Pods-CarTrawlerSDKIntegration-dummy.m in Sources */,
+				D428F155599F3B4FA87A1B1DBF320EFB /* NSDictionary+SP_TypeMethods.m in Sources */,
+				CFF21862F43DC1BBA3030BDF4B0F2584 /* SNOWError.m in Sources */,
+				74D708FDF4DD3227EED200E5996FC310 /* SnowplowTracker-dummy.m in Sources */,
+				A8C365DB338DBED07D42CBF209722CD0 /* SNOWReachability.m in Sources */,
+				6CFD60BEAC0E3D8BFE908DE5A1B41F8D /* SPBackground.m in Sources */,
+				50C75803BA0B56C3B7C265BBA7CB76B0 /* SPConfiguration.m in Sources */,
+				EB516CC57051CDECF42E66E6A7DDCF78 /* SPConfigurationBundle.m in Sources */,
+				5C86DE4F1E44F90CFF95694ADBA04A0E /* SPConfigurationCache.m in Sources */,
+				018D5B82C341D0A243BE4C9E8418110C /* SPConfigurationFetcher.m in Sources */,
+				3ADFDD9381BB5BBE4EC256BB3490FD38 /* SPConfigurationProvider.m in Sources */,
+				7CCE698DBF3994AD79044E002D8CB080 /* SPConsentDocument.m in Sources */,
+				47240CDAF59D33CBBC53289C13356A04 /* SPConsentGranted.m in Sources */,
+				2FB40D0E1D60AFDA06F4A2618E984C61 /* SPConsentWithdrawn.m in Sources */,
+				06416B2B7734CBC131B9187B0C37C30E /* SPController.m in Sources */,
+				36005C363B28D6AF1530DEA5CD09C4A5 /* SPDataPersistence.m in Sources */,
+				455EC5D0A766F2135FEB763AD8C807AC /* SPDefaultNetworkConnection.m in Sources */,
+				268F830AF1235A74B22587BE2052AB06 /* SPDevicePlatform.m in Sources */,
+				5EE18A0AC6A412EE4DFBE8814153C7FE /* SPEcommerce.m in Sources */,
+				481060FB79E42276226A8018F90C7159 /* SPEcommerceItem.m in Sources */,
+				84B220F7682BDF4EA3BFFB91CEACBE65 /* SPEmitter.m in Sources */,
+				EDCE26653513E094CC9BC8D3B56B1B64 /* SPEmitterConfiguration.m in Sources */,
+				6850E9413B56D8C09D76F9DA447DBBB8 /* SPEmitterConfigurationUpdate.m in Sources */,
+				07B75FB7B0887252E92492EBB6A86096 /* SPEmitterControllerImpl.m in Sources */,
+				DE0007E3EDF2E318B8C9BDE4013B15DE /* SPEmitterEvent.m in Sources */,
+				B6B949B419CEF44F18FE2C8DECC2A005 /* SPEventBase.m in Sources */,
+				B72B77DC758744F661C804108AEC8A05 /* SPFetchedConfigurationBundle.m in Sources */,
+				AB42D0C3BB0B2CC9E93CF8E425D183BC /* SPForeground.m in Sources */,
+				9FCE6EFADC38156E216DA33180594F6D /* SPGDPRConfiguration.m in Sources */,
+				67ABB4FF4C1CF58C676BA951BCF065AF /* SPGDPRConfigurationUpdate.m in Sources */,
+				7B9C069B67FCB88CB698DD16A431F478 /* SPGdprContext.m in Sources */,
+				82EEF4232CC00BDE13F4FB334DE8F0EC /* SPGDPRControllerImpl.m in Sources */,
+				1313EBBB40F6B5D31AA7F3E131EA8309 /* SPGlobalContext.m in Sources */,
+				42D150C462DB0381D5000043C9E02A76 /* SPGlobalContextsConfiguration.m in Sources */,
+				695BEE12EEE3393CDF11DDFA7A64A00D /* SPGlobalContextsControllerImpl.m in Sources */,
+				0736A148E6C5A9E65911DC9353D3E36C /* SPInstallTracker.m in Sources */,
+				901DAB7416256CB94751B842AA886346 /* SPJSONSerialization.m in Sources */,
+				2060E1F9672BD9EBBDAA6F7CF6C1102B /* SPLogger.m in Sources */,
+				9BC4057A2C876B0415D5B83A858B3180 /* SPMemoryEventStore.m in Sources */,
+				2BC607B4F4285A5D15AAE04B2A3B2E1B /* SPNetworkConfiguration.m in Sources */,
+				BD8DF70353BE30562038787CFC8F5E61 /* SPNetworkConfigurationUpdate.m in Sources */,
+				7299673B45750F1521ACFCB29B017364 /* SPNetworkControllerImpl.m in Sources */,
+				B7EC813D655F21B9DDFA7D43FA7E7D55 /* SPPageView.m in Sources */,
+				64760465B6F31D80851F75C46BA70BFD /* SPPayload.m in Sources */,
+				05D41915DD2FA4AC26C2DD7495F07BBF /* SPPushNotification.m in Sources */,
+				0916EBF9667CDCF66F45FAA86B223E18 /* SPRemoteConfiguration.m in Sources */,
+				6E019A3D9AB52F79BDEE629DC530FFFE /* SPRequest.m in Sources */,
+				875D91691E4372DD44A8E6529252F6D7 /* SPRequestResult.m in Sources */,
+				7EF0E603F91139B16D5AA64C2F4F88D5 /* SPSchemaRule.m in Sources */,
+				2AFCDBD71E692BDD2F541BD80A697808 /* SPSchemaRuleset.m in Sources */,
+				2DE1C59EE884607E822C6FC7E1E00EEC /* SPScreenState.m in Sources */,
+				C9EAD801DCBED773AF5306C7DF8850EC /* SPScreenView.m in Sources */,
+				F0580B92E2E8F97AC1249EDCFEDB2276 /* SPSelfDescribing.m in Sources */,
+				3FA131066BA61B115EF38EF0E8F2452D /* SPSelfDescribingJson.m in Sources */,
+				65CC54C854F17005FA867FCC7A75C79F /* SPServiceProvider.m in Sources */,
+				8C790A435A9E895D26F720D389C246DA /* SPSession.m in Sources */,
+				02E3AFE55C6F16A63FA9295FC2E0D5AE /* SPSessionConfiguration.m in Sources */,
+				5D1094056DFE0E948F63BAC6C2ED88CC /* SPSessionConfigurationUpdate.m in Sources */,
+				68B3D1FE1B83B4DE8E0B70409A819FF9 /* SPSessionControllerImpl.m in Sources */,
+				F76E3F3C302BF19D23EE8BD31F066C2C /* SPSnowplow.m in Sources */,
+				BEDB6FF72FEC172064F56462B3A828E8 /* SPSQLiteEventStore.m in Sources */,
+				FEA39F7F90D92D74167A561F2CED5B22 /* SPStructured.m in Sources */,
+				DEA741F8AA9300A72CD9F79DC6F55B05 /* SPSubject.m in Sources */,
+				943D140CF8AA8F74B71A138BE308E6CF /* SPSubjectConfiguration.m in Sources */,
+				59CE5CA38D11B31A8989A1D8DC2DEC38 /* SPSubjectConfigurationUpdate.m in Sources */,
+				E1BBFBB3BDE1E684F8C1C1737D988251 /* SPSubjectControllerImpl.m in Sources */,
+				9D8AAB4F6AC188B5253891FFE5951F74 /* SPTiming.m in Sources */,
+				D07235C6BAC7284EBE3F46D25359E2A6 /* SPTracker.m in Sources */,
+				0685ECB0C6AE09B481E570D5C659D3BA /* SPTrackerConfiguration.m in Sources */,
+				91C6F91A426256C62ADF2C4CA4911B04 /* SPTrackerConfigurationUpdate.m in Sources */,
+				19EDF8DC3DB6897D5D453F0DF6BC0AB1 /* SPTrackerConstants.m in Sources */,
+				A3584523A3124CE039964DF36C2A3EAB /* SPTrackerControllerImpl.m in Sources */,
+				AE14DA376F937A791BBEE592EC1A388E /* SPTrackerError.m in Sources */,
+				86258E2B0775BBDF1C2D90CDB99C9007 /* SPTrackerEvent.m in Sources */,
+				A39405BFE7A99C5995F59914791E6195 /* SPUtilities.m in Sources */,
+				D9D2B39FD3909361DD5C2D38499224AF /* SPWeakTimerTarget.m in Sources */,
+				9C54636ABA324524C6EE6BD9A0FD682B /* UIViewController+SPScreenView_SWIZZLE.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C0F482B8AD0F41C5E2AC63CE43C5C14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F8100517A69C7B32D0A0732C4EDE766 /* Pods-CarTrawlerSDKIntegration-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83EBA7F76A09AEACA3779909C174AD54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B165C7AD84542145886021FEAEBFDDF /* FMDatabase.m in Sources */,
+				667B11A6320B16F5EC5AA3E0A69C2087 /* FMDatabaseAdditions.m in Sources */,
+				CAE20033FFC2A63715D25A8C46049247 /* FMDatabasePool.m in Sources */,
+				15FD0031806A87A46E13986FB92B6FB8 /* FMDatabaseQueue.m in Sources */,
+				F402CC9DAFE4E4A10A5FDFD1E805C5E0 /* FMDB-dummy.m in Sources */,
+				874A9C1D051BA689C9D1B3BA18CB3C5D /* FMResultSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0FFECFDC2E87917633475510C4D63563 /* PBXTargetDependency */ = {
+		0370FA40023BF06C416385E8D614EE40 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CTPayment;
 			target = 06AC81A34DAD85D1DEFFB4B0202285C2 /* CTPayment */;
-			targetProxy = D1A159F805ACE276CBCD6FBF9111995D /* PBXContainerItemProxy */;
+			targetProxy = AA90271198651F7157449E86CA2FF403 /* PBXContainerItemProxy */;
 		};
-		2A1DDC5938B5C22E72BCB49385930257 /* PBXTargetDependency */ = {
+		23ECA541B62FB09EC6599222A0E21457 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CarTrawlerSDK;
 			target = 71568D7B9FA9D5C2E7BCBD576E1909FC /* CarTrawlerSDK */;
-			targetProxy = E2CBEAE51723516C0912D2EAE5BD854D /* PBXContainerItemProxy */;
+			targetProxy = B4FC8EF050B8600CD062E4A1146E0CBC /* PBXContainerItemProxy */;
 		};
-		967702F589227EAC070CAED41D033773 /* PBXTargetDependency */ = {
+		73420D9E4E584A2492671EBEA5A518FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDB;
+			target = 8592E0E389D40AC17881400ADC67ABC0 /* FMDB */;
+			targetProxy = 4150966ABA6180B42DABE601DE4A026F /* PBXContainerItemProxy */;
+		};
+		7FD0006668D4F2C18C36C6B8C3D2893F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CTPayment;
 			target = 06AC81A34DAD85D1DEFFB4B0202285C2 /* CTPayment */;
-			targetProxy = 369482B70543F5C6BCD4234E52FC51CE /* PBXContainerItemProxy */;
+			targetProxy = 13554D40636DEA48AD5CECE111A48FB4 /* PBXContainerItemProxy */;
+		};
+		9DB28E232DC40644DBB521A52B3A0C3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnowplowTracker;
+			target = 4DBA189AF01B5699C4ECEC25CBCCFA65 /* SnowplowTracker */;
+			targetProxy = 150563960A7F518F5B51F07C57E9C5A8 /* PBXContainerItemProxy */;
+		};
+		B5FF19054EC6FF2F31F8F2166F32583E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDB;
+			target = 8592E0E389D40AC17881400ADC67ABC0 /* FMDB */;
+			targetProxy = 68B70424C431945E36C62F943AE45EB0 /* PBXContainerItemProxy */;
+		};
+		FD845CDF6A87012285F9669CE621FF7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnowplowTracker;
+			target = 4DBA189AF01B5699C4ECEC25CBCCFA65 /* SnowplowTracker */;
+			targetProxy = E2FAF72C47AC78CB22EEF4273A6CECE8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0F34B543E9C34F43703D31A8615E205F /* Debug */ = {
+		23BCBBCFEFCC2A9CCB6736C931060E0C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F004A93E03D331D8B9BC15B4EA6D323 /* CarTrawlerSDK.debug.xcconfig */;
+			baseConfigurationReference = 2737858FBC39CAADE32B3A441CD237C4 /* SnowplowTracker.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SnowplowTracker/SnowplowTracker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/SnowplowTracker/SnowplowTracker.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SnowplowTracker;
+				PRODUCT_NAME = SnowplowTracker;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28C199D896BAFDF0ABBB6BAA5B9A0879 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05E80D124D6D4DE5B8823D0A54DC7378 /* FMDB.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = FMDB;
+				PRODUCT_NAME = FMDB;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43C4EFAFAA903355903DC2C2242F2762 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAB3255B942E646A9A0972D5D5D46C03 /* CTPayment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56AFAE07F477A41226F6068B6552CE0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECA8974A6FF50B2032BE2279B0012378 /* CTPayment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,7 +1308,7 @@
 			};
 			name = Debug;
 		};
-		2698DABD38F812BC3B5023460C6BE0FB /* Debug */ = {
+		5A84E1049611084D0BC7E77840945910 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C75A606DDFA83DB3432998EBB0A7C8B6 /* Pods-CarTrawlerSDKIntegration.debug.xcconfig */;
 			buildSettings = {
@@ -326,34 +1329,30 @@
 			};
 			name = Debug;
 		};
-		43C4EFAFAA903355903DC2C2242F2762 /* Release */ = {
+		67EFD438096A09C26B5006CAB602311C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9DD0E15574C41B3E53F265988BDAE05 /* CTPayment.release.xcconfig */;
+			baseConfigurationReference = 96AF8BD3E7DE5EFB725522FE8F2E9CB9 /* SnowplowTracker.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SnowplowTracker/SnowplowTracker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/SnowplowTracker/SnowplowTracker.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SnowplowTracker;
+				PRODUCT_NAME = SnowplowTracker;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		56AFAE07F477A41226F6068B6552CE0A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C501AAD0CCBD2290EBD96602B59AE16 /* CTPayment.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
 		};
 		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -417,7 +1416,7 @@
 			};
 			name = Release;
 		};
-		82725819FF25B4ABD4897D7001E96B2E /* Release */ = {
+		9C5603A8F157211AABD21C9CFFA610A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 18F44997A566FAA49D02D165BF9A02AD /* Pods-CarTrawlerSDKIntegration.release.xcconfig */;
 			buildSettings = {
@@ -439,9 +1438,33 @@
 			};
 			name = Release;
 		};
-		A3055E026FB4FEA37C991758F1EA4DB7 /* Release */ = {
+		B9180DC04734B062CFF0A3607D76DF7E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEA6A7AEAC7889D844AAAEA3E09E57FD /* CarTrawlerSDK.release.xcconfig */;
+			baseConfigurationReference = 47EA4B8B88CFC8DAB97B1F2F92739709 /* FMDB.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = FMDB;
+				PRODUCT_NAME = FMDB;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA6D4232D960F30B3E7177A4BA29194F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F87B37C1D9D95657524169B5190A0E1 /* CarTrawlerSDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -450,9 +1473,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
 		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -520,9 +1542,42 @@
 			};
 			name = Debug;
 		};
+		F6C5C964E3AB7656B09B8A05D2285E41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CE04B04A90ECAA8E6F73A661F5B51F4 /* CarTrawlerSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1D8858CB26D5DFF0EA47444E35F62AA5 /* Build configuration list for PBXNativeTarget "SnowplowTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23BCBBCFEFCC2A9CCB6736C931060E0C /* Debug */,
+				67EFD438096A09C26B5006CAB602311C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3067999BFBE2D484E8A944CD5FC219A5 /* Build configuration list for PBXNativeTarget "Pods-CarTrawlerSDKIntegration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A84E1049611084D0BC7E77840945910 /* Debug */,
+				9C5603A8F157211AABD21C9CFFA610A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -541,20 +1596,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B0918AF3668DFB4865534EDF00D3CF76 /* Build configuration list for PBXNativeTarget "Pods-CarTrawlerSDKIntegration" */ = {
+		ABF59DBDB0B4C384B638CFFA3561EE8B /* Build configuration list for PBXNativeTarget "FMDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2698DABD38F812BC3B5023460C6BE0FB /* Debug */,
-				82725819FF25B4ABD4897D7001E96B2E /* Release */,
+				B9180DC04734B062CFF0A3607D76DF7E /* Debug */,
+				28C199D896BAFDF0ABBB6BAA5B9A0879 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E3536E6B7F82278BA6CDC93CFF857C3B /* Build configuration list for PBXAggregateTarget "CarTrawlerSDK" */ = {
+		E855720645DF2B61169C4F7FD60FB91E /* Build configuration list for PBXAggregateTarget "CarTrawlerSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0F34B543E9C34F43703D31A8615E205F /* Debug */,
-				A3055E026FB4FEA37C991758F1EA4DB7 /* Release */,
+				CA6D4232D960F30B3E7177A4BA29194F /* Debug */,
+				F6C5C964E3AB7656B09B8A05D2285E41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

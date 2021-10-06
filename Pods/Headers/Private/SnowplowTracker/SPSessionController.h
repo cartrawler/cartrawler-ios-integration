@@ -1,0 +1,1 @@
+../../../SnowplowTracker/Snowplow/Internal/Session/SPSessionController.h

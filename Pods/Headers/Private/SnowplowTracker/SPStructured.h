@@ -1,0 +1,1 @@
+../../../SnowplowTracker/Snowplow/Internal/Events/SPStructured.h

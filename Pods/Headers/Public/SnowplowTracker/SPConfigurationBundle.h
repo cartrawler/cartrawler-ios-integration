@@ -1,0 +1,1 @@
+../../../SnowplowTracker/Snowplow/Internal/Configurations/SPConfigurationBundle.h
