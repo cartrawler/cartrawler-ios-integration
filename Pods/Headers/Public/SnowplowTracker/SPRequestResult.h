@@ -1,1 +1,0 @@
-../../../SnowplowTracker/Snowplow/Internal/Emitter/SPRequestResult.h

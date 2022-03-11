@@ -1,1 +1,0 @@
-../../../SnowplowTracker/Snowplow/Internal/Events/SPScreenView.h

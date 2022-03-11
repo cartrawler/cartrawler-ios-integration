@@ -1,1 +1,0 @@
-../../../SnowplowTracker/Snowplow/Internal/GDPR/SPGDPRConfigurationUpdate.h

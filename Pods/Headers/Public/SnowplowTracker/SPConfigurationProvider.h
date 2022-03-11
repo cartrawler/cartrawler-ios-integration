@@ -1,1 +1,0 @@
-../../../SnowplowTracker/Snowplow/Internal/RemoteConfiguration/SPConfigurationProvider.h

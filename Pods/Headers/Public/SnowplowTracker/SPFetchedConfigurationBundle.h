@@ -1,1 +1,0 @@
-../../../SnowplowTracker/Snowplow/Internal/RemoteConfiguration/SPFetchedConfigurationBundle.h

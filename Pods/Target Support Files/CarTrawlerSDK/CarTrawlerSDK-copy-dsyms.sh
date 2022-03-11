@@ -69,6 +69,7 @@ install_dsym() {
       rsync --delete -av "${RSYNC_PROTECT_TMP_FILES[@]}" --links --filter "- CVS/" --filter "- .svn/" --filter "- .git/" --filter "- .hg/" --filter "- Headers" --filter "- PrivateHeaders" --filter "- Modules" "${DERIVED_FILES_DIR}/${basename}.dSYM" "${DWARF_DSYM_FOLDER_PATH}"
     else
       # The dSYM was not stripped at all, in this case touch a fake folder so the input/output paths from Xcode do not reexecute this script because the file is missing.
+      mkdir -p "${DWARF_DSYM_FOLDER_PATH}"
       touch "${DWARF_DSYM_FOLDER_PATH}/${basename}.dSYM"
     fi
   fi
@@ -83,5 +84,5 @@ install_bcsymbolmap() {
 }
 
 install_dsym "${PODS_ROOT}/CarTrawlerSDK/CarTrawlerSDK.framework.dSYM"
-install_bcsymbolmap "${PODS_ROOT}/CarTrawlerSDK/51E5B026-3A69-38CD-B141-B67E8E5FDC21.bcsymbolmap"
-install_bcsymbolmap "${PODS_ROOT}/CarTrawlerSDK/535CF7DC-503F-3E85-8848-09A35DF93BDF.bcsymbolmap"
+install_bcsymbolmap "${PODS_ROOT}/CarTrawlerSDK/85CE64CF-5715-38C1-B89C-03B967045F1C.bcsymbolmap"
+install_bcsymbolmap "${PODS_ROOT}/CarTrawlerSDK/D65F9DBA-C3BF-3D45-AB86-5E62E4224217.bcsymbolmap"

@@ -1,1 +1,0 @@
-../../../SnowplowTracker/Snowplow/Internal/Payload/SPPayload.h

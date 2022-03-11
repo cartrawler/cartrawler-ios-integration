@@ -1,1 +1,0 @@
-../../../SnowplowTracker/Snowplow/Internal/ScreenViewTracking/UIViewController+SPScreenView_SWIZZLE.h

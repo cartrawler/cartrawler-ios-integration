@@ -1,1 +1,0 @@
-../../../SnowplowTracker/Snowplow/Internal/Configurations/SPNetworkConfiguration.h

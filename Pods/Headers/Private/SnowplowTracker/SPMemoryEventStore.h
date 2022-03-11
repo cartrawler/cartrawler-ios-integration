@@ -1,1 +1,0 @@
-../../../SnowplowTracker/Snowplow/Internal/Storage/SPMemoryEventStore.h
