@@ -1,9 +1,9 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/CTPayment" "${PODS_ROOT}/CarTrawlerSDK"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/CTPayment" "${PODS_ROOT}/CarTrawlerSDK" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CTPayment" "${PODS_XCFRAMEWORKS_BUILD_DIR}/CarTrawlerSDK"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iframework "${PODS_ROOT}/CTPayment" -iframework "${PODS_ROOT}/CarTrawlerSDK"
+OTHER_CFLAGS = $(inherited) -iframework "${PODS_ROOT}/CTPayment" -iframework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CTPayment" -iframework "${PODS_ROOT}/CarTrawlerSDK" -iframework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CarTrawlerSDK"
 OTHER_LDFLAGS = $(inherited) -framework "CTPayment" -framework "CarTrawlerSDK"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

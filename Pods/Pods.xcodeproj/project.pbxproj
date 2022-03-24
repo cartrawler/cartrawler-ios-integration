@@ -9,8 +9,9 @@
 /* Begin PBXAggregateTarget section */
 		06AC81A34DAD85D1DEFFB4B0202285C2 /* CTPayment */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 8BF49166E60EBAF82AD014E2D8F59616 /* Build configuration list for PBXAggregateTarget "CTPayment" */;
+			buildConfigurationList = 8C670568CD98BDE28E68AF1BA12214E9 /* Build configuration list for PBXAggregateTarget "CTPayment" */;
 			buildPhases = (
+				291843CF56E9AD05229027EB361D694C /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
 			);
@@ -18,12 +19,12 @@
 		};
 		71568D7B9FA9D5C2E7BCBD576E1909FC /* CarTrawlerSDK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 9C42ABD8B5D4E053E609D92E52B4E04B /* Build configuration list for PBXAggregateTarget "CarTrawlerSDK" */;
+			buildConfigurationList = 4BE07E24971FCF50ECD8A271DCF5254C /* Build configuration list for PBXAggregateTarget "CarTrawlerSDK" */;
 			buildPhases = (
-				E8C7E336628D7C8D9B0CEA7407986993 /* [CP] Copy dSYMs */,
+				5149217903AA8361E02C1FD376FECD81 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
-				4730A0531EF082B6501A3FCA893AB1C2 /* PBXTargetDependency */,
+				2882B6704B3623174FC593EDB70CAAA5 /* PBXTargetDependency */,
 			);
 			name = CarTrawlerSDK;
 		};
@@ -36,12 +37,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		77DB6B168F03A80DAB7DB25012B423C1 /* PBXContainerItemProxy */ = {
+		678C45409C323F2C9BE7C6E1DEE95E01 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 06AC81A34DAD85D1DEFFB4B0202285C2;
 			remoteInfo = CTPayment;
+		};
+		D07556BEADD5B4B84323F6BBD2B4096A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71568D7B9FA9D5C2E7BCBD576E1909FC;
+			remoteInfo = CarTrawlerSDK;
 		};
 		E5608DE15ABC4ECF7FAE57822E709526 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -50,35 +58,29 @@
 			remoteGlobalIDString = 06AC81A34DAD85D1DEFFB4B0202285C2;
 			remoteInfo = CTPayment;
 		};
-		F93EE82291B451AF91EC2DB06E32B79C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 71568D7B9FA9D5C2E7BCBD576E1909FC;
-			remoteInfo = CarTrawlerSDK;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		09B355F9A46E8BCC053E1D6F9FB60641 /* Pods-CarTrawlerSDKIntegration-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CarTrawlerSDKIntegration-Info.plist"; sourceTree = "<group>"; };
-		0C501AAD0CCBD2290EBD96602B59AE16 /* CTPayment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CTPayment.debug.xcconfig; sourceTree = "<group>"; };
 		11E92D503C155BF0145D612772BA9C82 /* Pods-CarTrawlerSDKIntegration-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CarTrawlerSDKIntegration-acknowledgements.plist"; sourceTree = "<group>"; };
+		1B8E96695A971F08E894974C04DFE423 /* CTPayment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CTPayment.debug.xcconfig; sourceTree = "<group>"; };
 		24B226396F662CF4F404BF0DD2BDBFFF /* Pods-CarTrawlerSDKIntegration-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CarTrawlerSDKIntegration-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2B812F290F896109F370B49C763418C9 /* Pods-CarTrawlerSDKIntegration-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CarTrawlerSDKIntegration-dummy.m"; sourceTree = "<group>"; };
 		2EE133BDB699ACE19D01A99014FA5352 /* Pods-CarTrawlerSDKIntegration-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CarTrawlerSDKIntegration-frameworks.sh"; sourceTree = "<group>"; };
+		302F81CF4A4677C832D6D837E8167A5C /* CTPayment.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = CTPayment.xcframework; sourceTree = "<group>"; };
+		31C5110F65D15AA50ABC6A6418346B3C /* CarTrawlerSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = CarTrawlerSDK.xcframework; sourceTree = "<group>"; };
+		56E40C5388ACF92098F1399FA7FFA768 /* CarTrawlerSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CarTrawlerSDK.release.xcconfig; sourceTree = "<group>"; };
 		6BE23AEC75F7E47AFBE6ABBFC863E940 /* Pods-CarTrawlerSDKIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CarTrawlerSDKIntegration.debug.xcconfig"; sourceTree = "<group>"; };
 		6D0F12483C1C98040EBFD4876044BCB4 /* Pods-CarTrawlerSDKIntegration.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CarTrawlerSDKIntegration.modulemap"; sourceTree = "<group>"; };
 		723F5E8206CDC7C95CC9E4DD3E1610E6 /* Pods-CarTrawlerSDKIntegration-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CarTrawlerSDKIntegration-umbrella.h"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		754EF1A8B0860484FFD754BF62E5FEE5 /* Pods-CarTrawlerSDKIntegration */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CarTrawlerSDKIntegration"; path = Pods_CarTrawlerSDKIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EAEF61EA1E7214DA6E1BC126D16A823 /* CarTrawlerSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CarTrawlerSDK.debug.xcconfig; sourceTree = "<group>"; };
-		9CE6689BDAEFDDF0FFBC046907475AE8 /* CarTrawlerSDK-copy-dsyms.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "CarTrawlerSDK-copy-dsyms.sh"; sourceTree = "<group>"; };
+		786DA2DF52FE2947C64AF50B3B9D5588 /* CTPayment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CTPayment.release.xcconfig; sourceTree = "<group>"; };
+		8D423B10F1A9818C89EA58AC634E7D54 /* CarTrawlerSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CarTrawlerSDK.debug.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C68D3F6366BC9F201B3F57F6E481312B /* CTPayment.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CTPayment.framework; sourceTree = "<group>"; };
+		A7AAD8003DAA7523ECE2DF3A4205AB46 /* CarTrawlerSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "CarTrawlerSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		C7D4E0BDF275F78960BE641599F22FB4 /* CTPayment-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "CTPayment-xcframeworks.sh"; sourceTree = "<group>"; };
 		CA85FBAF4BAA57A281EC46FCB231AA68 /* Pods-CarTrawlerSDKIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CarTrawlerSDKIntegration.release.xcconfig"; sourceTree = "<group>"; };
-		CC20D14C839ED07CC003EA50F9C01E8F /* CarTrawlerSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CarTrawlerSDK.release.xcconfig; sourceTree = "<group>"; };
-		D9DD0E15574C41B3E53F265988BDAE05 /* CTPayment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CTPayment.release.xcconfig; sourceTree = "<group>"; };
-		F9B36BBEAC9228CF6C680853BE0FDDF8 /* CarTrawlerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CarTrawlerSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +111,19 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		719343A6709D5FB38853D005C2A3E884 /* CTPayment */ = {
+		7BBC3BB5954DD1C3B7715ED464FD8235 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BE00A78FB27FB27E11659390D62A4AA8 /* Frameworks */,
-				9AA1F8F802322DE8FD714568026D6B0B /* Support Files */,
+				31C5110F65D15AA50ABC6A6418346B3C /* CarTrawlerSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FA7DCD7A0DF36CCE9C16086FC2FDAB6 /* CTPayment */ = {
+			isa = PBXGroup;
+			children = (
+				E0D0C57BCF071224CE934813F1B2EF0E /* Frameworks */,
+				B9CEB3CAF53DA9CA1B4F367FDCA9F90C /* Support Files */,
 			);
 			name = CTPayment;
 			path = CTPayment;
@@ -122,57 +132,42 @@
 		9605DC9068308C6F0C01CD2D17D89F99 /* CarTrawlerSDK */ = {
 			isa = PBXGroup;
 			children = (
-				9C592FB1465C9367D3BD56484C0F3B0C /* Frameworks */,
-				9B2B6A80FEED0D76E0E236B30D6AFBCC /* Support Files */,
+				7BBC3BB5954DD1C3B7715ED464FD8235 /* Frameworks */,
+				B111242D3E3F3161778BEC1DA74985F7 /* Support Files */,
 			);
 			name = CarTrawlerSDK;
 			path = CarTrawlerSDK;
 			sourceTree = "<group>";
 		};
-		9AA1F8F802322DE8FD714568026D6B0B /* Support Files */ = {
+		B111242D3E3F3161778BEC1DA74985F7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0C501AAD0CCBD2290EBD96602B59AE16 /* CTPayment.debug.xcconfig */,
-				D9DD0E15574C41B3E53F265988BDAE05 /* CTPayment.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CTPayment";
-			sourceTree = "<group>";
-		};
-		9B2B6A80FEED0D76E0E236B30D6AFBCC /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9CE6689BDAEFDDF0FFBC046907475AE8 /* CarTrawlerSDK-copy-dsyms.sh */,
-				8EAEF61EA1E7214DA6E1BC126D16A823 /* CarTrawlerSDK.debug.xcconfig */,
-				CC20D14C839ED07CC003EA50F9C01E8F /* CarTrawlerSDK.release.xcconfig */,
+				A7AAD8003DAA7523ECE2DF3A4205AB46 /* CarTrawlerSDK-xcframeworks.sh */,
+				8D423B10F1A9818C89EA58AC634E7D54 /* CarTrawlerSDK.debug.xcconfig */,
+				56E40C5388ACF92098F1399FA7FFA768 /* CarTrawlerSDK.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/CarTrawlerSDK";
-			sourceTree = "<group>";
-		};
-		9C592FB1465C9367D3BD56484C0F3B0C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F9B36BBEAC9228CF6C680853BE0FDDF8 /* CarTrawlerSDK.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B4D85880B13A3743E062DA76BCB0AFFC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				9605DC9068308C6F0C01CD2D17D89F99 /* CarTrawlerSDK */,
-				719343A6709D5FB38853D005C2A3E884 /* CTPayment */,
+				7FA7DCD7A0DF36CCE9C16086FC2FDAB6 /* CTPayment */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		BE00A78FB27FB27E11659390D62A4AA8 /* Frameworks */ = {
+		B9CEB3CAF53DA9CA1B4F367FDCA9F90C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C68D3F6366BC9F201B3F57F6E481312B /* CTPayment.framework */,
+				C7D4E0BDF275F78960BE641599F22FB4 /* CTPayment-xcframeworks.sh */,
+				1B8E96695A971F08E894974C04DFE423 /* CTPayment.debug.xcconfig */,
+				786DA2DF52FE2947C64AF50B3B9D5588 /* CTPayment.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/CTPayment";
 			sourceTree = "<group>";
 		};
 		CEC0A21B26E3D634F2F8CEC1A1395FB3 /* Targets Support Files */ = {
@@ -219,6 +214,14 @@
 			path = "Target Support Files/Pods-CarTrawlerSDKIntegration";
 			sourceTree = "<group>";
 		};
+		E0D0C57BCF071224CE934813F1B2EF0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				302F81CF4A4677C832D6D837E8167A5C /* CTPayment.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -246,7 +249,7 @@
 			);
 			dependencies = (
 				E71BDA096C651A33DAF09C7EF2400C48 /* PBXTargetDependency */,
-				28C2AE8D6F3AF2372043F91A7D0ECEBC /* PBXTargetDependency */,
+				56A119BB50D1120BD452A51D3087AC0A /* PBXTargetDependency */,
 			);
 			name = "Pods-CarTrawlerSDKIntegration";
 			productName = Pods_CarTrawlerSDKIntegration;
@@ -293,25 +296,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		E8C7E336628D7C8D9B0CEA7407986993 /* [CP] Copy dSYMs */ = {
+		291843CF56E9AD05229027EB361D694C /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/CarTrawlerSDK/CarTrawlerSDK.framework.dSYM",
-				"${PODS_ROOT}/CarTrawlerSDK/85CE64CF-5715-38C1-B89C-03B967045F1C.bcsymbolmap",
-				"${PODS_ROOT}/CarTrawlerSDK/D65F9DBA-C3BF-3D45-AB86-5E62E4224217.bcsymbolmap",
+				"${PODS_ROOT}/Target Support Files/CTPayment/CTPayment-xcframeworks.sh",
+				"${PODS_ROOT}/CTPayment/CTPayment.xcframework",
 			);
-			name = "[CP] Copy dSYMs";
+			name = "[CP] Copy XCFrameworks";
 			outputPaths = (
-				"${DWARF_DSYM_FOLDER_PATH}/CarTrawlerSDK.framework.dSYM",
-				"${DWARF_DSYM_FOLDER_PATH}/85CE64CF-5715-38C1-B89C-03B967045F1C.bcsymbolmap",
-				"${DWARF_DSYM_FOLDER_PATH}/D65F9DBA-C3BF-3D45-AB86-5E62E4224217.bcsymbolmap",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/CTPayment/CTPayment.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/CarTrawlerSDK/CarTrawlerSDK-copy-dsyms.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/CTPayment/CTPayment-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5149217903AA8361E02C1FD376FECD81 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/CarTrawlerSDK/CarTrawlerSDK-xcframeworks.sh",
+				"${PODS_ROOT}/CarTrawlerSDK/CarTrawlerSDK.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/CarTrawlerSDK/CarTrawlerSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/CarTrawlerSDK/CarTrawlerSDK-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -328,17 +346,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		28C2AE8D6F3AF2372043F91A7D0ECEBC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CarTrawlerSDK;
-			target = 71568D7B9FA9D5C2E7BCBD576E1909FC /* CarTrawlerSDK */;
-			targetProxy = F93EE82291B451AF91EC2DB06E32B79C /* PBXContainerItemProxy */;
-		};
-		4730A0531EF082B6501A3FCA893AB1C2 /* PBXTargetDependency */ = {
+		2882B6704B3623174FC593EDB70CAAA5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CTPayment;
 			target = 06AC81A34DAD85D1DEFFB4B0202285C2 /* CTPayment */;
-			targetProxy = 77DB6B168F03A80DAB7DB25012B423C1 /* PBXContainerItemProxy */;
+			targetProxy = 678C45409C323F2C9BE7C6E1DEE95E01 /* PBXContainerItemProxy */;
+		};
+		56A119BB50D1120BD452A51D3087AC0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CarTrawlerSDK;
+			target = 71568D7B9FA9D5C2E7BCBD576E1909FC /* CarTrawlerSDK */;
+			targetProxy = D07556BEADD5B4B84323F6BBD2B4096A /* PBXContainerItemProxy */;
 		};
 		E71BDA096C651A33DAF09C7EF2400C48 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -349,14 +367,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		02D087B4C6F565D327813900B3F9C7A8 /* Debug */ = {
+		0657F665EAB980AE1900555793A5ACEC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EAEF61EA1E7214DA6E1BC126D16A823 /* CarTrawlerSDK.debug.xcconfig */;
+			baseConfigurationReference = 1B8E96695A971F08E894974C04DFE423 /* CTPayment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -396,43 +414,14 @@
 			};
 			name = Debug;
 		};
-		43C4EFAFAA903355903DC2C2242F2762 /* Release */ = {
+		40488F07FF580B1A225AD139C58430AF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9DD0E15574C41B3E53F265988BDAE05 /* CTPayment.release.xcconfig */;
+			baseConfigurationReference = 786DA2DF52FE2947C64AF50B3B9D5588 /* CTPayment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		56AFAE07F477A41226F6068B6552CE0A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C501AAD0CCBD2290EBD96602B59AE16 /* CTPayment.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		6923F9DA894E3E620C2AEAEB2100763E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC20D14C839ED07CC003EA50F9C01E8F /* CarTrawlerSDK.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -501,6 +490,35 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
+		};
+		9B488786D6048F5B857E16CBC3F9AB17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56E40C5388ACF92098F1399FA7FFA768 /* CarTrawlerSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B75C7EC027A742F90771806DB4DC943D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D423B10F1A9818C89EA58AC634E7D54 /* CarTrawlerSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -614,20 +632,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BF49166E60EBAF82AD014E2D8F59616 /* Build configuration list for PBXAggregateTarget "CTPayment" */ = {
+		4BE07E24971FCF50ECD8A271DCF5254C /* Build configuration list for PBXAggregateTarget "CarTrawlerSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				56AFAE07F477A41226F6068B6552CE0A /* Debug */,
-				43C4EFAFAA903355903DC2C2242F2762 /* Release */,
+				B75C7EC027A742F90771806DB4DC943D /* Debug */,
+				9B488786D6048F5B857E16CBC3F9AB17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C42ABD8B5D4E053E609D92E52B4E04B /* Build configuration list for PBXAggregateTarget "CarTrawlerSDK" */ = {
+		8C670568CD98BDE28E68AF1BA12214E9 /* Build configuration list for PBXAggregateTarget "CTPayment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02D087B4C6F565D327813900B3F9C7A8 /* Debug */,
-				6923F9DA894E3E620C2AEAEB2100763E /* Release */,
+				0657F665EAB980AE1900555793A5ACEC /* Debug */,
+				40488F07FF580B1A225AD139C58430AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

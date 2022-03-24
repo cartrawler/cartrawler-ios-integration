@@ -176,12 +176,12 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${PODS_ROOT}/CTPayment/CTPayment.framework"
-  install_framework "${PODS_ROOT}/CarTrawlerSDK/CarTrawlerSDK.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CTPayment/CTPayment.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CarTrawlerSDK/CarTrawlerSDK.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${PODS_ROOT}/CTPayment/CTPayment.framework"
-  install_framework "${PODS_ROOT}/CarTrawlerSDK/CarTrawlerSDK.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CTPayment/CTPayment.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/CarTrawlerSDK/CarTrawlerSDK.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

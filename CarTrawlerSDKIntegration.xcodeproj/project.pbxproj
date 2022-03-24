@@ -209,8 +209,8 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CarTrawlerSDKIntegration/Pods-CarTrawlerSDKIntegration-frameworks.sh",
-				"${PODS_ROOT}/CTPayment/CTPayment.framework",
-				"${PODS_ROOT}/CarTrawlerSDK/CarTrawlerSDK.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/CTPayment/CTPayment.framework/CTPayment",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/CarTrawlerSDK/CarTrawlerSDK.framework/CarTrawlerSDK",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
