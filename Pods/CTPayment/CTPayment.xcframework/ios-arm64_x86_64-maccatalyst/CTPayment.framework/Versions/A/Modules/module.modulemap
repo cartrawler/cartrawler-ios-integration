@@ -1,0 +1,6 @@
+framework module CTPayment {
+  umbrella header "CTPayment.h"
+
+  export *
+  module * { export * }
+}

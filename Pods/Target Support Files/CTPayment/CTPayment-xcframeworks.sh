@@ -17,11 +17,14 @@ RSYNC_PROTECT_TMP_FILES=(--filter "P .*.??????")
 variant_for_slice()
 {
   case "$1" in
-  "CTPayment.xcframework/ios-i386_x86_64-simulator")
-    echo "simulator"
-    ;;
   "CTPayment.xcframework/ios-arm64_armv7")
     echo ""
+    ;;
+  "CTPayment.xcframework/ios-arm64_x86_64-maccatalyst")
+    echo "maccatalyst"
+    ;;
+  "CTPayment.xcframework/ios-arm64_i386_x86_64-simulator")
+    echo "simulator"
     ;;
   esac
 }
@@ -29,11 +32,14 @@ variant_for_slice()
 archs_for_slice()
 {
   case "$1" in
-  "CTPayment.xcframework/ios-i386_x86_64-simulator")
-    echo "i386 x86_64"
-    ;;
   "CTPayment.xcframework/ios-arm64_armv7")
     echo "arm64 armv7"
+    ;;
+  "CTPayment.xcframework/ios-arm64_x86_64-maccatalyst")
+    echo "arm64 x86_64"
+    ;;
+  "CTPayment.xcframework/ios-arm64_i386_x86_64-simulator")
+    echo "arm64 i386 x86_64"
     ;;
   esac
 }
@@ -117,5 +123,5 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/CTPayment/CTPayment.xcframework" "CTPayment" "framework" "ios-i386_x86_64-simulator" "ios-arm64_armv7"
+install_xcframework "${PODS_ROOT}/CTPayment/CTPayment.xcframework" "CTPayment" "framework" "ios-arm64_armv7" "ios-arm64_x86_64-maccatalyst" "ios-arm64_i386_x86_64-simulator"
 
