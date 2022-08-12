@@ -1,10 +1,10 @@
 PODS:
-  - CarTrawlerSDK (12.3.0):
+  - CarTrawlerSDK (12.4.0):
     - CTPayment (= 2.1.0)
   - CTPayment (2.1.0)
 
 DEPENDENCIES:
-  - CarTrawlerSDK (~> 12.3.0)
+  - CarTrawlerSDK (~> 12.4.0)
 
 SPEC REPOS:
   https://github.com/cartrawler/cartrawler-ios-pods:
@@ -12,9 +12,9 @@ SPEC REPOS:
     - CTPayment
 
 SPEC CHECKSUMS:
-  CarTrawlerSDK: 1ba02f9563e4e9b3999362bd8199ce4d088033d4
+  CarTrawlerSDK: 3cbcf30d80c486369a45b64ccc6195b671c941dc
   CTPayment: 4f32601fa3d352f3926717f79d814d65c3921346
 
-PODFILE CHECKSUM: 1665f2065a371ffdc888a8af23b1bd7768b65cd9
+PODFILE CHECKSUM: ca47deff02d2171ac6d0b2a272a8c5f35d9d171d
 
 COCOAPODS: 1.11.3
