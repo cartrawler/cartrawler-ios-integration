@@ -6,5 +6,5 @@ use_frameworks!
 inhibit_all_warnings!
 
 target 'CarTrawlerSDKIntegration' do
-  pod 'CarTrawlerSDK', '~> 13.1.1'
+  pod 'CarTrawlerSDK', '~> 13.2.0'
 end
