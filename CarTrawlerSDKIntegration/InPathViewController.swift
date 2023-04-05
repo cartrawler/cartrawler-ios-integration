@@ -44,7 +44,7 @@ class InPathViewController: UIViewController {
         let pickUpDate = Date(timeIntervalSinceNow: TimeInterval(86400 * 3))
         let returnDate = Date(timeIntervalSinceNow: TimeInterval(86400 * 6))
 
-        let context = CTContext(clientID: "122070", flow: .inPath)
+        let context = CTContext(implementationID: "7c4f7224-6447-468a-a7a2-caa2dd75b4c1", clientID: "122070", flow: .inPath)
         context.countryCode = "IE"
         context.currencyCode = "EUR"
         context.languageCode = "EN"
