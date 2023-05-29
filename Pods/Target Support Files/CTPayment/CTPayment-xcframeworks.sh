@@ -20,11 +20,11 @@ variant_for_slice()
   "CTPayment.xcframework/ios-arm64_armv7")
     echo ""
     ;;
-  "CTPayment.xcframework/ios-arm64_x86_64-maccatalyst")
-    echo "maccatalyst"
-    ;;
   "CTPayment.xcframework/ios-arm64_i386_x86_64-simulator")
     echo "simulator"
+    ;;
+  "CTPayment.xcframework/ios-arm64_x86_64-maccatalyst")
+    echo "maccatalyst"
     ;;
   esac
 }
@@ -35,11 +35,11 @@ archs_for_slice()
   "CTPayment.xcframework/ios-arm64_armv7")
     echo "arm64 armv7"
     ;;
-  "CTPayment.xcframework/ios-arm64_x86_64-maccatalyst")
-    echo "arm64 x86_64"
-    ;;
   "CTPayment.xcframework/ios-arm64_i386_x86_64-simulator")
     echo "arm64 i386 x86_64"
+    ;;
+  "CTPayment.xcframework/ios-arm64_x86_64-maccatalyst")
+    echo "arm64 x86_64"
     ;;
   esac
 }
@@ -123,5 +123,5 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/CTPayment/CTPayment.xcframework" "CTPayment" "framework" "ios-arm64_armv7" "ios-arm64_x86_64-maccatalyst" "ios-arm64_i386_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/CTPayment/CTPayment.xcframework" "CTPayment" "framework" "ios-arm64_armv7" "ios-arm64_i386_x86_64-simulator" "ios-arm64_x86_64-maccatalyst"
 
