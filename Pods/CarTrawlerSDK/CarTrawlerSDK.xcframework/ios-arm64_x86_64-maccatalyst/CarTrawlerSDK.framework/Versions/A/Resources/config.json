@@ -40,6 +40,7 @@
         "showTAC":"true",
         "showPP":"true"
       },
+      "enablePayPaliOS":"true",
       "settingsMenu": {
         "urls":[
            {
@@ -914,6 +915,35 @@
     "hertz",
     "alamo",
     "budget"
+  ],
+  "omnibusCountries": [
+  "AU",
+  "BE",
+  "BG",
+  "HR",
+  "CY",
+  "CS",
+  "DA",
+  "ET",
+  "FI",
+  "FR",
+  "DE",
+  "EL",
+  "HU",
+  "IE",
+  "IT",
+  "LV",
+  "LT",
+  "LX",
+  "MT",
+  "NL",
+  "PL",
+  "PT",
+  "RO",
+  "SK",
+  "SL",
+  "ES",
+  "SV"
   ],
   "hash": {
     "b6QUqVKuzdx/SvXkO7SgfzSA9Y4pXi+Vuylaiy3KjT8ethLt1V8Sf4uv/Wf6a6RUrsGmHHTyj1O2KG1nbI576La897D34oMMosFb9Ur4VvBY8mbGYguyaEsKapm+B+gkcJomNMp+eJseJKCFu36zG6NzBCkagG/oybranp11a+k=": [
