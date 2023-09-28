@@ -12,7 +12,7 @@ class PaymentController: NSObject {
     func makePaymentFor(json: String,
                         completion:@escaping (_ error: Error?, _ reservationNumber: String?) -> Void) {
         
-        let stringURL = "https://external-dev.cartrawler.com/cartrawlerpay/json?sec=true&type=OTA_VehResRQ"
+        let stringURL = "https://external-dev-pay.cartrawler.com/cartrawlerpay/json?sec=true&type=OTA_VehResRQ"
         
         var formattedJson = json
         formattedJson = formattedJson.replacingOccurrences(of: "[CARDNUMBER]", with: "4111111111111111")
