@@ -54,6 +54,30 @@ class InPathViewController: UIViewController {
         context.flightNumber = "FL1234"
         context.passengers = [passenger]
         context.delegate = self
+        
+        // Flight details
+        let flightDetails = CTFlightDetails()
+        flightDetails.passengerBreakdown = CTFlightPassengerBreakdown(adults: 2, teens: 0, children: 0, infants: 0)
+        flightDetails.marketingPreference = true
+        flightDetails.marketingSegment = "Budget Conscious"
+        flightDetails.fareClass = "regular"
+        flightDetails.flightFare = 101.99
+        flightDetails.basketAmount = 130.99
+        flightDetails.bags = 2
+        flightDetails.sportsEquipment = 2
+        flightDetails.sportsEquipmentBreakdown = ["golf": (1), "ski": (1), "surf": (1)]
+        flightDetails.loyaltyNumber = "WZ123456789"
+        flightDetails.loyaltyTier = "platinum"
+        flightDetails.membershipID = "123222121"
+        flightDetails.age = 32
+        flightDetails.tripType = "business"
+        flightDetails.tripDuration = 4
+        flightDetails.context = "confirmation"
+        flightDetails.pnr = "TEYI89"
+        flightDetails.sessionID = "0idfw78jsnkoo"
+        flightDetails.campaignID = "Google-EN-Destination-France"
+        context.flightDetails = flightDetails
+        
         self.carTrawlerSDK.setContext(context)
         
         let widgetContainer3 = self.carTrawlerSDK.getWidget(status: .simple, style: CTWidgetStyle(), delegate: self)
