@@ -85,8 +85,8 @@
 		87697C00000000 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 			};
 			buildConfigurationList = 87697C00000030 /* Build configuration list for PBXProject "CTPayment" */;
 			compatibilityVersion = "Xcode 8.0";
