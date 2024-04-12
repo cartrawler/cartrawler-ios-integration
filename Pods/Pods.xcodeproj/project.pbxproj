@@ -7,22 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46EB2E00000190 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E00000180 /* Foundation.framework */; };
-		46EB2E00000200 /* Pods-CarTrawlerSDKIntegration-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E000001F0 /* Pods-CarTrawlerSDKIntegration-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46EB2E00000250 /* Pods-CarTrawlerSDKIntegration-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000240 /* Pods-CarTrawlerSDKIntegration-dummy.m */; };
+		46EB2E00000180 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E00000170 /* Foundation.framework */; };
+		46EB2E000001F0 /* Pods-CarTrawlerSDKIntegration-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E000001E0 /* Pods-CarTrawlerSDKIntegration-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46EB2E00000240 /* Pods-CarTrawlerSDKIntegration-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00000230 /* Pods-CarTrawlerSDKIntegration-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		46EB2E00000260 /* PBXContainerItemProxy */ = {
+		46EB2E00000250 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E000000C0 /* CTPayment.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 6D8B46FAD335A55A4D85696836F1A333;
-			remoteInfo = CTPayment;
-		};
-		46EB2E00000280 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E000000D0 /* CarTrawlerSDK.xcodeproj */;
+			containerPortal = 46EB2E000000C0 /* CarTrawlerSDK.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 2481ACACB124AD9C7A674315AB0B2E14;
 			remoteInfo = CarTrawlerSDK;
@@ -31,27 +24,26 @@
 
 /* Begin PBXFileReference section */
 		46EB2E000000B0 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		46EB2E000000C0 /* CTPayment */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CTPayment; path = CTPayment.xcodeproj; sourceTree = "<group>"; };
-		46EB2E000000D0 /* CarTrawlerSDK */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CarTrawlerSDK; path = CarTrawlerSDK.xcodeproj; sourceTree = "<group>"; };
-		46EB2E00000180 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		46EB2E000001B0 /* Pods-CarTrawlerSDKIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CarTrawlerSDKIntegration.release.xcconfig"; sourceTree = "<group>"; };
-		46EB2E000001C0 /* Pods-CarTrawlerSDKIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CarTrawlerSDKIntegration.debug.xcconfig"; sourceTree = "<group>"; };
-		46EB2E000001D0 /* Pods-CarTrawlerSDKIntegration-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CarTrawlerSDKIntegration-Info.plist"; sourceTree = "<group>"; };
-		46EB2E000001E0 /* Pods-CarTrawlerSDKIntegration.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CarTrawlerSDKIntegration.modulemap"; sourceTree = "<group>"; };
-		46EB2E000001F0 /* Pods-CarTrawlerSDKIntegration-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CarTrawlerSDKIntegration-umbrella.h"; sourceTree = "<group>"; };
-		46EB2E00000210 /* Pods-CarTrawlerSDKIntegration-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CarTrawlerSDKIntegration-frameworks.sh"; sourceTree = "<group>"; };
-		46EB2E00000220 /* Pods-CarTrawlerSDKIntegration-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CarTrawlerSDKIntegration-acknowledgements.plist"; sourceTree = "<group>"; };
-		46EB2E00000230 /* Pods-CarTrawlerSDKIntegration-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CarTrawlerSDKIntegration-acknowledgements.markdown"; sourceTree = "<group>"; };
-		46EB2E00000240 /* Pods-CarTrawlerSDKIntegration-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CarTrawlerSDKIntegration-dummy.m"; sourceTree = "<group>"; };
+		46EB2E000000C0 /* CarTrawlerSDK */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CarTrawlerSDK; path = CarTrawlerSDK.xcodeproj; sourceTree = "<group>"; };
+		46EB2E00000170 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		46EB2E000001A0 /* Pods-CarTrawlerSDKIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CarTrawlerSDKIntegration.release.xcconfig"; sourceTree = "<group>"; };
+		46EB2E000001B0 /* Pods-CarTrawlerSDKIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CarTrawlerSDKIntegration.debug.xcconfig"; sourceTree = "<group>"; };
+		46EB2E000001C0 /* Pods-CarTrawlerSDKIntegration-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CarTrawlerSDKIntegration-Info.plist"; sourceTree = "<group>"; };
+		46EB2E000001D0 /* Pods-CarTrawlerSDKIntegration.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CarTrawlerSDKIntegration.modulemap"; sourceTree = "<group>"; };
+		46EB2E000001E0 /* Pods-CarTrawlerSDKIntegration-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CarTrawlerSDKIntegration-umbrella.h"; sourceTree = "<group>"; };
+		46EB2E00000200 /* Pods-CarTrawlerSDKIntegration-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CarTrawlerSDKIntegration-frameworks.sh"; sourceTree = "<group>"; };
+		46EB2E00000210 /* Pods-CarTrawlerSDKIntegration-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CarTrawlerSDKIntegration-acknowledgements.plist"; sourceTree = "<group>"; };
+		46EB2E00000220 /* Pods-CarTrawlerSDKIntegration-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CarTrawlerSDKIntegration-acknowledgements.markdown"; sourceTree = "<group>"; };
+		46EB2E00000230 /* Pods-CarTrawlerSDKIntegration-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CarTrawlerSDKIntegration-dummy.m"; sourceTree = "<group>"; };
 		754EF1A8B0860484FFD754BF62E5FEE5 /* Pods-CarTrawlerSDKIntegration */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CarTrawlerSDKIntegration"; path = Pods_CarTrawlerSDKIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		46EB2E00000150 /* Frameworks */ = {
+		46EB2E00000140 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00000190 /* Foundation.framework in Frameworks */,
+				46EB2E00000180 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +72,7 @@
 		46EB2E00000060 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000170 /* iOS */,
+				46EB2E00000160 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -88,7 +80,7 @@
 		46EB2E00000070 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E000001A0 /* Pods-CarTrawlerSDKIntegration */,
+				46EB2E00000190 /* Pods-CarTrawlerSDKIntegration */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -96,32 +88,31 @@
 		46EB2E00000080 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E000000D0 /* CarTrawlerSDK */,
-				46EB2E000000C0 /* CTPayment */,
+				46EB2E000000C0 /* CarTrawlerSDK */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		46EB2E00000170 /* iOS */ = {
+		46EB2E00000160 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00000180 /* Foundation.framework */,
+				46EB2E00000170 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		46EB2E000001A0 /* Pods-CarTrawlerSDKIntegration */ = {
+		46EB2E00000190 /* Pods-CarTrawlerSDKIntegration */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E000001E0 /* Pods-CarTrawlerSDKIntegration.modulemap */,
-				46EB2E00000230 /* Pods-CarTrawlerSDKIntegration-acknowledgements.markdown */,
-				46EB2E00000220 /* Pods-CarTrawlerSDKIntegration-acknowledgements.plist */,
-				46EB2E00000240 /* Pods-CarTrawlerSDKIntegration-dummy.m */,
-				46EB2E00000210 /* Pods-CarTrawlerSDKIntegration-frameworks.sh */,
-				46EB2E000001D0 /* Pods-CarTrawlerSDKIntegration-Info.plist */,
-				46EB2E000001F0 /* Pods-CarTrawlerSDKIntegration-umbrella.h */,
-				46EB2E000001C0 /* Pods-CarTrawlerSDKIntegration.debug.xcconfig */,
-				46EB2E000001B0 /* Pods-CarTrawlerSDKIntegration.release.xcconfig */,
+				46EB2E000001D0 /* Pods-CarTrawlerSDKIntegration.modulemap */,
+				46EB2E00000220 /* Pods-CarTrawlerSDKIntegration-acknowledgements.markdown */,
+				46EB2E00000210 /* Pods-CarTrawlerSDKIntegration-acknowledgements.plist */,
+				46EB2E00000230 /* Pods-CarTrawlerSDKIntegration-dummy.m */,
+				46EB2E00000200 /* Pods-CarTrawlerSDKIntegration-frameworks.sh */,
+				46EB2E000001C0 /* Pods-CarTrawlerSDKIntegration-Info.plist */,
+				46EB2E000001E0 /* Pods-CarTrawlerSDKIntegration-umbrella.h */,
+				46EB2E000001B0 /* Pods-CarTrawlerSDKIntegration.debug.xcconfig */,
+				46EB2E000001A0 /* Pods-CarTrawlerSDKIntegration.release.xcconfig */,
 			);
 			name = "Pods-CarTrawlerSDKIntegration";
 			path = "Target Support Files/Pods-CarTrawlerSDKIntegration";
@@ -130,11 +121,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		46EB2E00000130 /* Headers */ = {
+		46EB2E00000120 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00000200 /* Pods-CarTrawlerSDKIntegration-umbrella.h in Headers */,
+				46EB2E000001F0 /* Pods-CarTrawlerSDKIntegration-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,18 +134,17 @@
 /* Begin PBXNativeTarget section */
 		6BF6F21A2A2D3566B11F2AF29EBDDA92 /* Pods-CarTrawlerSDKIntegration */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46EB2E000000F0 /* Build configuration list for PBXNativeTarget "Pods-CarTrawlerSDKIntegration" */;
+			buildConfigurationList = 46EB2E000000E0 /* Build configuration list for PBXNativeTarget "Pods-CarTrawlerSDKIntegration" */;
 			buildPhases = (
-				46EB2E00000130 /* Headers */,
-				46EB2E00000140 /* Sources */,
-				46EB2E00000150 /* Frameworks */,
-				46EB2E00000160 /* Resources */,
+				46EB2E00000120 /* Headers */,
+				46EB2E00000130 /* Sources */,
+				46EB2E00000140 /* Frameworks */,
+				46EB2E00000150 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				46EB2E00000270 /* PBXTargetDependency */,
-				46EB2E00000290 /* PBXTargetDependency */,
+				46EB2E00000260 /* PBXTargetDependency */,
 			);
 			name = "Pods-CarTrawlerSDKIntegration";
 			productName = Pods_CarTrawlerSDKIntegration;
@@ -183,10 +173,7 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProjectRef = 46EB2E000000C0 /* CTPayment */;
-				},
-				{
-					ProjectRef = 46EB2E000000D0 /* CarTrawlerSDK */;
+					ProjectRef = 46EB2E000000C0 /* CarTrawlerSDK */;
 				},
 			);
 			projectRoot = "";
@@ -197,7 +184,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		46EB2E00000160 /* Resources */ = {
+		46EB2E00000150 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -207,26 +194,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		46EB2E00000140 /* Sources */ = {
+		46EB2E00000130 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00000250 /* Pods-CarTrawlerSDKIntegration-dummy.m in Sources */,
+				46EB2E00000240 /* Pods-CarTrawlerSDKIntegration-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		46EB2E00000270 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CTPayment;
-			targetProxy = 46EB2E00000260 /* PBXContainerItemProxy */;
-		};
-		46EB2E00000290 /* PBXTargetDependency */ = {
+		46EB2E00000260 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CarTrawlerSDK;
-			targetProxy = 46EB2E00000280 /* PBXContainerItemProxy */;
+			targetProxy = 46EB2E00000250 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -359,9 +341,9 @@
 			};
 			name = Release;
 		};
-		46EB2E00000100 /* Release */ = {
+		46EB2E000000F0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E000001B0 /* Pods-CarTrawlerSDKIntegration.release.xcconfig */;
+			baseConfigurationReference = 46EB2E000001A0 /* Pods-CarTrawlerSDKIntegration.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -394,9 +376,9 @@
 			};
 			name = Release;
 		};
-		46EB2E00000110 /* Debug */ = {
+		46EB2E00000100 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E000001C0 /* Pods-CarTrawlerSDKIntegration.debug.xcconfig */;
+			baseConfigurationReference = 46EB2E000001B0 /* Pods-CarTrawlerSDKIntegration.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -440,11 +422,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46EB2E000000F0 /* Build configuration list for PBXNativeTarget "Pods-CarTrawlerSDKIntegration" */ = {
+		46EB2E000000E0 /* Build configuration list for PBXNativeTarget "Pods-CarTrawlerSDKIntegration" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46EB2E00000110 /* Debug */,
-				46EB2E00000100 /* Release */,
+				46EB2E00000100 /* Debug */,
+				46EB2E000000F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

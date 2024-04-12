@@ -19,17 +19,6 @@
 			<key>License</key>
 			<string>Commercial</string>
 			<key>Title</key>
-			<string>CTPayment</string>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-		</dict>
-		<dict>
-			<key>FooterText</key>
-			<string>Copyright (C) 2016 Cartrawler
-</string>
-			<key>License</key>
-			<string>Commercial</string>
-			<key>Title</key>
 			<string>CarTrawlerSDK</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>

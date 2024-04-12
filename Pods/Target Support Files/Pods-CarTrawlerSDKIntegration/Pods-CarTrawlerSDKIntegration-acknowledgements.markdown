@@ -1,11 +1,6 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## CTPayment
-
-Copyright (C) 2016 Cartrawler
-
-
 ## CarTrawlerSDK
 
 Copyright (C) 2016 Cartrawler
