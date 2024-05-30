@@ -1,16 +1,16 @@
 PODS:
-  - CarTrawlerSDK (15.0.1)
+  - CarTrawlerSDK (15.2.0)
 
 DEPENDENCIES:
-  - CarTrawlerSDK (= 15.0.1)
+  - CarTrawlerSDK (= 15.2.0)
 
 SPEC REPOS:
   https://github.com/cartrawler/cartrawler-ios-pods:
     - CarTrawlerSDK
 
 SPEC CHECKSUMS:
-  CarTrawlerSDK: 23d8f494ebd075f347d12a16c1543562023ed0be
+  CarTrawlerSDK: daf14e8f5b98d7f27dd872116929441750d123f3
 
-PODFILE CHECKSUM: 3f61e28698080eb578d03c82e19b71536221d649
+PODFILE CHECKSUM: dbdcf2e44f2799f39774a6082385b2080a9156cb
 
 COCOAPODS: 1.15.2
