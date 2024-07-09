@@ -9,5 +9,5 @@ use_modular_headers!
 inhibit_all_warnings!
 
 target 'CarTrawlerSDKIntegration' do
-  pod 'CarTrawlerSDK', '15.3.0'
+  pod 'CarTrawlerSDK', '15.3.3'
 end
