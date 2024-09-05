@@ -28,10 +28,10 @@ class ViewController: UIViewController {
         context.countryCode = "IE" // Default device country code
         context.currencyCode = "EUR" // Default device currency code
         context.languageCode = "EN" // Default EN
-//        context.pickupDate = Date(timeIntervalSinceNow: 86400) // next day
-//        context.dropOffDate = Date(timeIntervalSinceNow: 86400 * 3) // next day + 3 days
-//        context.pickupLocation = "AMS"
-//        context.dropOffLocation = "ORY"
+        context.pickupDate = Date(timeIntervalSinceNow: 86400) // next day
+        context.dropOffDate = Date(timeIntervalSinceNow: 86400 * 3) // next day + 3 days
+        context.pickupLocation = "AMS"
+        context.dropOffLocation = "ORY"
         
         CarTrawlerSDK.sharedInstance().present(from: self, context: context)
     }

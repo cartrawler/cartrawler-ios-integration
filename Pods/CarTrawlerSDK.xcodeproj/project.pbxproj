@@ -97,6 +97,7 @@
 				en,
 			);
 			mainGroup = 7732B900000010;
+			minimizedProjectReferenceProxies = 0;
 			productRefGroup = 7732B900000020 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
