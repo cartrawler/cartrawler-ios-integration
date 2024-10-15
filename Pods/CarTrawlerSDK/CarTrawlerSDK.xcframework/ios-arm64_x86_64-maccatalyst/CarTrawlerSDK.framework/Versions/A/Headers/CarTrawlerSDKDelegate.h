@@ -9,7 +9,9 @@
 #import "CTInPathVehicle.h"
 #import "CTVehicleDetails.h"
 #import "CTWidgetContainer.h"
+#import "CTNavigationDetails.h"
 #import "Payment.h"
+#import "CTVehicleSearch.h"
 
 @class CTReservationDetails;
 
@@ -50,6 +52,27 @@ static NSString * _Nonnull const CTPlaceholderPassengerCountryCode = @"[COUNTRYN
 
 
 @optional
+
+/**
+ Called when the user navigates
+ 
+ @param navigationDetails The navigation details
+ */
+- (void)didNavigateTo:(nonnull CTNavigationDetails *)navigationDetails;
+
+/**
+ Called when the vehicle search will start
+ 
+ @param vehicleSearch details of the search
+ */
+- (void)willStartVehicleSearch:(nonnull CTVehicleSearch *)vehicleSearch;
+
+/**
+ Called when the vehicle search is returned
+ 
+ @param vehicleSearch details of the search
+ */
+- (void)didReceiveVehicleSearch:(nonnull CTVehicleSearch *)vehicleSearch;
 
 /**
  Called when the vehicles have been fetched and the best daily rate has been calculated
