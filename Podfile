@@ -3,11 +3,11 @@ source 'https://cdn.cocoapods.org/'
 source 'https://github.com/cartrawler/cartrawler-ios-pods'
 source 'https://github.cartrawler.com/cartrawler/cartrawler-ios-internal-pods'
 
-platform :ios, 11.0
+platform :ios, 13.0
 use_frameworks!
 use_modular_headers!
 inhibit_all_warnings!
 
 target 'CarTrawlerSDKIntegration' do
-  pod 'CarTrawlerSDK', '15.8.0'
+  pod 'CarTrawlerSDK', '16.1.0'
 end

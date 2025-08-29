@@ -12,6 +12,7 @@
 #import "CTRecentSearch.h"
 #import "CTFlightDetails.h"
 #import "CTUTMParameters.h"
+#import <CoreLocation/CLLocation.h>
 
 @class CTPassenger;
 
@@ -20,8 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSUInteger, CTURLDeeplinkType) {
     CTURLDeeplinkTypeNone,
     CTURLDeeplinkTypeLanding,
-    CTURLDeeplinkTypeSearchForm,
     CTURLDeeplinkTypeSearchResults,
+    CTURLDeeplinkTypeBookingDetails,
 };
 
 typedef NS_ENUM(NSUInteger, CTSettingsIconType) {
@@ -47,7 +48,7 @@ typedef NS_ENUM(NSUInteger, CTSettingsIconType) {
 @property (nonatomic, strong) NSString *pickupLocationID;
 @property (nonatomic, strong) NSString *dropOffLocationID;
 @property (nonatomic, strong) NSString *pinnedVehicleID;
-@property (nonatomic, strong) NSArray<CTPassenger *>* passengers;
+@property (nonatomic, strong) CTPassenger *passenger;
 @property (nonatomic, strong) NSString *loyaltyRegex;
 @property (nonatomic, strong, nullable) NSString *clientUserIdentifier;
 @property (nonatomic) BOOL customCashTreatment;
@@ -58,9 +59,12 @@ typedef NS_ENUM(NSUInteger, CTSettingsIconType) {
 @property (nonatomic) CTSettingsIconType settingsIconType;
 @property (nonatomic) CTFlightDetails *flightDetails;
 @property (nonatomic) CTUTMParameters *utmParameters;
+@property (nonatomic) NSString *bookingEmail;
+@property (nonatomic) NSString *bookingID;
+@property (nonatomic) CLLocationCoordinate2D pickupLocationCoordinate;
+@property (nonatomic) CLLocationCoordinate2D dropoffLocationCoordinate;
 
 - (instancetype)init __attribute__((unavailable("Please use initWithImplementationID:clientID:flow")));
-- (nonnull instancetype)initWithClientID:(nonnull NSString *)clientID flow:(CTFlowType)flowType __attribute__((unavailable("Please use initWithImplementationID:clientID:flow")));
 - (nonnull instancetype)initWithImplementationID:(nonnull NSString *)implementationID
                                         clientID:(nonnull NSString *)clientID
                                             flow:(CTFlowType)flowType;

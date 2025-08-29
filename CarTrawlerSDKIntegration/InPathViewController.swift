@@ -38,8 +38,7 @@ class InPathViewController: UIViewController {
                                     email: "john.murphy@cartrawler.com",
                                     phone: "0838880000",
                                     phoneCountryPrefix: "353",
-                                    loyaltyProgramNumber: "123456",
-                                    isPrimaryDriver: true)
+                                    loyaltyProgramNumber: "123456")
         
         let pickUpDate = Date(timeIntervalSinceNow: TimeInterval(86400 * 3))
         let returnDate = Date(timeIntervalSinceNow: TimeInterval(86400 * 6))
@@ -52,7 +51,7 @@ class InPathViewController: UIViewController {
         context.pickupDate = pickUpDate
         context.dropOffDate = returnDate
         context.flightNumber = "FL1234"
-        context.passengers = [passenger]
+        context.passenger = passenger
         context.delegate = self
         
         // Flight details
