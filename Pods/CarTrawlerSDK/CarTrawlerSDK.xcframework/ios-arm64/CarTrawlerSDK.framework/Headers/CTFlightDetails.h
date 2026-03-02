@@ -15,6 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CTFlightDetails : NSObject
 
 @property (nonatomic, strong) CTFlightPassengerBreakdown *passengerBreakdown;
+@property (nonatomic, strong) NSString *firstName;
+@property (nonatomic, strong) NSString *surName;
+@property (nonatomic, strong) NSString *customerEmail;
+@property (nonatomic, strong) NSString *flightOrigin;
+@property (nonatomic, strong) NSString *flightReturn;
 @property (nonatomic) BOOL marketingPreference;
 @property (nonatomic, strong) NSString *marketingSegment;
 @property (nonatomic, strong) NSString *fareClass;
@@ -33,6 +38,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *pnr;
 @property (nonatomic, strong) NSString *sessionID;
 @property (nonatomic, strong) NSString *campaignID;
+@property (nonatomic, strong) NSString *visitorID;
 @property (nonatomic) BOOL oneWay;
 
 - (NSDictionary *)toDictionary;

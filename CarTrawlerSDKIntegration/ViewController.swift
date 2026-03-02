@@ -33,6 +33,20 @@ class ViewController: UIViewController {
         context.pickupLocation = "AMS"
         context.dropOffLocation = "ORY"
         
+        
+        let flightDetails = CTFlightDetails()
+        flightDetails.flightOrigin = "DUB|LHR|2025-01-16T06:05:00|2025-01-16T07:25:00|XX8719"
+        flightDetails.firstName = "John"
+        flightDetails.surName     = "Doe"
+        flightDetails.customerEmail     = "john.doe@example.com"
+        flightDetails.fareClass     = "business"
+        flightDetails.flightFare = 175.95
+        flightDetails.bags = 1
+        flightDetails.loyaltyNumber = "ABC123456"
+        flightDetails.visitorID = "123456"
+        
+        
+        context.flightDetails = flightDetails
         CarTrawlerSDK.sharedInstance().present(from: self, context: context)
     }
     
