@@ -2,11 +2,11 @@ install! "cocoapods", :disable_input_output_paths => true, :generate_multiple_po
 source 'https://cdn.cocoapods.org/'
 source 'https://github.com/cartrawler/cartrawler-ios-pods'
 
-platform :ios, 13.0
+platform :ios, 15.0
 use_frameworks!
 use_modular_headers!
 inhibit_all_warnings!
 
 target 'CarTrawlerSDKIntegration' do
-  pod 'CarTrawlerSDK', '16.5.0'
+  pod 'CarTrawlerSDK', '16.7.1'
 end
